@@ -1,0 +1,73 @@
+import { Button } from '../ui/button';
+import { ArrowRight, Sparkles } from 'lucide-react';
+import SilkR3F from '../effects/SilkR3F';
+
+const HeroSection = () => {
+  return (
+    <>
+      <section className="relative min-h-screen flex items-center justify-center pt-20 pb-32 bg-slate-900">
+        {/* Silk R3F Background */}
+        <div className="absolute inset-0 overflow-hidden">
+          <SilkR3F
+            speed={5}
+            scale={0.6}
+            color="#277cfb"
+            noiseIntensity={1.5}
+            rotation={0}
+          />
+        </div>
+        
+        {/* Dark Transparent Overlay for Better Readability */}
+        <div className="absolute inset-0 bg-black/30 backdrop-blur-[1px]"></div>
+
+        <div className="mx-auto px-6 relative z-10 w-[65%]">
+          <div className="text-center max-w-4xl mx-auto">
+            {/* New Badge */}
+            <div className="inline-flex items-center gap-2 glass-container rounded-full px-4 py-2 mb-8">
+              <Sparkles className="w-4 h-4 text-white" />
+              <span className="text-sm font-medium text-white">
+                Transforming Business Operations with AI
+              </span>
+            </div>
+
+            {/* Main Headline */}
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white/90">
+              Enterprise solutions that scale your success
+            </h1>
+
+            {/* Subtitle */}
+            <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+              Westpoint Capital delivers cutting-edge SaaS solutions, intelligent automation, 
+              and AI-powered tools that transform how enterprises operate and compete.
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex justify-center items-center mb-16">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="px-8 py-4 text-lg"
+              >
+                Schedule a Demo
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Floating Dashboard Preview - positioned between sections */}
+      <div className="relative z-20 -mt-64 mb-12">
+        <div className="mx-auto px-6 w-[65%]">
+          <img 
+            src="/lovable-uploads/87b4aeb1-a16e-424f-8ed4-e124df3d5e72.png" 
+            alt="Dashboard preview showing SMS marketing platform interface"
+            className="w-full max-w-5xl mx-auto rounded-2xl"
+          />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default HeroSection;
