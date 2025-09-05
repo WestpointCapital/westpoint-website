@@ -1,5 +1,6 @@
 import Navigation from '../components/ui/navigation';
 import Footer from '../components/sections/footer';
+import BlobUpload from '../components/BlobUpload';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
@@ -227,6 +228,19 @@ const Partners = () => {
                 </form>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Blob Store Demo */}
+        <section className="py-24 bg-slate-950">
+          <div className="w-[65%] mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-6 text-white">File <span className="text-blue-400">Storage</span></h2>
+              <p className="text-xl text-white/70 max-w-3xl mx-auto">
+                Upload and manage files with our integrated blob storage system.
+              </p>
+            </div>
+            <BlobUpload />
           </div>
         </section>
       </main>
