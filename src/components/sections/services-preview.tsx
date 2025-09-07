@@ -31,7 +31,7 @@ const ServicesPreview = () => {
 
   return (
     <section className="py-24 bg-slate-950">
-      <div className="mx-auto px-6 w-full">
+      <div className="mx-auto px-6 w-[65%]">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
@@ -44,7 +44,7 @@ const ServicesPreview = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 w-[65%] mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {services.map((service, index) => (
             <div key={index} className="glass-container rounded-2xl p-6 group hover:scale-105 transition-all duration-300 bg-slate-900/50 border border-blue-500/20">
               <div className="text-blue-400 mb-4 group-hover:scale-110 transition-transform duration-300">
