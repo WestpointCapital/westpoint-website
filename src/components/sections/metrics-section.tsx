@@ -40,7 +40,7 @@ const MetricsSection = () => {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-400/15 rounded-full blur-3xl"></div>
       
-      <div className="container mx-auto relative z-10 w-full">
+      <div className="w-[65%] mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
             Proven results that matter
@@ -51,7 +51,7 @@ const MetricsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-[80%] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-[65%] mx-auto">
           {metrics.map((metric, index) => {
             const IconComponent = metric.icon;
             return (

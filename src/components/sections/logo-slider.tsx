@@ -47,7 +47,7 @@ const LogoSlider = () => {
 
   return (
     <section className="py-16 bg-slate-950 overflow-hidden">
-      <div className="container mx-auto px-4">
+      <div className="w-[65%] mx-auto px-4">
         
         <div 
           ref={scrollRef}
