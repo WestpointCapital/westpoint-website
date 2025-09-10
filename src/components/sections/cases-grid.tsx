@@ -4,31 +4,31 @@ const CasesGrid = () => {
   const caseItems = [{
     image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Odyssey-No-Grain-3k-scaled%20%281%29.webp",
     title: "Villa Vie Residences",
-    price: "$2,500",
+    services: ["SMS Marketing", "Email Marketing"],
     description: "We helped them reactivate old and new leads and gain more than 5 million+ revenue.",
     link: "/cases/villa-vie-residences"
   }, {
     image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Bedre-klima-vogn-1024x768.webp",
     title: "Bedreklima",
-    price: "$2,500",
+    services: ["SMS Marketing"],
     description: "We helped scale this HVAC company to 40% of sales online through SMS marketing.",
     link: "/cases/bedreklima"
   }, {
     image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Nicolinehus-Aarhus-Oe.webp",
     title: "Nicolinehus Apartments",
-    price: "$2,200",
+    services: ["Email Marketing"],
     description: "Help when develop a software to manage the the apartments avalibility and started email campaigns",
     link: "/cases/nikolinehus"
   }, {
     image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/nrs1.png",
     title: "Nordic Refrigeration Solutions",
-    price: "$2,800",
+    services: ["SMS Marketing"],
     description: "Running comprehensive SMS marketing campaigns for all signed up leads, automating customer communication and streamlining the sales process with AI-powered responses.",
     link: "/cases/nordic-refrigeration"
   }, {
     image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Showerheads.png",
     title: "Swissblu",
-    price: "$2,200",
+    services: ["Email Marketing"],
     description: "Comprehensive email marketing campaigns that transformed their customer engagement and increased sales through targeted automation and personalized messaging strategies.",
     link: "/cases/swissblu"
   }, {
@@ -112,31 +112,36 @@ const CasesGrid = () => {
             
             return (
               <div key={index} className="relative rounded-3xl overflow-hidden h-[500px] mb-6">
-                {/* Full Background Image */}
-                <div className="absolute inset-0 w-full h-full bg-cover bg-center" style={{
-              backgroundImage: `url(${item.image})`
-            }} />
-                
-                {/* Price Badge */}
-                <div className="absolute top-4 right-4 z-10">
-                  <span className="bg-black/70 text-white px-3 py-1 rounded-full text-sm font-medium">
-                    {item.price}
-                  </span>
+              {/* Full Background Image */}
+              <div className="absolute inset-0 w-full h-full bg-cover bg-center" style={{
+            backgroundImage: `url(${item.image})`
+          }} />
+              
+                {/* Services Tags - Top Right Corner */}
+                <div className="absolute top-4 right-4 flex flex-wrap gap-2 justify-end">
+                  {item.services.map((service, serviceIndex) => (
+                    <span 
+                      key={serviceIndex}
+                      className="px-4 py-2 bg-white/90 text-slate-800 text-sm font-semibold rounded-full shadow-lg backdrop-blur-sm"
+                    >
+                      {service}
+                </span>
+                  ))}
+              </div>
+              
+              {/* Glass Overlay - Bottom 50% */}
+              <div className="absolute bottom-0 left-0 right-0 h-[70%] glass-card-overlay text-white flex flex-col justify-end p-6 gap-4 py-0">
+                <div>
+                  <h3 className="text-xl font-bold mb-3">
+                    {item.title}
+                  </h3>
+                    <p className="text-white/70 text-sm leading-relaxed mb-3">
+                    {item.description}
+                  </p>
                 </div>
                 
-                {/* Glass Overlay - Bottom 50% */}
-                <div className="absolute bottom-0 left-0 right-0 h-[70%] glass-card-overlay text-white flex flex-col justify-end p-6 gap-4 py-0">
-                  <div>
-                    <h3 className="text-xl font-bold mb-3">
-                      {item.title}
-                    </h3>
-                    <p className="text-white/70 text-sm leading-relaxed mb-3">
-                      {item.description}
-                    </p>
-                  </div>
-                  
-                  {/* CTA Button */}
-                  <div className="pb-4">
+                {/* CTA Button */}
+                <div className="pb-4">
                     <Link 
                       to={item.link}
                       className="w-full py-3 px-4 bg-white text-black font-medium rounded-full hover:bg-gray-100 transition-colors duration-200 inline-block text-center"

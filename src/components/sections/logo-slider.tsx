@@ -3,23 +3,13 @@ import { useEffect, useRef } from 'react';
 const LogoSlider = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  // Fake company logos - using text placeholders
+  // Company logos - using text placeholders
   const logos = [
-    'Microsoft',
-    'Google',
-    'Amazon',
-    'Apple',
-    'Meta',
-    'Tesla',
-    'Netflix',
-    'Adobe',
-    'Salesforce',
-    'Oracle',
-    'IBM',
-    'Intel',
-    'NVIDIA',
-    'Spotify',
-    'Uber'
+    'Bedreklima',
+    'Nordic Refrigeration Solutions',
+    'nrs-energi',
+    'Villa Vie Residences',
+    'Fable Voyages'
   ];
 
   // Duplicate logos for seamless scrolling
