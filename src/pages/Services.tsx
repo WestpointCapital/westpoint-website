@@ -66,7 +66,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-slate-950 overflow-x-hidden">
       <Navigation />
       <main className="pt-20">
         {/* Hero Section */}
@@ -78,22 +78,22 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="relative z-10 w-[65%] mx-auto px-6 text-center">
+          <div className="relative z-10 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8 text-center">
             {/* Glowing Quarter-Circle Arc - Planet Horizon Above Text */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1800px] h-[1800px] pointer-events-none z-30">
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1800px] h-[1800px] pointer-events-none z-30 overflow-hidden">
               <div className="w-full h-full relative overflow-hidden">
                 {/* Quarter-circle mask to show only the top arc */}
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full">
                   {/* Main circle - perfect size */}
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border-t-2 border-blue-300 rounded-full blur-sm animate-pulse"></div>
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] border-t-2 border-blue-300 rounded-full blur-sm animate-pulse"></div>
                   {/* Bright outward glow - expanded */}
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] border-t border-white/90 rounded-full blur-md animate-pulse"></div>
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1100px] h-[1100px] border-t border-white/90 rounded-full blur-md animate-pulse"></div>
                   {/* Extended bright flare - more outwards */}
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[1200px] border-t border-blue-100/85 rounded-full blur-lg animate-pulse"></div>
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1300px] h-[1300px] border-t border-blue-100/85 rounded-full blur-lg animate-pulse"></div>
                   {/* Maximum outward flare */}
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1400px] h-[1400px] border-t border-blue-200/70 rounded-full blur-xl animate-pulse"></div>
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1500px] h-[1500px] border-t border-blue-200/70 rounded-full blur-xl animate-pulse"></div>
                   {/* Ultra-wide outward flare */}
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1600px] h-[1600px] border-t border-blue-300/50 rounded-full blur-2xl animate-pulse"></div>
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1700px] h-[1700px] border-t border-blue-300/50 rounded-full blur-2xl animate-pulse"></div>
                 </div>
                 {/* Mask to show only the top quarter */}
                 <div className="absolute top-1/2 left-0 w-full h-1/2 bg-slate-950"></div>
@@ -109,45 +109,45 @@ const Services = () => {
             </div>
 
             {/* Main Headline */}
-            <h1 className="relative z-40 text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="relative z-40 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
               Our Services
             </h1>
 
             {/* Description */}
-            <p className="relative z-40 text-xl text-white/70 max-w-4xl mx-auto mb-12 leading-relaxed">
+            <p className="relative z-40 text-base sm:text-lg md:text-xl text-white/70 max-w-4xl mx-auto mb-8 sm:mb-12 leading-relaxed">
               At Westpoint Capital, we help businesses unlock growth by combining AI, automation, and digital strategy. Instead of offering one-off tools, we design solutions that work together — giving you smarter systems, stronger customer connections, and scalable results.
             </p>
 
             {/* Call-to-Action Buttons */}
-            <div className="relative z-40 flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-              <Button variant="outline" size="lg" className="bg-transparent border-white/20 text-white hover:bg-white/10 px-8 py-4">
+            <div className="relative z-40 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-6 sm:mb-8">
+              <Button variant="outline" size="lg" className="bg-transparent border-white/20 text-white hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto">
                 <div className="w-4 h-4 border-l-2 border-t-2 border-b-2 border-white transform rotate-45 mr-3"></div>
                 Watch Demo
               </Button>
-              <Button size="lg" className="bg-blue-400 hover:bg-blue-500 text-white px-8 py-4">
+              <Button size="lg" className="bg-blue-400 hover:bg-blue-500 text-white px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto">
                 Get started for free
               </Button>
             </div>
 
             {/* Trusted by Section */}
             <div className="relative z-40 text-center">
-              <p className="text-white/60 text-sm mb-6">Trusted by 500+ companies</p>
-              <div className="flex justify-center items-center gap-8 opacity-60">
-                <div className="text-white/40 font-semibold">Boltshift</div>
-                <div className="text-white/40 font-semibold">Lightbox</div>
-                <div className="text-white/40 font-semibold">FeatherDev</div>
-                <div className="text-white/40 font-semibold">GlobalBank</div>
+              <p className="text-white/60 text-sm mb-4 sm:mb-6">Trusted by 500+ companies</p>
+              <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-8 opacity-60">
+                <div className="text-white/40 font-semibold text-sm sm:text-base">Boltshift</div>
+                <div className="text-white/40 font-semibold text-sm sm:text-base">Lightbox</div>
+                <div className="text-white/40 font-semibold text-sm sm:text-base">FeatherDev</div>
+                <div className="text-white/40 font-semibold text-sm sm:text-base">GlobalBank</div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Services Grid */}
-        <section className="py-24 bg-slate-950">
-          <div className="w-[65%] mx-auto px-6">
-            <div className="grid lg:grid-cols-2 gap-12">
+        <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-slate-950">
+          <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
               {services.map((service, index) => (
-                <div key={index} className="glass-container rounded-2xl p-8 group bg-slate-900/50 border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300 relative overflow-hidden">
+                <div key={index} className="glass-container rounded-2xl p-6 sm:p-8 group bg-slate-900/50 border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300 relative overflow-hidden">
                   {/* Special background image for first service */}
                   {index === 0 && (
                     <div className="absolute bottom-0 left-0 w-1/2 h-1/2 -ml-0">
@@ -198,18 +198,18 @@ const Services = () => {
                         {service.icon}
                       </div>
                     )}
-                    <h3 className="text-2xl font-bold mb-4 text-white">{service.title}</h3>
-                    <p className="text-white/70 mb-6 leading-relaxed">
+                    <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white">{service.title}</h3>
+                    <p className="text-sm sm:text-base text-white/70 mb-4 sm:mb-6 leading-relaxed">
                       {service.description}
                     </p>
                     
-                    <div className="mb-6">
-                      <h4 className="font-semibold mb-3 text-white">Examples:</h4>
-                      <ul className="space-y-2">
+                    <div className="mb-4 sm:mb-6">
+                      <h4 className="font-semibold mb-2 sm:mb-3 text-white text-sm sm:text-base">Examples:</h4>
+                      <ul className="space-y-1 sm:space-y-2">
                         {service.examples.map((example, idx) => (
-                          <li key={idx} className="flex items-center gap-3">
-                            <CheckCircle className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                            <span className="text-white/70">{example}</span>
+                          <li key={idx} className="flex items-center gap-2 sm:gap-3">
+                            <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400 flex-shrink-0" />
+                            <span className="text-white/70 text-sm sm:text-base">{example}</span>
                           </li>
                         ))}
                       </ul>
@@ -230,7 +230,7 @@ const Services = () => {
 
         {/* Our Service Approach Section */}
         <section className="py-24 bg-slate-900/30">
-          <div className="w-[65%] mx-auto px-6">
+          <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8">
             <div className="glass-container rounded-2xl p-12 bg-slate-900/50 border border-blue-500/20">
               <div className="grid lg:grid-cols-2 gap-16 items-center">
                 <div className="relative">
@@ -280,7 +280,7 @@ const Services = () => {
 
         {/* Why Westpoint Capital Section */}
         <section className="py-24 bg-slate-900/30">
-          <div className="w-[65%] mx-auto px-6">
+          <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-white mb-6">
                 Why <span className="text-blue-400">Westpoint Capital</span>?
@@ -308,7 +308,7 @@ const Services = () => {
 
         {/* CTA Section */}
         <section className="py-24 bg-slate-950">
-          <div className="w-[65%] mx-auto px-6 text-center">
+          <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8 text-center">
             <div className="glass-container rounded-2xl p-12 max-w-4xl mx-auto bg-slate-900/50 border border-blue-500/20">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
                 Ready to unlock your business growth?

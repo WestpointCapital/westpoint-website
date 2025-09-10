@@ -27,7 +27,7 @@ const AboutSection = () => {
 
   return (
     <section className="py-24 bg-gradient-subtle">
-      <div className="mx-auto px-6 w-[65%]">
+      <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div>

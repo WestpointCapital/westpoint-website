@@ -20,7 +20,7 @@ const HeroSection = () => {
         {/* Dark Transparent Overlay for Better Readability */}
         <div className="absolute inset-0 bg-black/30 backdrop-blur-[1px]"></div>
 
-        <div className="mx-auto px-6 relative z-10 w-[65%]">
+        <div className="mx-auto px-6 sm:px-8 relative z-10 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="text-center max-w-4xl mx-auto">
             {/* New Badge */}
             <div className="inline-flex items-center gap-2 glass-container rounded-full px-4 py-2 mb-8">
@@ -31,12 +31,12 @@ const HeroSection = () => {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white/90">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight text-white/90">
               Enterprise solutions that scale your success
             </h1>
 
             {/* Subtitle */}
-            <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
               Westpoint Capital delivers cutting-edge SaaS solutions, intelligent automation, 
               and AI-powered tools that transform how enterprises operate and compete.
             </p>
@@ -58,11 +58,11 @@ const HeroSection = () => {
 
       {/* Floating Dashboard Preview - positioned between sections */}
       <div className="relative z-20 -mt-64 mb-12">
-        <div className="mx-auto px-6 w-[65%]">
+        <div className="mx-auto px-6 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <img 
             src="/lovable-uploads/87b4aeb1-a16e-424f-8ed4-e124df3d5e72.png" 
             alt="Dashboard preview showing SMS marketing platform interface"
-            className="w-full max-w-5xl mx-auto rounded-2xl"
+            className="w-full max-w-6xl mx-auto rounded-2xl"
           />
         </div>
       </div>

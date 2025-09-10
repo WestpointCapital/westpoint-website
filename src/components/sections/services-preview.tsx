@@ -31,7 +31,7 @@ const ServicesPreview = () => {
 
   return (
     <section className="py-24 bg-slate-950">
-      <div className="mx-auto px-6 w-[65%]">
+      <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">

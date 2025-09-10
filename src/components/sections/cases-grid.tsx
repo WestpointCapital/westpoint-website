@@ -39,8 +39,8 @@ const CasesGrid = () => {
     buttonText: "Contact"
   }];
   return <section className="py-20 bg-slate-950">
-      <div className="w-[65%] mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-8">
+      <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {caseItems.map((item, index) => {
             if (item.isCTA) {
               return (

@@ -33,15 +33,15 @@ const CasesSectionV2 = () => {
     <section className="py-24 bg-slate-950">
       <div className="w-full">
         {/* Header */}
-        <div className="w-[65%] mx-auto px-6 mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white">
+        <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8 mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
             Our <span className="text-blue-400">success stories</span>
           </h2>
         </div>
 
         {/* Cases Grid */}
-        <div className="w-[65%] mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-visible py-4">
+        <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 overflow-visible py-4">
             {cases.map((caseItem, index) => (
               <div 
                 key={index}
@@ -91,7 +91,7 @@ const CasesSectionV2 = () => {
         </div>
 
         {/* View All Cases Button */}
-        <div className="w-[65%] mx-auto px-6 mt-8">
+        <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8 mt-8">
           <Link 
             to="/cases" 
             className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"

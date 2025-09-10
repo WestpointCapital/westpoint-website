@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 
 const NordicRefrigeration = () => {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-slate-950 overflow-x-hidden">
       <Navigation />
       <main>
         {/* Hero Section */}
         <section className="relative py-24 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-transparent to-blue-400/20"></div>
-          <div className="w-[65%] mx-auto px-6 relative z-10">
+          <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8 relative z-10">
             <Link 
               to="/cases" 
               className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors mb-8"
@@ -65,7 +65,7 @@ const NordicRefrigeration = () => {
 
         {/* Challenge Section */}
         <section className="py-24 bg-slate-950">
-          <div className="w-[65%] mx-auto px-6">
+          <div className="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[65%] mx-auto px-6 sm:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-4xl font-bold text-white mb-6">
@@ -116,7 +116,7 @@ const NordicRefrigeration = () => {
 
         {/* Solution Section */}
         <section className="py-24 bg-slate-950">
-          <div className="w-[65%] mx-auto px-6">
+          <div className="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[65%] mx-auto px-6 sm:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-white mb-6">
                 Our <span className="text-blue-400">Solution</span>
@@ -162,7 +162,7 @@ const NordicRefrigeration = () => {
 
         {/* Results Section */}
         <section className="py-24 bg-slate-950">
-          <div className="w-[65%] mx-auto px-6">
+          <div className="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[65%] mx-auto px-6 sm:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-white mb-6">
                 The <span className="text-blue-400">Results</span>
@@ -240,7 +240,7 @@ const NordicRefrigeration = () => {
 
         {/* CTA Section */}
         <section className="py-24 bg-slate-950">
-          <div className="w-[65%] mx-auto px-6">
+          <div className="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[65%] mx-auto px-6 sm:px-8">
             <div className="glass-container rounded-2xl p-12 text-center bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                 Ready to automate your lead management?

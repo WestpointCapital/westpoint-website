@@ -6,7 +6,7 @@ import Footer from '../components/sections/footer';
 
 const Cases = () => {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-slate-950 overflow-x-hidden">
       <div className="relative z-[60]">
         <Navigation />
       </div>

@@ -97,7 +97,8 @@ const CasesHero = () => {
     <div className="carousel-container" ref={carouselRef}>
       <style>{`
         .carousel-container {
-          width: 100vw;
+          width: 100%;
+          max-width: 100vw;
           height: calc(100vh - 80px);
           overflow: hidden;
           position: relative;

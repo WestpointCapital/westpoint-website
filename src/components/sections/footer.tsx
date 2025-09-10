@@ -9,7 +9,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-gradient-subtle py-16">
-      <div className="mx-auto px-6 w-[65%]">
+      <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
         {/* Main Footer Content */}
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Company Info */}

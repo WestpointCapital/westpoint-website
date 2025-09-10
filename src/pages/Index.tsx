@@ -12,7 +12,7 @@ import Footer from '../components/sections/footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-slate-950 overflow-x-hidden">
       <Navigation />
       <main>
         <HeroSection />

@@ -74,22 +74,22 @@ const Partners = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-slate-950 overflow-x-hidden">
       <Navigation />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="pt-0 pb-24 relative -mt-20">
+        <section className="pt-0 pb-24 relative -mt-20 overflow-hidden">
           {/* Dark Veil Background */}
           <div className="absolute inset-0 w-full h-full">
             <DarkVeil />
           </div>
           
-          <div className="w-[65%] mx-auto px-6 text-center relative z-10">
+          <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8 text-center relative z-10">
             <div className="mb-0 flex justify-center relative -mt-[130px]">
               <img 
                 src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/glasshandshake.png" 
                 alt="Partnership Handshake" 
-                className="h-[32rem] md:h-[40rem] lg:h-[48rem] xl:h-[56rem] w-auto object-contain"
+                className="h-[36rem] md:h-[44rem] lg:h-[52rem] xl:h-[60rem] w-auto object-contain"
               />
               <div className="absolute inset-0 flex items-end justify-center pb-16">
                 <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white text-center drop-shadow-lg">
@@ -119,7 +119,7 @@ const Partners = () => {
 
         {/* Benefits Section */}
         <section className="py-16 bg-slate-950">
-          <div className="w-[65%] mx-auto px-6">
+          <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8">
             {/* Intro Card - Shared Belief */}
             <div className="mb-12">
               <div className="glass-container rounded-2xl p-8 text-center bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/30">
@@ -136,7 +136,7 @@ const Partners = () => {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {benefits.map((benefit, index) => (
                 <div key={index} className="glass-container rounded-2xl p-6 text-center group hover:scale-105 transition-all duration-300 bg-slate-900/50 border border-blue-500/20">
                   <div className="text-blue-400 mb-4 group-hover:scale-110 transition-transform duration-300 flex justify-center">
@@ -154,7 +154,7 @@ const Partners = () => {
 
         {/* Partnership Explanation Section */}
         <section className="py-24 bg-slate-950">
-          <div className="w-[65%] mx-auto px-6">
+          <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8">
             <div className="glass-container rounded-2xl p-12 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* Left Side - Heart Image */}
@@ -162,7 +162,7 @@ const Partners = () => {
                   <img 
                     src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/heart.png" 
                     alt="Partnership Heart" 
-                    className="w-full h-[26rem] object-contain"
+                    className="w-full h-[30rem] object-contain"
                   />
                 </div>
 
@@ -213,7 +213,7 @@ const Partners = () => {
 
         {/* Partner Types */}
         <section className="py-24 bg-slate-950">
-          <div className="w-[65%] mx-auto px-6">
+          <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-6 text-white">Partnership <span className="text-blue-400">opportunities</span></h2>
               <p className="text-xl text-white/70 max-w-3xl mx-auto">
@@ -221,7 +221,7 @@ const Partners = () => {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-3 gap-8">
+            <div className="grid lg:grid-cols-3 gap-6 sm:gap-8">
               {partnerTypes.map((type, index) => (
                 <div key={index} className="glass-container rounded-2xl p-8 bg-slate-900/50 border border-blue-500/20">
                   <h3 className="text-2xl font-bold mb-4 text-white">{type.title}</h3>
@@ -247,7 +247,7 @@ const Partners = () => {
 
         {/* Application Form */}
         <section id="partnership-form" className="py-24 bg-slate-950">
-          <div className="w-[65%] mx-auto px-6">
+          <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8">
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <div>
                 <h2 className="text-4xl font-bold mb-6 text-white">

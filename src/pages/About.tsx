@@ -6,7 +6,7 @@ import NetworkDiagram from '../components/sections/network-diagram';
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-slate-950 overflow-x-hidden">
       <Navigation />
       <main className="pt-20">
         {/* Hero Section */}
@@ -21,26 +21,26 @@ const About = () => {
             <img
               src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/glasshand1.png"
               alt="Glass Hand Technology"
-              className="h-[90%] max-h-[720px] w-auto object-contain"
+              className="h-[95%] max-h-[800px] w-auto object-contain"
             />
           </div>
           
-          <div className="w-[65%] mx-auto px-6 relative z-10">
-            <div className="grid lg:grid-cols-12 gap-8 items-center">
+          <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8 relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
               {/* Left Side - Text Content */}
-              <div className="lg:col-span-6 xl:col-span-5 space-y-8 pr-8">
+              <div className="lg:col-span-6 xl:col-span-5 space-y-6 sm:space-y-8 lg:pr-8">
                 <div>
-                  <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-white">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight text-white">
                     About <span className="text-blue-400">Westpoint Capital</span>
                   </h1>
-                  <p className="text-xl text-white/80 leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl text-white/80 leading-relaxed">
                     We're a leading technology company specializing in AI-powered solutions 
                     that transform how businesses operate and scale in the modern digital landscape.
                   </p>
                 </div>
                 
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" className="bg-white text-black hover:bg-white/90 px-8 py-4">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                  <Button size="lg" className="bg-white text-black hover:bg-white/90 px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto">
                     Read more
                     <ArrowRight className="ml-2 w-4 h-4 text-black" />
                   </Button>
@@ -53,13 +53,13 @@ const About = () => {
         </section>
 
         {/* About Us Section */}
-        <section className="py-24 bg-slate-950">
-          <div className="w-[65%] mx-auto px-6">
-            <div className="glass-container rounded-2xl p-12 bg-slate-900/50 border border-blue-500/20">
-              <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-slate-950">
+          <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8">
+            <div className="glass-container rounded-2xl p-6 sm:p-8 md:p-10 lg:p-12 bg-slate-900/50 border border-blue-500/20">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
                 {/* Left Side - dna1.png Image */}
                 <div className="relative">
-                  <div className="relative w-full h-[600px] flex items-center justify-center">
+                  <div className="relative w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[650px] flex items-center justify-center">
                     <img 
                       src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/dna1.png" 
                       alt="Westpoint Capital Technology" 
@@ -78,22 +78,22 @@ const About = () => {
                   </div>
 
                   {/* Main Heading */}
-                  <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
                     From marketing expertise to <span className="text-blue-400">AI innovation</span>
                   </h2>
 
                   {/* First Paragraph */}
-                  <p className="text-lg text-white/70 leading-relaxed">
+                  <p className="text-sm sm:text-base md:text-lg text-white/70 leading-relaxed">
                     With over 6 years of proven experience in SMS and email marketing, we've helped businesses connect with their audiences, increase engagement, and drive measurable growth. From building effective campaigns to optimizing deliverability, our expertise covers every step of the customer journey.
                   </p>
 
                   {/* Second Paragraph */}
-                  <p className="text-lg text-white/70 leading-relaxed">
+                  <p className="text-sm sm:text-base md:text-lg text-white/70 leading-relaxed">
                     Since the launch of ChatGPT, we've also been at the forefront of AI-powered automations, developing solutions that integrate seamlessly into marketing workflows. Our focus includes voice agents and chatbots, designed to handle conversations naturally and efficiently, giving companies a smarter way to engage their customers.
                   </p>
 
                   {/* Third Paragraph */}
-                  <p className="text-lg text-white/70 leading-relaxed">
+                  <p className="text-sm sm:text-base md:text-lg text-white/70 leading-relaxed">
                     By combining years of marketing know-how with cutting-edge AI, we deliver strategies and tools that are not only effective today but built for the future of digital communication.
                   </p>
 
@@ -119,21 +119,21 @@ const About = () => {
         </section>
 
         {/* Team Members Section */}
-        <section className="py-24 bg-slate-950">
-          <div className="w-[65%] mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+        <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-slate-950">
+          <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8">
+            <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
                 Partnered with most of the <span className="text-blue-400">top people at each industry</span>
               </h2>
-              <p className="text-xl text-white/70 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-white/70 max-w-3xl mx-auto">
                 Meet the core team behind our solutions, supported by trusted partners and freelancers worldwide.
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 sm:gap-8">
               {/* Team Member 1 */}
               <div className="group relative bg-gradient-to-br from-slate-800/60 to-slate-900/80 rounded-2xl overflow-hidden hover:from-slate-700/60 hover:to-slate-800/80 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20">
-                <div className="relative h-72">
+                <div className="relative h-48 sm:h-56 md:h-64 lg:h-72">
                   <img 
                     src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/marcus.jpeg" 
                     alt="Marcus Volsted" 
@@ -141,15 +141,15 @@ const About = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-2xl font-bold text-white mb-1">Marcus Volsted</h3>
-                  <p className="text-blue-400 font-medium">CMO</p>
+                <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-1">Marcus Volsted</h3>
+                  <p className="text-blue-400 font-medium text-sm sm:text-base">CMO</p>
                 </div>
               </div>
 
               {/* Team Member 2 */}
               <div className="group relative bg-gradient-to-br from-slate-800/60 to-slate-900/80 rounded-2xl overflow-hidden hover:from-slate-700/60 hover:to-slate-800/80 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20">
-                <div className="relative h-72">
+                <div className="relative h-48 sm:h-56 md:h-64 lg:h-72">
                   <img 
                     src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Sebastian.jpeg" 
                     alt="Sebastian Stokkendal" 
@@ -165,7 +165,7 @@ const About = () => {
 
               {/* Team Member 3 */}
               <div className="group relative bg-gradient-to-br from-slate-800/60 to-slate-900/80 rounded-2xl overflow-hidden hover:from-slate-700/60 hover:to-slate-800/80 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20">
-                <div className="relative h-72">
+                <div className="relative h-48 sm:h-56 md:h-64 lg:h-72">
                   <img 
                     src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/alexander-e1749406883885.jpg" 
                     alt="Alexander Ovesen" 
@@ -181,7 +181,7 @@ const About = () => {
 
               {/* Team Member 4 */}
               <div className="group relative bg-gradient-to-br from-slate-800/60 to-slate-900/80 rounded-2xl overflow-hidden hover:from-slate-700/60 hover:to-slate-800/80 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20">
-                <div className="relative h-72">
+                <div className="relative h-48 sm:h-56 md:h-64 lg:h-72">
                   <img 
                     src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/willss.png" 
                     alt="Kasper Willow" 
@@ -197,7 +197,7 @@ const About = () => {
 
               {/* Team Member 5 */}
               <div className="group relative bg-gradient-to-br from-slate-800/60 to-slate-900/80 rounded-2xl overflow-hidden hover:from-slate-700/60 hover:to-slate-800/80 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20">
-                <div className="relative h-72">
+                <div className="relative h-48 sm:h-56 md:h-64 lg:h-72">
                   <img 
                     src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/IMG_9123-scaled.jpg" 
                     alt="Jesper Kruse" 
@@ -220,7 +220,7 @@ const About = () => {
 
         {/* Mission & Vision Section */}
         <section className="py-24 bg-slate-950">
-          <div className="w-[65%] mx-auto px-6">
+          <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8">
             <div className="grid lg:grid-cols-2 gap-16">
               <div className="glass-container rounded-2xl p-8 bg-slate-900/50 border border-blue-500/20">
                 <Target className="w-12 h-12 text-blue-400 mb-6" />
@@ -246,7 +246,7 @@ const About = () => {
         {/* Values Section */}
         <section className="py-24 bg-gradient-to-br from-blue-950/60 via-slate-950 to-slate-950 relative">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-transparent to-blue-400/20"></div>
-          <div className="w-[65%] mx-auto px-6 relative">
+          <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8 relative">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
                 Our <span className="text-blue-400">values</span>
@@ -295,7 +295,7 @@ const About = () => {
 
         {/* CTA Section */}
         <section className="py-24 bg-slate-950">
-          <div className="w-[65%] mx-auto px-6 text-center">
+          <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8 text-center">
             <div className="glass-container rounded-2xl p-12 max-w-4xl mx-auto bg-slate-900/50 border border-blue-500/20">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
                 Ready to work with us?
