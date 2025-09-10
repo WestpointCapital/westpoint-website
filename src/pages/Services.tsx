@@ -1,65 +1,67 @@
 import Navigation from '../components/ui/navigation';
 import Footer from '../components/sections/footer';
 import { Button } from '../components/ui/button';
-import { Bot, Cpu, Zap, Shield, ArrowRight, CheckCircle } from 'lucide-react';
+import { Bot, Cpu, Zap, Shield, ArrowRight, CheckCircle, Settings, MessageSquare, BarChart3, Target, Users, TrendingUp, Star } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
-      icon: <Cpu className="w-12 h-12" />,
-      title: "SaaS Solutions",
-      description: "Custom-built software platforms designed to scale with your business and integrate seamlessly with your existing infrastructure.",
-      features: [
-        "Cloud-native architecture for scalability",
-        "Real-time analytics and reporting",
-        "Enterprise-grade security",
-        "API-first design for integrations",
-        "Multi-tenant architecture",
-        "Automated backup and recovery"
-      ],
-      pricing: "Starting at $5,000/month"
+      icon: null, // No icon for this service
+      title: "Intelligent Automation & Custom SaaS",
+      description: "We build custom SaaS platforms and AI workflows designed around your business — not the other way around. Whether it's streamlining operations, integrating data across systems, or creating a platform that supports your growth, our solutions are tailored to solve your most pressing challenges.",
+      examples: [
+        "Internal dashboards and CRMs",
+        "Workflow automation with AI",
+        "Bespoke software products"
+      ]
     },
     {
-      icon: <Zap className="w-12 h-12" />,
-      title: "Automation Tools",
-      description: "Streamline your operations and eliminate manual processes with our intelligent workflow automation solutions.",
-      features: [
-        "Business process optimization",
-        "Workflow automation design",
-        "Legacy system integration",
-        "Document processing automation",
-        "Quality assurance automation",
-        "Performance monitoring"
-      ],
-      pricing: "Starting at $3,000/month"
+      icon: null, // No icon for this service
+      title: "AI-Powered Customer Experiences",
+      description: "We transform how your business interacts with customers through AI chatbots and assistants. Our solutions don't just answer questions — they qualify leads, nurture relationships, and provide real-time support that feels human, at scale.",
+      examples: [
+        "AI chatbots for websites & apps",
+        "Virtual sales assistants",
+        "Lead qualification and nurturing flows"
+      ]
     },
     {
-      icon: <Bot className="w-12 h-12" />,
-      title: "AI Chatbots",
-      description: "Deploy intelligent conversational agents that enhance customer experience while reducing support costs.",
-      features: [
-        "Natural language processing",
-        "24/7 customer support",
-        "Multi-channel deployment",
-        "Sentiment analysis",
-        "Conversation analytics",
-        "Human handoff capabilities"
-      ],
-      pricing: "Starting at $2,000/month"
+      icon: null, // No icon for this service
+      title: "Data-Driven Marketing Systems",
+      description: "We help you reach the right people at the right time with AI-enhanced SMS and email marketing. Instead of sending generic campaigns, we design personalized, automated marketing journeys that increase engagement and drive measurable ROI.",
+      examples: [
+        "Automated SMS/email campaigns",
+        "AI-driven content personalization",
+        "Re-engagement & retention workflows"
+      ]
     },
     {
-      icon: <Shield className="w-12 h-12" />,
-      title: "AI Assistants",
-      description: "Empower your team with AI-powered assistants that augment productivity and enhance decision-making.",
-      features: [
-        "Intelligent data insights",
-        "Task automation",
-        "Predictive analytics",
-        "Document intelligence",
-        "Voice-enabled interfaces",
-        "Custom training models"
-      ],
-      pricing: "Starting at $4,000/month"
+      icon: null, // No icon for this service
+      title: "Strategy & Integration",
+      description: "Technology only works when it's connected to your goals. We work with you to align SaaS, AI, and marketing into a cohesive system. From strategy workshops to hands-on integration, we make sure every part of your digital ecosystem contributes to growth.",
+      examples: [
+        "Strategic planning workshops",
+        "System integration & optimization",
+        "Performance monitoring & analytics"
+      ]
+    }
+  ];
+
+  const whyChooseUs = [
+    {
+      icon: <Users className="w-8 h-8" />,
+      title: "Tailored solutions",
+      description: "Built for your unique needs"
+    },
+    {
+      icon: <Zap className="w-8 h-8" />,
+      title: "Seamless integration",
+      description: "SaaS, AI, and marketing in one ecosystem"
+    },
+    {
+      icon: <TrendingUp className="w-8 h-8" />,
+      title: "Growth-first approach",
+      description: "Tech that drives measurable results"
     }
   ];
 
@@ -108,18 +110,16 @@ const Services = () => {
 
             {/* Main Headline */}
             <h1 className="relative z-40 text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-              Enterprise technology solutions.
-              <br />
-              <span className="text-blue-400">The future of business.</span>
+              Our Services
             </h1>
 
             {/* Description */}
-            <p className="relative z-40 text-xl text-white/70 max-w-3xl mx-auto mb-12 leading-relaxed">
-              Powerful, scalable SaaS platforms and AI-powered automation tools. Supercharge your operations & drive measurable growth with cutting-edge technology.
+            <p className="relative z-40 text-xl text-white/70 max-w-4xl mx-auto mb-12 leading-relaxed">
+              At Westpoint Capital, we help businesses unlock growth by combining AI, automation, and digital strategy. Instead of offering one-off tools, we design solutions that work together — giving you smarter systems, stronger customer connections, and scalable results.
             </p>
 
             {/* Call-to-Action Buttons */}
-            <div className="relative z-40 flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+            <div className="relative z-40 flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
               <Button variant="outline" size="lg" className="bg-transparent border-white/20 text-white hover:bg-white/10 px-8 py-4">
                 <div className="w-4 h-4 border-l-2 border-t-2 border-b-2 border-white transform rotate-45 mr-3"></div>
                 Watch Demo
@@ -143,40 +143,163 @@ const Services = () => {
         </section>
 
         {/* Services Grid */}
-        <section className="py-16 bg-slate-950">
+        <section className="py-24 bg-slate-950">
           <div className="w-[65%] mx-auto px-6">
             <div className="grid lg:grid-cols-2 gap-12">
               {services.map((service, index) => (
-                <div key={index} className="glass-container rounded-2xl p-8 group bg-slate-900/50 border border-blue-500/20">
-                  <div className="text-blue-400 mb-6 group-hover:scale-110 transition-transform duration-300">
-                    {service.icon}
-                  </div>
-                  <h3 className="text-2xl font-bold mb-4 text-white">{service.title}</h3>
-                  <p className="text-white/70 mb-6 leading-relaxed">
-                    {service.description}
-                  </p>
-                  
-                  <div className="mb-6">
-                    <h4 className="font-semibold mb-3 text-white">Key Features:</h4>
-                    <ul className="space-y-2">
-                      {service.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-center gap-3">
-                          <CheckCircle className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                          <span className="text-white/70">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="flex items-center justify-between">
-                    <div className="text-lg font-semibold text-blue-400">
-                      {service.pricing}
+                <div key={index} className="glass-container rounded-2xl p-8 group bg-slate-900/50 border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300 relative overflow-hidden">
+                  {/* Special background image for first service */}
+                  {index === 0 && (
+                    <div className="absolute bottom-0 left-0 w-1/2 h-1/2 -ml-0">
+                      <img 
+                        src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/gear2.png" 
+                        alt="Gear" 
+                        className="w-full h-full object-contain object-left-bottom opacity-20"
+                      />
                     </div>
-                    <Button className="hero-button">
-                      Learn More
-                      <ArrowRight className="ml-2 w-4 h-4" />
-                    </Button>
+                  )}
+                  
+                  {/* Special background image for second service */}
+                  {index === 1 && (
+                    <div className="absolute bottom-0 left-0 w-1/2 h-1/2 -ml-0">
+                      <img 
+                        src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/ai-bot.png" 
+                        alt="AI Bot" 
+                        className="w-full h-full object-contain object-left-bottom opacity-20"
+                      />
+                    </div>
+                  )}
+                  
+                  {/* Special background image for third service */}
+                  {index === 2 && (
+                    <div className="absolute bottom-0 left-0 w-1/2 h-1/2 -ml-0">
+                      <img 
+                        src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/arrow.png" 
+                        alt="Arrow" 
+                        className="w-full h-full object-contain object-left-bottom opacity-20"
+                      />
+                    </div>
+                  )}
+                  
+                  {/* Special background image for fourth service */}
+                  {index === 3 && (
+                    <div className="absolute bottom-0 left-0 w-1/2 h-1/2 -ml-0">
+                      <img 
+                        src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/1arrow.png" 
+                        alt="Arrow 1" 
+                        className="w-full h-full object-contain object-left-bottom opacity-20"
+                      />
+                    </div>
+                  )}
+                  
+                  <div className="relative z-10">
+                    {service.icon && (
+                      <div className="text-blue-400 mb-6 group-hover:scale-110 transition-transform duration-300">
+                        {service.icon}
+                      </div>
+                    )}
+                    <h3 className="text-2xl font-bold mb-4 text-white">{service.title}</h3>
+                    <p className="text-white/70 mb-6 leading-relaxed">
+                      {service.description}
+                    </p>
+                    
+                    <div className="mb-6">
+                      <h4 className="font-semibold mb-3 text-white">Examples:</h4>
+                      <ul className="space-y-2">
+                        {service.examples.map((example, idx) => (
+                          <li key={idx} className="flex items-center gap-3">
+                            <CheckCircle className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                            <span className="text-white/70">{example}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div className="flex items-center justify-end">
+                      <Button className="hero-button">
+                        Learn more
+                        <ArrowRight className="ml-2 w-4 h-4" />
+                      </Button>
+                    </div>
                   </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Our Service Approach Section */}
+        <section className="py-24 bg-slate-900/30">
+          <div className="w-[65%] mx-auto px-6">
+            <div className="glass-container rounded-2xl p-12 bg-slate-900/50 border border-blue-500/20">
+              <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="relative">
+                  <div className="relative w-full h-[780px] flex items-center justify-center">
+                    <img 
+                      src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/icons.png" 
+                      alt="Westpoint Capital Service Technology" 
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                </div>
+                <div className="space-y-6">
+                  <div className="inline-block">
+                    <span className="px-4 py-2 bg-slate-800/50 text-white/80 text-sm font-medium rounded-full border border-blue-500/20">Our Approach</span>
+                  </div>
+                  <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+                    Integrated solutions that <span className="text-blue-400">work together</span>
+                  </h2>
+                  <p className="text-lg text-white/70 leading-relaxed">
+                    Unlike traditional agencies that offer disconnected tools, we design comprehensive ecosystems where every component enhances the others. Our SaaS platforms integrate seamlessly with AI automation, while our marketing systems leverage data insights to drive personalized customer experiences.
+                  </p>
+                  <p className="text-lg text-white/70 leading-relaxed">
+                    From custom CRM development to AI-powered chatbots and automated marketing campaigns, each service we provide is built to complement and amplify your existing systems. This integrated approach ensures maximum efficiency and measurable ROI across your entire business operation.
+                  </p>
+                  <p className="text-lg text-white/70 leading-relaxed">
+                    Our 6+ years of experience in marketing automation, combined with cutting-edge AI development, means we understand both the technical requirements and business outcomes you need to succeed in today's competitive landscape.
+                  </p>
+                  <div className="flex items-center gap-4 pt-4">
+                    <div className="flex -space-x-2">
+                      <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full border-2 border-slate-900 flex items-center justify-center">
+                        <span className="text-white text-sm font-bold">S</span>
+                      </div>
+                      <div className="w-10 h-10 bg-gradient-to-br from-purple-400 to-blue-500 rounded-full border-2 border-slate-900 flex items-center justify-center">
+                        <span className="text-white text-sm font-bold">A</span>
+                      </div>
+                      <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full border-2 border-slate-900 flex items-center justify-center">
+                        <span className="text-white text-sm font-bold">I</span>
+                      </div>
+                    </div>
+                    <span className="text-white font-medium">SaaS + AI + Integration = Results</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Westpoint Capital Section */}
+        <section className="py-24 bg-slate-900/30">
+          <div className="w-[65%] mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-white mb-6">
+                Why <span className="text-blue-400">Westpoint Capital</span>?
+              </h2>
+              <p className="text-xl text-white/70 max-w-3xl mx-auto">
+                We don't just build technology — we build solutions that drive real business growth.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              {whyChooseUs.map((item, index) => (
+                <div key={index} className="text-center group">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-400/10 border border-blue-400/20 rounded-2xl mb-6 group-hover:bg-blue-400/20 transition-colors duration-300">
+                    <div className="text-blue-400">
+                      {item.icon}
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
+                  <p className="text-white/70 leading-relaxed">{item.description}</p>
                 </div>
               ))}
             </div>
@@ -188,15 +311,16 @@ const Services = () => {
           <div className="w-[65%] mx-auto px-6 text-center">
             <div className="glass-container rounded-2xl p-12 max-w-4xl mx-auto bg-slate-900/50 border border-blue-500/20">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-                Ready to get started?
+                Ready to unlock your business growth?
               </h2>
               <p className="text-xl text-white/70 mb-8">
-                Let's discuss which solution is right for your business. 
-                Our experts will work with you to design the perfect implementation.
+                Let's discuss how our integrated approach can transform your business. 
+                Our experts will work with you to design the perfect solution that drives measurable results.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="hero-button px-8 py-4">
                   Schedule Consultation
+                  <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
                 <Button variant="outline" size="lg" className="glass-container border-none px-8 py-4">
                   Download Brochure

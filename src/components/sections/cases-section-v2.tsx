@@ -1,170 +1,105 @@
-import { useState, useEffect, useRef } from 'react';
-import { ChevronLeft, ChevronRight, Building2, Factory, Heart } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const CasesSectionV2 = () => {
-  const [current, setCurrent] = useState(0);
-  const trackRef = useRef<HTMLDivElement>(null);
-  const wrapRef = useRef<HTMLDivElement>(null);
-  
   const cases = [
     {
-      title: "Compliance",
-      description: "Security and compliance tailored for the world's most regulated industries.",
-      image: "/lovable-uploads/a60fb6f4-3664-4e5d-a1d0-5426229798cf.png",
-      icon: <Building2 className="w-6 h-6" />,
+      title: "Villa Vie Residences",
+      description: "We helped them reactivate old and new leads and gain more than 5 million+ revenue.",
+      image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Odyssey-No-Grain-3k-scaled%20%281%29.webp",
+      price: "$2,500"
     },
     {
-      title: "Reimbursement",
-      description: "Medicare Medicaid reimbursement rates to calculate the cost.",
-      image: "/lovable-uploads/64ff65fb-2e43-493d-8f26-69b03a44c20f.png",
-      icon: <Heart className="w-6 h-6" />,
+      title: "Bedreklima",
+      description: "We helped scale this HVAC company to 40% of sales online through SMS marketing.",
+      image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Bedre-klima-vogn-1024x768.webp",
+      price: "$2,500"
     },
     {
-      title: "Validation",
-      description: "Measurement of completed requirements mandatory for clinical implementation.",
-      image: "/lovable-uploads/7a7a5c28-6b77-4460-95c1-697247c62b74.png",
-      icon: <Factory className="w-6 h-6" />,
+      title: "Nicolinehus Apartments",
+      description: "Help when develop a software to manage the the apartments avalibility and started email campaigns",
+      image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Nicolinehus-Aarhus-Oe.webp",
+      price: "$2,200"
     },
     {
-      title: "Traction",
-      description: "Timeline and steps of validation.",
-      image: "/lovable-uploads/f1452ced-5bcf-45ee-9593-d8525059a25b.png",
-      icon: <Building2 className="w-6 h-6" />,
-    },
-    {
-      title: "Predictive Analytics",
-      description: "De-risk an innovation's funding and investment.",
-      image: "/lovable-uploads/2a396632-2343-45ef-96aa-d977a05a8398.png",
-      icon: <Heart className="w-6 h-6" />,
+      title: "Nordic Refrigeration Solutions",
+      description: "Running comprehensive SMS marketing campaigns for all signed up leads, automating customer communication and streamlining the sales process with AI-powered responses.",
+      image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/nrs1.png",
+      price: "$2,800"
     },
   ];
-
-  const isMobile = () => window.matchMedia("(max-width: 767px)").matches;
-
-  const center = (i: number) => {
-    if (!wrapRef.current || !trackRef.current) return;
-    
-    const card = trackRef.current.children[i] as HTMLElement;
-    if (!card) return;
-    
-    const wrap = wrapRef.current;
-    const isMob = isMobile();
-    
-    if (isMob) {
-      const wrapHeight = wrap.clientHeight;
-      const cardHeight = card.clientHeight;
-      const start = card.offsetTop;
-      wrap.scrollTo({
-        top: start - (wrapHeight / 2 - cardHeight / 2),
-        behavior: "smooth"
-      });
-    } else {
-      const wrapWidth = wrap.clientWidth;
-      const cardWidth = card.clientWidth;
-      const start = card.offsetLeft;
-      wrap.scrollTo({
-        left: start - (wrapWidth / 2 - cardWidth / 2),
-        behavior: "smooth"
-      });
-    }
-  };
-
-  const activate = (i: number, scroll: boolean = false) => {
-    if (i === current) return;
-    setCurrent(i);
-    if (scroll) center(i);
-  };
-
-  const go = (step: number) => {
-    const newIndex = Math.min(Math.max(current + step, 0), cases.length - 1);
-    activate(newIndex, true);
-  };
-
-  useEffect(() => {
-    const handleResize = () => center(current);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, [current]);
-
-  useEffect(() => {
-    center(0);
-  }, []);
 
   return (
     <section className="py-24 bg-slate-950">
       <div className="w-full">
         {/* Header */}
         <div className="w-[65%] mx-auto px-6 mb-16">
-          <div className="flex justify-between items-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-white">
-              Our <span className="text-blue-400">success stories</span>
-            </h2>
-            
-            <div className="project-slider-controls">
-              <button 
-                className="project-nav-btn" 
-                onClick={() => go(-1)}
-                disabled={current === 0}
-                aria-label="Previous"
-              >
-                <ChevronLeft className="w-6 h-6" />
-              </button>
-              <button 
-                className="project-nav-btn" 
-                onClick={() => go(1)}
-                disabled={current === cases.length - 1}
-                aria-label="Next"
-              >
-                <ChevronRight className="w-6 h-6" />
-              </button>
-            </div>
-          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-white">
+            Our <span className="text-blue-400">success stories</span>
+          </h2>
         </div>
 
-        {/* Slider */}
-        <div className="w-full">
-          <div className="w-[65%] mx-auto px-6">
-            <div className="project-slider" ref={wrapRef}>
-          <div className="project-track" ref={trackRef}>
+        {/* Cases Grid */}
+        <div className="w-[65%] mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-visible py-4">
             {cases.map((caseItem, index) => (
-              <article 
+              <div 
                 key={index}
-                className={`project-card ${current === index ? 'active' : ''}`}
-                onClick={() => activate(index, true)}
-                onMouseEnter={() => window.matchMedia("(hover: hover)").matches && activate(index, true)}
+                className="relative rounded-3xl overflow-hidden h-[500px] w-full"
               >
-                <img 
-                  className="project-card__bg" 
-                  src={caseItem.image} 
-                  alt={caseItem.title}
+                {/* Full Background Image */}
+                <div 
+                  className="absolute inset-0 w-full h-full bg-cover bg-center" 
+                  style={{ backgroundImage: `url(${caseItem.image})` }}
                 />
-                <div className="project-card__content">
-                  <div className="frosted-box bg-gradient-to-t from-black/50 via-black/30 to-black/20">
-                    <div>
-                      <h3 className="project-card__title text-white">{caseItem.title}</h3>
-                      <p className="project-card__desc text-white/90">{caseItem.description}</p>
-                      <button className="project-card__btn bg-white text-black hover:bg-white/90">Learn More</button>
-                    </div>
+                
+                {/* Price Badge */}
+                <div className="absolute top-4 right-4 z-10">
+                  <span className="bg-black/70 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    {caseItem.price}
+                  </span>
+                </div>
+                
+                {/* Glass Overlay - Bottom 70% */}
+                <div className="absolute bottom-0 left-0 right-0 h-[70%] glass-card-overlay text-white flex flex-col justify-end p-6 gap-4 py-0 overflow-visible">
+                  <div>
+                    <h3 className="text-xl font-bold mb-3">
+                      {caseItem.title}
+                    </h3>
+                    <p className="text-white/70 text-sm leading-relaxed mb-3">
+                      {caseItem.description}
+                    </p>
+                  </div>
+                  
+                  {/* CTA Button */}
+                  <div className="pb-4">
+                    <Link 
+                      to={index === 0 ? "/cases/villa-vie-residences" : 
+                          index === 1 ? "/cases/bedreklima" : 
+                          index === 2 ? "/cases/nikolinehus" : 
+                          "/cases/nordic-refrigeration"}
+                      className="w-full py-3 px-4 bg-white text-black font-medium rounded-full hover:bg-gray-100 transition-colors duration-200 inline-block text-center"
+                      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    >
+                      Read more
+                    </Link>
                   </div>
                 </div>
-              </article>
+              </div>
             ))}
-          </div>
-            </div>
           </div>
         </div>
 
-        {/* Dots */}
-        <div className="w-[65%] mx-auto px-6">
-          <div className="project-dots">
-            {cases.map((_, index) => (
-              <span 
-                key={index}
-                className={`project-dot ${current === index ? 'active' : ''}`}
-                onClick={() => activate(index, true)}
-              />
-            ))}
-          </div>
+        {/* View All Cases Button */}
+        <div className="w-[65%] mx-auto px-6 mt-8">
+          <Link 
+            to="/cases" 
+            className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
+            <span>View All Cases</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </div>
     </section>

@@ -8,34 +8,34 @@ const CasesHero = () => {
 
   const items = [
     {
-      image: "/lovable-uploads/738b1840-27d5-4ba0-8e6d-567318e784fc.png",
+      image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Odyssey-No-Grain-3k-scaled%20%281%29.webp",
       title: "CASES",
-      name: "COMPLIANCE",
-      description: "Security and compliance tailored for the world's most regulated industries with advanced AI solutions."
+      name: "VILLA VIE RESIDENCES",
+      description: "We helped them reactivate old and new leads and gain more than 5 million+ revenue."
     },
     {
-      image: "/lovable-uploads/16c05f99-edea-463d-832a-6b33afafd856.png",
+      image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Bedre-klima-vogn-1024x768.webp",
       title: "CASES", 
-      name: "REIMBURSEMENT",
-      description: "Medicare Medicaid reimbursement rates calculated with precision using our intelligent automation systems."
+      name: "BEDREKLIMA",
+      description: "We helped scale this HVAC company to 40% of sales online through SMS marketing."
     },
     {
-      image: "/lovable-uploads/a92eaa08-b028-42a6-85b7-65af4d95f067.png",
+      image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Nicolinehus-Aarhus-Oe.webp",
       title: "CASES",
-      name: "VALIDATION", 
-      description: "Measurement of completed requirements mandatory for clinical implementation through AI-powered analytics."
+      name: "NICOLINEHUS APARTMENTS", 
+      description: "Help when develop a software to manage the the apartments avalibility and started email campaigns"
     },
     {
-      image: "/lovable-uploads/9b76c421-b1fa-4777-8421-96704513645e.png",
+      image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/nrs1.png",
       title: "CASES",
-      name: "TRACTION",
-      description: "Timeline and steps of validation streamlined through our comprehensive automation framework."
+      name: "NORDIC REFRIGERATION SOLUTIONS",
+      description: "Running comprehensive SMS marketing campaigns for all signed up leads, automating customer communication and streamlining the sales process with AI-powered responses."
     },
     {
-      image: "/lovable-uploads/22874d4e-4417-4ab7-8cd1-a2b0f0a7492e.png",
+      image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Showerheads.png",
       title: "CASES",
-      name: "ANALYTICS",
-      description: "De-risk an innovation's funding and investment with predictive analytics and intelligent insights."
+      name: "SWISSBLU",
+      description: "Comprehensive email marketing campaigns that transformed their customer engagement and increased sales through targeted automation and personalized messaging strategies."
     }
   ];
 
@@ -170,7 +170,7 @@ const CasesHero = () => {
         }
 
         .content-title {
-          font-size: 70px;
+          font-size: 50px;
           text-transform: uppercase;
           color: #60a5fa;
           font-weight: bold;
@@ -180,11 +180,11 @@ const CasesHero = () => {
         }
 
         .content-name {
-          font-size: 70px;
+          font-size: 50px;
           text-transform: uppercase;
           font-weight: bold;
           line-height: 1;
-          text-shadow: 3px 4px 4px rgba(255, 255, 255, 0.8);
+          margin-bottom: 20px;
           opacity: 0;
           animation: animate 1s ease-in-out 0.6s 1 forwards;
         }
@@ -283,7 +283,7 @@ const CasesHero = () => {
           }
           .content-title,
           .content-name {
-            font-size: 70px;
+            font-size: 50px;
           }
           .content-description {
             font-size: 16px;
@@ -296,7 +296,7 @@ const CasesHero = () => {
           }
           .content-title,
           .content-name {
-            font-size: 45px;
+            font-size: 35px;
           }
           .content-button {
             padding: 10px 15px;
@@ -320,10 +320,9 @@ const CasesHero = () => {
             style={{ backgroundImage: `url(${item.image})` }}
           >
             {(getItemClass(index) === 'carousel-item-1' || getItemClass(index) === 'carousel-item-2') && (
-              <div className="absolute inset-0 bg-black/40 z-10"></div>
+              <div className="absolute inset-0 bg-slate-900/60 z-10"></div>
             )}
             <div className="item-content relative z-20">
-              <div className="content-title">{item.title}</div>
               <div className="content-name">{item.name}</div>
               <div className="content-description">{item.description}</div>
               <div className="content-buttons">

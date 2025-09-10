@@ -1,32 +1,42 @@
 import Navigation from '../components/ui/navigation';
 import Footer from '../components/sections/footer';
-import BlobUpload from '../components/BlobUpload';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
-import { Handshake, Globe, TrendingUp, Users, CheckCircle, ArrowRight } from 'lucide-react';
+import { Handshake, Globe, TrendingUp, Users, CheckCircle, ArrowRight, DollarSign, Target, Zap, BarChart3, Shield, Award, Banknote } from 'lucide-react';
+import DarkVeil from '../components/DarkVeil';
 
 const Partners = () => {
   const benefits = [
     {
-      icon: <Globe className="w-8 h-8" />,
-      title: "Global Reach",
-      description: "Access to international markets and opportunities through our extensive network."
+      icon: <DollarSign className="w-8 h-8" />,
+      title: "Refer & Earn for Life",
+      description: "Send us customers, and we'll close the deal. When we win, you keep earning a high % of revenue — for as long as the customer stays with us."
     },
     {
-      icon: <TrendingUp className="w-8 h-8" />,
-      title: "Revenue Growth",
-      description: "Lucrative commission structures and recurring revenue opportunities."
+      icon: <Target className="w-8 h-8" />,
+      title: "Hit 10 Referrals — Get a Bonus",
+      description: "Close 10 referred customers, and we'll add an exclusive cash bonus on top of your regular commission."
     },
     {
-      icon: <Users className="w-8 h-8" />,
-      title: "Expert Support",
-      description: "Dedicated partner success team and comprehensive training programs."
+      icon: <Zap className="w-8 h-8" />,
+      title: "Zero Work, Pure Profit",
+      description: "We handle sales, support, and onboarding. You focus on referrals — and watch your revenue grow."
     },
     {
-      icon: <Handshake className="w-8 h-8" />,
-      title: "Strategic Alliance",
-      description: "Long-term partnerships built on mutual success and shared values."
+      icon: <BarChart3 className="w-8 h-8" />,
+      title: "Scalable Income",
+      description: "Your earnings grow with every referral. There's no limit to how much you can make."
+    },
+    {
+      icon: <Shield className="w-8 h-8" />,
+      title: "Trusted SaaS Solution",
+      description: "We sell proven SMS & Email marketing software that businesses already need — making your referrals easy to close."
+    },
+    {
+      icon: <Award className="w-8 h-8" />,
+      title: "Partner Recognition",
+      description: "Top partners get featured, extra rewards, and VIP treatment."
     }
   ];
 
@@ -68,16 +78,39 @@ const Partners = () => {
       <Navigation />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-24">
-          <div className="w-[65%] mx-auto px-6 text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
-              Become a <span className="text-blue-400">partner</span>
-            </h1>
-            <p className="text-xl text-white/70 max-w-3xl mx-auto mb-12">
+        <section className="pt-0 pb-24 relative -mt-20">
+          {/* Dark Veil Background */}
+          <div className="absolute inset-0 w-full h-full">
+            <DarkVeil />
+          </div>
+          
+          <div className="w-[65%] mx-auto px-6 text-center relative z-10">
+            <div className="mb-0 flex justify-center relative -mt-[130px]">
+              <img 
+                src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/glasshandshake.png" 
+                alt="Partnership Handshake" 
+                className="h-[32rem] md:h-[40rem] lg:h-[48rem] xl:h-[56rem] w-auto object-contain"
+              />
+              <div className="absolute inset-0 flex items-end justify-center pb-16">
+                <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white text-center drop-shadow-lg">
+                  Become a <span className="text-blue-400">partner</span>
+                </h1>
+              </div>
+            </div>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto mb-5 -mt-[34px]">
               Join our growing partner ecosystem and unlock new revenue opportunities 
               while delivering exceptional value to your clients.
             </p>
-            <Button size="lg" className="hero-button px-8 py-4">
+            <Button 
+              size="lg" 
+              className="hero-button px-8 py-4"
+              onClick={() => {
+                const formSection = document.getElementById('partnership-form');
+                if (formSection) {
+                  formSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
               Apply to Become a Partner
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
@@ -87,17 +120,23 @@ const Partners = () => {
         {/* Benefits Section */}
         <section className="py-16 bg-slate-950">
           <div className="w-[65%] mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-white">
-                Why partner with <span className="text-blue-400">westpoint capital?</span>
-              </h2>
-              <p className="text-xl text-white/70 max-w-3xl mx-auto">
-                We believe in building partnerships that drive mutual success and deliver 
-                exceptional value to clients across the globe.
-              </p>
+            {/* Intro Card - Shared Belief */}
+            <div className="mb-12">
+              <div className="glass-container rounded-2xl p-8 text-center bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/30">
+                <div className="text-blue-400 mb-4 flex justify-center">
+                  <Banknote className="w-12 h-12" />
+                </div>
+                <h3 className="text-lg font-medium mb-4 text-blue-400">Together for Profit</h3>
+                <h2 className="text-4xl font-bold mb-4 text-white">
+                  Why partner with <span className="text-blue-400">westpoint capital?</span>
+                </h2>
+                <p className="text-xl text-white/80 leading-relaxed max-w-4xl mx-auto">
+                  We believe the right partnership creates shared success. Our goal is simple: everyone should profit from our services.
+                </p>
+              </div>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {benefits.map((benefit, index) => (
                 <div key={index} className="glass-container rounded-2xl p-6 text-center group hover:scale-105 transition-all duration-300 bg-slate-900/50 border border-blue-500/20">
                   <div className="text-blue-400 mb-4 group-hover:scale-110 transition-transform duration-300 flex justify-center">
@@ -109,6 +148,65 @@ const Partners = () => {
                   </p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Partnership Explanation Section */}
+        <section className="py-24 bg-slate-950">
+          <div className="w-[65%] mx-auto px-6">
+            <div className="glass-container rounded-2xl p-12 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20">
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                {/* Left Side - Heart Image */}
+                <div className="flex items-center justify-center">
+                  <img 
+                    src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/heart.png" 
+                    alt="Partnership Heart" 
+                    className="w-full h-[26rem] object-contain"
+                  />
+                </div>
+
+                {/* Right Side - Headline, Content and CTA */}
+                <div className="space-y-6">
+                  <div className="inline-block">
+                    <span className="px-4 py-2 bg-blue-500/20 text-blue-400 text-sm font-medium rounded-full border border-blue-500/30">
+                      Partnership Details
+                    </span>
+                  </div>
+                  
+                  <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+                    What we mean by <span className="text-blue-400">partner</span>
+                  </h2>
+                  
+                  <p className="text-lg text-white/80 leading-relaxed">
+                    By partner we mean a collaboration where you get access to our services and can refer customers to us.
+                  </p>
+                  
+                  <p className="text-lg text-white/80 leading-relaxed">
+                    We charge <span className="text-blue-400 font-semibold">$10,000</span> to become a partner for one simple reason: we value serious, committed relationships — we trust that you have a network of people who are serious and can benefit from our services.
+                  </p>
+                  
+                  <p className="text-lg text-white/80 leading-relaxed">
+                    It's about filtering out casual conversations and low-quality leads so we can focus our time, energy, and resources on building real growth with the right people — both for your referrals and for our partnership.
+                  </p>
+
+                  <div className="pt-4">
+                    <Button 
+                      size="lg" 
+                      className="hero-button px-8 py-4"
+                      onClick={() => {
+                        const formSection = document.getElementById('partnership-form');
+                        if (formSection) {
+                          formSection.scrollIntoView({ behavior: 'smooth' });
+                        }
+                      }}
+                    >
+                      Schedule a Call
+                      <ArrowRight className="ml-2 w-5 h-5" />
+                    </Button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -139,7 +237,7 @@ const Partners = () => {
                     ))}
                   </ul>
                   <Button className="hero-button w-full">
-                    Learn More
+                    Read more
                   </Button>
                 </div>
               ))}
@@ -148,7 +246,7 @@ const Partners = () => {
         </section>
 
         {/* Application Form */}
-        <section className="py-24 bg-slate-950">
+        <section id="partnership-form" className="py-24 bg-slate-950">
           <div className="w-[65%] mx-auto px-6">
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <div>
@@ -231,18 +329,6 @@ const Partners = () => {
           </div>
         </section>
 
-        {/* Blob Store Demo */}
-        <section className="py-24 bg-slate-950">
-          <div className="w-[65%] mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-white">File <span className="text-blue-400">Storage</span></h2>
-              <p className="text-xl text-white/70 max-w-3xl mx-auto">
-                Upload and manage files with our integrated blob storage system.
-              </p>
-            </div>
-            <BlobUpload />
-          </div>
-        </section>
       </main>
       <Footer />
     </div>

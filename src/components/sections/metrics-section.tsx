@@ -1,25 +1,25 @@
 import React from 'react';
-import { TrendingUp, Users, Zap, Shield } from 'lucide-react';
+import { TrendingUp, Users, Zap, Shield, Rocket, Handshake } from 'lucide-react';
 
 const MetricsSection = () => {
   const metrics = [
     {
-      icon: TrendingUp,
-      number: "150%",
-      label: "Average ROI Increase",
-      description: "Our clients see significant returns on investment"
+      icon: Rocket,
+      number: "9+",
+      label: "Years of Innovation",
+      description: "Leading the future of AI-powered business automation"
     },
     {
       icon: Users,
-      number: "500+",
-      label: "Enterprise Clients",
-      description: "Trusted by leading companies worldwide"
+      number: "230+",
+      label: "Clients",
+      description: "Trusted by businesses worldwide to scale their operations"
     },
     {
-      icon: Zap,
-      number: "99.9%",
-      label: "System Uptime",
-      description: "Reliable infrastructure you can count on"
+      icon: Handshake,
+      number: "50+",
+      label: "Partners",
+      description: "Strategic partnerships driving mutual growth and success"
     },
     {
       icon: Shield,

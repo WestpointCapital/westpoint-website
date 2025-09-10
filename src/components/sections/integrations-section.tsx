@@ -98,12 +98,9 @@ const IntegrationsSection = () => {
 
         {/* Call to action */}
         <div className="text-center mt-16">
-          <p className="text-gray-400 mb-6">
+          <p className="text-gray-400">
             And many more integrations available
           </p>
-          <button className="bg-white/10 text-white px-8 py-3 rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 backdrop-blur-sm">
-            View All Integrations
-          </button>
         </div>
       </div>
     </section>

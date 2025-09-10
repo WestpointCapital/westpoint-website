@@ -10,19 +10,19 @@ const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(2);
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "CTO",
-      company: "TechCorp Industries",
-      image: sarahImage,
+      name: "Anne Alms",
+      role: "Director of Sales & Marketing",
+      company: "Villa Vie Residences",
+      image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Anne-Alms-1.png",
       content: "Westpoint Capital transformed our operations completely. Their AI solutions reduced our processing time by 70% and improved accuracy beyond our expectations.",
       rating: 5
     },
     {
-      name: "Michael Chen",
-      role: "Operations Director",
-      company: "Global Logistics Ltd",
-      image: michaelImage,
-      content: "The automation tools delivered by Westpoint have been game-changing. We've seen a 40% reduction in operational costs while scaling our capacity.",
+      name: "Thomas Nielsen",
+      role: "CEO & Owner",
+      company: "Bodotex",
+      image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/th.png",
+      content: "Working with Goauto has completely transformed our email marketing. Before, our campaigns lacked structure and engagement, but now we have a clear strategy that actually delivers results. They helped us design and implement automated flows tailored to our customer journey, optimized our newsletters for higher open and click-through rates, and gave us actionable insights through detailed reporting. We've seen a significant increase in lead engagement and, most importantly, measurable growth in sales opportunities. The team is proactive, professional, and always ready to adapt to our specific needs. Partnering with them has been one of the best marketing decisions we've made.",
       rating: 5
     },
     {

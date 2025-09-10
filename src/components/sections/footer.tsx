@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Linkedin, Twitter, Mail, ArrowUp } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 import { Button } from '../ui/button';
 
 const Footer = () => {
@@ -19,17 +19,6 @@ const Footer = () => {
               Transforming enterprises through innovative SaaS solutions, intelligent automation, 
               and AI-powered tools that drive measurable business results.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 glass-container rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-200">
-                <Linkedin className="w-5 h-5 text-white" />
-              </a>
-              <a href="#" className="w-10 h-10 glass-container rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-200">
-                <Twitter className="w-5 h-5 text-white" />
-              </a>
-              <a href="#" className="w-10 h-10 glass-container rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-200">
-                <Mail className="w-5 h-5 text-white" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -87,7 +76,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-border">
           <div className="text-white/70 mb-4 md:mb-0">
-            © 2024 Westpoint Capital. All rights reserved.
+            © 2019 Westpoint Capital. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
             <a href="#" className="text-white/70 hover:text-white transition-colors text-sm">

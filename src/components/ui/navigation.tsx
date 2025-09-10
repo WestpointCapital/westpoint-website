@@ -18,27 +18,31 @@ const Navigation = () => {
       <div className="nav-glass w-[65%] rounded-[300px] px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className={`text-2xl font-bold transition-colors duration-300 ${logoColorClass}`}>
-            Westpoint Capital
+          <Link to="/" className="flex items-center">
+            <img 
+              src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Westpoint-02.png" 
+              alt="Westpoint Capital" 
+              className="h-8 w-auto transition-opacity duration-300 hover:opacity-80"
+            />
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link 
               to="/services" 
-              className={`hover:text-primary transition-colors duration-300 ${textColorClass}`}
+              className={`hover:text-gray-300 transition-colors duration-300 ${textColorClass}`}
             >
               Services
             </Link>
             <Link 
               to="/about" 
-              className={`hover:text-primary transition-colors duration-300 ${textColorClass}`}
+              className={`hover:text-gray-300 transition-colors duration-300 ${textColorClass}`}
             >
               About
             </Link>
             <Link 
               to="/cases" 
-              className={`hover:text-primary transition-colors duration-300 ${textColorClass}`}
+              className={`hover:text-gray-300 transition-colors duration-300 ${textColorClass}`}
             >
               Cases
             </Link>

@@ -1,13 +1,13 @@
-import { Bot, Cpu, Zap, Shield } from 'lucide-react';
+import { Bot, Cpu, Zap, Shield, Mail } from 'lucide-react';
 import { Button } from '../ui/button';
 
 const ServicesPreview = () => {
   const services = [
     {
-      icon: <Cpu className="w-8 h-8" />,
-      title: "SaaS Solutions",
-      description: "Custom-built software platforms that scale with your business needs and integrate seamlessly with existing systems.",
-      features: ["Cloud-native architecture", "Real-time analytics", "Enterprise security"]
+      icon: <Mail className="w-8 h-8" />,
+      title: "EMAIL & SMS Software",
+      description: "AI-powered messaging platform that automates customer communication, follow-ups, and campaigns across email and SMS channels.",
+      features: ["Automated follow-ups", "Campaign management", "Real-time messaging"]
     },
     {
       icon: <Zap className="w-8 h-8" />,

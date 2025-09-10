@@ -47,7 +47,7 @@ const AboutSection = () => {
             
             <div className="mb-8">
               <Button size="lg" className="hero-button">
-                Learn More About Us
+                Read more About Us
               </Button>
             </div>
 
