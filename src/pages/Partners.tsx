@@ -285,28 +285,28 @@ const Partners = () => {
 
               <div className="glass-container rounded-2xl p-8 bg-slate-900/50 border border-blue-500/20">
                 <h3 className="text-2xl font-bold mb-6 text-white">Partnership Application</h3>
-                <form className="space-y-6">
+                <form action="mailto:hello@goauto.ai" method="post" encType="text/plain" className="space-y-6">
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-medium mb-2 text-white">First Name</label>
-                      <Input className="glass-container border-none bg-slate-800/50 text-white" />
+                      <Input name="firstName" className="glass-container border-none bg-slate-800/50 text-white" />
                     </div>
                     <div>
                       <label className="block text-sm font-medium mb-2 text-white">Last Name</label>
-                      <Input className="glass-container border-none bg-slate-800/50 text-white" />
+                      <Input name="lastName" className="glass-container border-none bg-slate-800/50 text-white" />
                     </div>
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-2 text-white">Company Name</label>
-                    <Input className="glass-container border-none bg-slate-800/50 text-white" />
+                    <Input name="company" className="glass-container border-none bg-slate-800/50 text-white" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-2 text-white">Email Address</label>
-                    <Input type="email" className="glass-container border-none bg-slate-800/50 text-white" />
+                    <Input name="email" type="email" className="glass-container border-none bg-slate-800/50 text-white" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-2 text-white">Partnership Type</label>
-                    <select className="w-full p-3 glass-container border-none rounded-lg bg-slate-800/50 text-white">
+                    <select name="partnershipType" className="w-full p-3 glass-container border-none rounded-lg bg-slate-800/50 text-white">
                       <option>Technology Partner</option>
                       <option>Reseller Partner</option>
                       <option>Implementation Partner</option>
@@ -315,6 +315,7 @@ const Partners = () => {
                   <div>
                     <label className="block text-sm font-medium mb-2 text-white">Tell us about your business</label>
                     <Textarea 
+                      name="message"
                       placeholder="Describe your company, target market, and partnership goals..."
                       className="glass-container border-none min-h-[120px] bg-slate-800/50 text-white"
                     />

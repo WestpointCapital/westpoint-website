@@ -7,25 +7,25 @@ const CasesSectionV2 = () => {
       title: "Villa Vie Residences",
       description: "We helped them reactivate old and new leads and gain more than 5 million+ revenue.",
       image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Odyssey-No-Grain-3k-scaled%20%281%29.webp",
-      price: "$2,500"
+      services: ["SMS Marketing", "Email Marketing"]
     },
     {
       title: "Bedreklima",
       description: "We helped scale this HVAC company to 40% of sales online through SMS marketing.",
       image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Bedre-klima-vogn-1024x768.webp",
-      price: "$2,500"
+      services: ["SMS Marketing"]
     },
     {
       title: "Nicolinehus Apartments",
       description: "Help when develop a software to manage the the apartments avalibility and started email campaigns",
       image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Nicolinehus-Aarhus-Oe.webp",
-      price: "$2,200"
+      services: ["Email Marketing"]
     },
     {
       title: "Nordic Refrigeration Solutions",
       description: "Running comprehensive SMS marketing campaigns for all signed up leads, automating customer communication and streamlining the sales process with AI-powered responses.",
       image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/nrs1.png",
-      price: "$2,800"
+      services: ["SMS Marketing"]
     },
   ];
 
@@ -53,13 +53,18 @@ const CasesSectionV2 = () => {
                   style={{ backgroundImage: `url(${caseItem.image})` }}
                 />
                 
-                {/* Price Badge */}
-                <div className="absolute top-4 right-4 z-10">
-                  <span className="bg-black/70 text-white px-3 py-1 rounded-full text-sm font-medium">
-                    {caseItem.price}
-                  </span>
+                {/* Services Tags - Top Right Corner */}
+                <div className="absolute top-4 right-4 flex flex-wrap gap-2 justify-end">
+                  {caseItem.services.map((service, serviceIndex) => (
+                    <span 
+                      key={serviceIndex}
+                      className="px-4 py-2 bg-white/90 text-slate-800 text-sm font-semibold rounded-full shadow-lg backdrop-blur-sm"
+                    >
+                      {service}
+                    </span>
+                  ))}
                 </div>
-                
+
                 {/* Glass Overlay - Bottom 70% */}
                 <div className="absolute bottom-0 left-0 right-0 h-[70%] glass-card-overlay text-white flex flex-col justify-end p-6 gap-4 py-0 overflow-visible">
                   <div>

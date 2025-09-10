@@ -3,8 +3,12 @@ import Footer from '../components/sections/footer';
 import { Button } from '../components/ui/button';
 import { ArrowRight, Users, Target, Award, Lightbulb } from 'lucide-react';
 import NetworkDiagram from '../components/sections/network-diagram';
+import CalModal from '../components/CalModal';
+import { useState } from 'react';
 
 const About = () => {
+  const [isCalModalOpen, setIsCalModalOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-slate-950 overflow-x-hidden">
       <Navigation />
@@ -21,7 +25,7 @@ const About = () => {
             <img
               src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/glasshand1.png"
               alt="Glass Hand Technology"
-              className="h-[95%] max-h-[800px] w-auto object-contain"
+              className="h-[66.5%] max-h-[560px] w-auto object-contain"
             />
           </div>
           
@@ -304,7 +308,11 @@ const About = () => {
                 Let's discuss how we can help transform your business with our innovative solutions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-white text-black hover:bg-white/90 px-8 py-4">
+                <Button 
+                  size="lg" 
+                  className="bg-white text-black hover:bg-white/90 px-8 py-4"
+                  onClick={() => setIsCalModalOpen(true)}
+                >
                   Get In Touch
                 </Button>
               </div>
@@ -313,6 +321,12 @@ const About = () => {
         </section>
       </main>
       <Footer />
+      
+      {/* Cal.com Modal */}
+      <CalModal 
+        isOpen={isCalModalOpen} 
+        onClose={() => setIsCalModalOpen(false)} 
+      />
     </div>
   );
 };

@@ -32,7 +32,7 @@ const ContactCTA = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-white">Email Us</div>
-                  <div className="text-white/70">contact@westpointcapital.com</div>
+                  <div className="text-white/70">hello@goauto.ai</div>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -49,28 +49,29 @@ const ContactCTA = () => {
 
           {/* Contact Form */}
           <div className="glass-container rounded-2xl p-8 bg-slate-900/50 border border-blue-500/20">
-            <form className="space-y-6">
+            <form action="mailto:hello@goauto.ai" method="post" encType="text/plain" className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium mb-2 text-white">First Name</label>
-                  <Input placeholder="John" className="bg-slate-800/50 border-slate-700 text-white placeholder:text-white/50" />
+                  <Input name="firstName" placeholder="John" className="bg-slate-800/50 border-slate-700 text-white placeholder:text-white/50" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-2 text-white">Last Name</label>
-                  <Input placeholder="Doe" className="bg-slate-800/50 border-slate-700 text-white placeholder:text-white/50" />
+                  <Input name="lastName" placeholder="Doe" className="bg-slate-800/50 border-slate-700 text-white placeholder:text-white/50" />
                 </div>
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2 text-white">Company Email</label>
-                <Input type="email" placeholder="john@company.com" className="bg-slate-800/50 border-slate-700 text-white placeholder:text-white/50" />
+                <Input name="email" type="email" placeholder="john@company.com" className="bg-slate-800/50 border-slate-700 text-white placeholder:text-white/50" />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2 text-white">Company Name</label>
-                <Input placeholder="Your Company" className="bg-slate-800/50 border-slate-700 text-white placeholder:text-white/50" />
+                <Input name="company" placeholder="Your Company" className="bg-slate-800/50 border-slate-700 text-white placeholder:text-white/50" />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2 text-white">Project Details</label>
                 <Textarea 
+                  name="message"
                   placeholder="Tell us about your requirements and challenges..."
                   className="bg-slate-800/50 border-slate-700 text-white placeholder:text-white/50 min-h-[120px]"
                 />
