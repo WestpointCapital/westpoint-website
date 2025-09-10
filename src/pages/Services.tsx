@@ -325,7 +325,7 @@ const Services = () => {
                 Let's discuss how our integrated approach can transform your business. 
                 Our experts will work with you to design the perfect solution that drives measurable results.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex justify-center">
                 <Button 
                   size="lg" 
                   className="hero-button px-8 py-4"
@@ -333,9 +333,6 @@ const Services = () => {
                 >
                   Schedule Consultation
                   <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
-                <Button variant="outline" size="lg" className="glass-container border-none px-8 py-4">
-                  Download Brochure
                 </Button>
               </div>
             </div>
