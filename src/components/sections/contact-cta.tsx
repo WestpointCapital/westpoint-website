@@ -32,7 +32,7 @@ const ContactCTA = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-white">Email Us</div>
-                  <div className="text-white/70">hello@goauto.ai</div>
+                  <div className="text-white/70">contact@westpoint.eu</div>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -49,7 +49,7 @@ const ContactCTA = () => {
 
           {/* Contact Form */}
           <div className="glass-container rounded-2xl p-8 bg-slate-900/50 border border-blue-500/20">
-            <form action="mailto:hello@goauto.ai" method="post" encType="text/plain" className="space-y-6">
+            <form action="mailto:contact@westpoint.eu" method="post" encType="text/plain" className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium mb-2 text-white">First Name</label>

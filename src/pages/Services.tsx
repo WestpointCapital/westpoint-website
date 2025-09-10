@@ -2,8 +2,12 @@ import Navigation from '../components/ui/navigation';
 import Footer from '../components/sections/footer';
 import { Button } from '../components/ui/button';
 import { Bot, Cpu, Zap, Shield, ArrowRight, CheckCircle, Settings, MessageSquare, BarChart3, Target, Users, TrendingUp, Star } from 'lucide-react';
+import CalModal from '../components/CalModal';
+import { useState } from 'react';
 
 const Services = () => {
+  const [isCalModalOpen, setIsCalModalOpen] = useState(false);
+  
   const services = [
     {
       icon: null, // No icon for this service
@@ -124,7 +128,11 @@ const Services = () => {
                 <div className="w-4 h-4 border-l-2 border-t-2 border-b-2 border-white transform rotate-45 mr-3"></div>
                 Watch Demo
               </Button>
-              <Button size="lg" className="bg-blue-400 hover:bg-blue-500 text-white px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto">
+              <Button 
+                size="lg" 
+                className="bg-blue-400 hover:bg-blue-500 text-white px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
+                onClick={() => setIsCalModalOpen(true)}
+              >
                 Get started for free
               </Button>
             </div>
@@ -318,7 +326,11 @@ const Services = () => {
                 Our experts will work with you to design the perfect solution that drives measurable results.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="hero-button px-8 py-4">
+                <Button 
+                  size="lg" 
+                  className="hero-button px-8 py-4"
+                  onClick={() => setIsCalModalOpen(true)}
+                >
                   Schedule Consultation
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
@@ -331,6 +343,7 @@ const Services = () => {
         </section>
       </main>
       <Footer />
+      <CalModal isOpen={isCalModalOpen} onClose={() => setIsCalModalOpen(false)} />
     </div>
   );
 };

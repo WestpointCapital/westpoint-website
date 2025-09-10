@@ -285,7 +285,7 @@ const Partners = () => {
 
               <div className="glass-container rounded-2xl p-8 bg-slate-900/50 border border-blue-500/20">
                 <h3 className="text-2xl font-bold mb-6 text-white">Partnership Application</h3>
-                <form action="mailto:hello@goauto.ai" method="post" encType="text/plain" className="space-y-6">
+                <form action="mailto:contact@westpoint.eu" method="post" encType="text/plain" className="space-y-6">
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-medium mb-2 text-white">First Name</label>
