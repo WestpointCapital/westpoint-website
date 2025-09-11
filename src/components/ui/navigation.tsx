@@ -46,9 +46,15 @@ const Navigation = () => {
             >
               Cases
             </Link>
-            <Link to="/partners">
+            <Link 
+              to="/partners" 
+              className={`hover:text-gray-300 transition-colors duration-300 ${textColorClass}`}
+            >
+              Partnerprogram
+            </Link>
+            <Link to="/contact">
               <Button variant="cta" size="sm" className="px-6 py-2">
-                Become a partner
+                Contact
               </Button>
             </Link>
           </div>
@@ -87,10 +93,17 @@ const Navigation = () => {
               >
                 Cases
               </Link>
+              <Link 
+                to="/partners" 
+                className="text-foreground hover:text-primary transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-gray-50"
+                onClick={() => setIsOpen(false)}
+              >
+                Partnerprogram
+              </Link>
               <div className="mt-4 pt-4 border-t border-gray-200">
-                <Link to="/partners" onClick={() => setIsOpen(false)}>
+                <Link to="/contact" onClick={() => setIsOpen(false)}>
                   <Button variant="cta" size="sm" className="w-full px-6 py-2">
-                    Become a partner
+                    Contact
                   </Button>
                 </Link>
               </div>

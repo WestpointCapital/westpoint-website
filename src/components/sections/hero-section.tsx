@@ -26,19 +26,19 @@ const HeroSection = () => {
             <div className="inline-flex items-center gap-2 glass-container rounded-full px-4 py-2 mb-8">
               <Sparkles className="w-4 h-4 text-white" />
               <span className="text-sm font-medium text-white">
-                Transforming Business Operations with AI
+                AI-Powered SMS & Email Marketing Platform
               </span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight text-white/90">
-              Enterprise solutions that scale your success
+              Your own SMS & Email software, powered by AI
             </h1>
 
             {/* Subtitle */}
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
-              Westpoint Capital delivers cutting-edge SaaS solutions, intelligent automation, 
-              and AI-powered tools that transform how enterprises operate and compete.
+              Build, customize, and scale your marketing campaigns with our proprietary SMS and email platform. 
+              AI-driven automation, intelligent targeting, and enterprise-grade performance.
             </p>
 
             {/* CTA Buttons */}
@@ -48,7 +48,7 @@ const HeroSection = () => {
                 size="lg" 
                 className="px-8 py-4 text-lg"
               >
-                Schedule a Demo
+                Get Your Platform Demo
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </div>

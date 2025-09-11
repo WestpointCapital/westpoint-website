@@ -5,8 +5,48 @@ import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { Handshake, Globe, TrendingUp, Users, CheckCircle, ArrowRight, DollarSign, Target, Zap, BarChart3, Shield, Award, Banknote } from 'lucide-react';
 import DarkVeil from '../components/DarkVeil';
+import { useState } from 'react';
+import { sendPartnershipForm, PartnershipFormData } from '../utils/emailService';
 
 const Partners = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    const formData = new FormData(e.currentTarget);
+    const data: PartnershipFormData = {
+      firstName: formData.get('firstName') as string,
+      lastName: formData.get('lastName') as string,
+      company: formData.get('company') as string,
+      email: formData.get('email') as string,
+      partnershipType: formData.get('partnershipType') as string,
+      message: formData.get('message') as string,
+    };
+
+    try {
+      const success = await sendPartnershipForm(data);
+      
+      if (success) {
+        setIsSubmitted(true);
+        // Reset form after 3 seconds
+        setTimeout(() => {
+          setIsSubmitted(false);
+          (e.target as HTMLFormElement).reset();
+        }, 3000);
+      } else {
+        alert('Failed to send application. Please try again or contact us directly at hello@goauto.ai');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      alert('Failed to send application. Please try again or contact us directly at contact@westpoint.eu');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   const benefits = [
     {
       icon: <DollarSign className="w-8 h-8" />,
@@ -285,7 +325,7 @@ const Partners = () => {
 
               <div className="glass-container rounded-2xl p-8 bg-slate-900/50 border border-blue-500/20">
                 <h3 className="text-2xl font-bold mb-6 text-white">Partnership Application</h3>
-                <form action="mailto:contact@westpoint.eu" method="post" encType="text/plain" className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-medium mb-2 text-white">First Name</label>
@@ -320,9 +360,14 @@ const Partners = () => {
                       className="glass-container border-none min-h-[120px] bg-slate-800/50 text-white"
                     />
                   </div>
-                  <Button size="lg" className="hero-button w-full">
-                    Submit Application
-                    <ArrowRight className="ml-2 w-5 h-5" />
+                  <Button 
+                    type="submit" 
+                    size="lg" 
+                    className="hero-button w-full"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? 'Submitting...' : isSubmitted ? 'Application Sent!' : 'Submit Application'}
+                    {!isSubmitting && !isSubmitted && <ArrowRight className="ml-2 w-5 h-5" />}
                   </Button>
                 </form>
               </div>

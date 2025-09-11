@@ -2,8 +2,47 @@ import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
 import { ArrowRight, Mail, Phone } from 'lucide-react';
+import { useState } from 'react';
+import { sendContactForm, ContactFormData } from '../../utils/emailService';
 
 const ContactCTA = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    const formData = new FormData(e.currentTarget);
+    const data: ContactFormData = {
+      firstName: formData.get('firstName') as string,
+      lastName: formData.get('lastName') as string,
+      email: formData.get('email') as string,
+      company: formData.get('company') as string,
+      message: formData.get('message') as string,
+    };
+
+    try {
+      const success = await sendContactForm(data);
+      
+      if (success) {
+        setIsSubmitted(true);
+        // Reset form after 3 seconds
+        setTimeout(() => {
+          setIsSubmitted(false);
+          (e.target as HTMLFormElement).reset();
+        }, 3000);
+      } else {
+        alert('Failed to send message. Please try again or contact us directly at hello@goauto.ai');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      alert('Failed to send message. Please try again or contact us directly at contact@westpoint.eu');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section className="py-24 bg-slate-950">
       <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
@@ -32,7 +71,7 @@ const ContactCTA = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-white">Email Us</div>
-                  <div className="text-white/70">contact@westpoint.eu</div>
+                  <div className="text-white/70">hello@goauto.ai</div>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -49,7 +88,7 @@ const ContactCTA = () => {
 
           {/* Contact Form */}
           <div className="glass-container rounded-2xl p-8 bg-slate-900/50 border border-blue-500/20">
-            <form action="mailto:contact@westpoint.eu" method="post" encType="text/plain" className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium mb-2 text-white">First Name</label>
@@ -76,9 +115,14 @@ const ContactCTA = () => {
                   className="bg-slate-800/50 border-slate-700 text-white placeholder:text-white/50 min-h-[120px]"
                 />
               </div>
-              <Button size="lg" className="hero-button w-full">
-                Send Message
-                <ArrowRight className="ml-2 w-5 h-5" />
+              <Button 
+                type="submit" 
+                size="lg" 
+                className="hero-button w-full"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? 'Sending...' : isSubmitted ? 'Message Sent!' : 'Send Message'}
+                {!isSubmitting && !isSubmitted && <ArrowRight className="ml-2 w-5 h-5" />}
               </Button>
             </form>
           </div>
