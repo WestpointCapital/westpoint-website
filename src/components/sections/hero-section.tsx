@@ -32,7 +32,7 @@ const HeroSection = () => {
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight text-white/90">
-              Your own SMS & Email software, powered by AI
+            Your SMS & Email Marketing Team
             </h1>
 
             {/* Subtitle */}

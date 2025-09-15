@@ -114,7 +114,7 @@ const About = () => {
                         <span className="text-white text-sm font-bold">C</span>
                       </div>
                     </div>
-                    <span className="text-white font-medium">Trusted by 500+ Enterprise Clients</span>
+                    <span className="text-white font-medium">Trusted by 250+ Enterprise Clients</span>
                   </div>
                 </div>
               </div>

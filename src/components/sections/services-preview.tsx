@@ -1,5 +1,6 @@
 import { Bot, Cpu, Zap, Shield, Mail } from 'lucide-react';
 import { Button } from '../ui/button';
+import { Link } from 'react-router-dom';
 
 const ServicesPreview = () => {
   const services = [
@@ -68,9 +69,11 @@ const ServicesPreview = () => {
 
         {/* CTA Section */}
         <div className="text-center">
-          <Button variant="cta" size="lg" className="px-8 py-4">
-            Explore All Services
-          </Button>
+          <Link to="/services">
+            <Button variant="cta" size="lg" className="px-8 py-4">
+              Explore All Services
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
