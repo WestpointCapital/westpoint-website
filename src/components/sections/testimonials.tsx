@@ -38,7 +38,7 @@ const Testimonials = () => {
       role: "CEO",
       company: "StartupTech Inc",
       image: sarahImage, // Reusing image for now
-      content: "Westpoint's strategic insights helped us scale from startup to enterprise-level operations in just 18 months.",
+      content: "Westpoint Capital's strategic insights helped us scale from startup to enterprise-level operations in just 18 months.",
       rating: 5
     },
     {
