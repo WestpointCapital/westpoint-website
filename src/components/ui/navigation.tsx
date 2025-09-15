@@ -50,7 +50,7 @@ const Navigation = () => {
               to="/partners" 
               className={`hover:text-gray-300 transition-colors duration-300 ${textColorClass}`}
             >
-              Partnerprogram
+              Partner Program
             </Link>
             <Link to="/contact">
               <Button variant="cta" size="sm" className="px-6 py-2">
@@ -98,7 +98,7 @@ const Navigation = () => {
                 className="text-foreground hover:text-primary transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-gray-50"
                 onClick={() => setIsOpen(false)}
               >
-                Partnerprogram
+                Partner Program
               </Link>
               <div className="mt-4 pt-4 border-t border-gray-200">
                 <Link to="/contact" onClick={() => setIsOpen(false)}>

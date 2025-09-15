@@ -168,7 +168,7 @@ const Partners = () => {
                 </div>
                 <h3 className="text-lg font-medium mb-4 text-blue-400">Together for Profit</h3>
                 <h2 className="text-4xl font-bold mb-4 text-white">
-                  Why partner with <span className="text-blue-400">westpoint capital?</span>
+                  Why partner with <span className="text-blue-400">Westpoint Capital?</span>
                 </h2>
                 <p className="text-xl text-white/80 leading-relaxed max-w-4xl mx-auto">
                   We believe the right partnership creates shared success. Our goal is simple: everyone should profit from our services.

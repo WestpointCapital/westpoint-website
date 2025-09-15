@@ -610,6 +610,11 @@ html, body {
                       radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.03) 0%, transparent 50%);
   }
 
+  /* Preserve heading fonts - keep original font stack for headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
   /* Project Slider V2 Styles */
   .project-slider-head {
     max-width: 1400px;

@@ -32,7 +32,7 @@ const AboutSection = () => {
           {/* Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              About <span className="font-bold">westpoint capital</span>
+              About <span className="font-bold">Westpoint Capital</span>
             </h2>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               Founded with a vision to bridge the gap between traditional business operations 

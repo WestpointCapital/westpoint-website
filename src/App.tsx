@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Cases from "./pages/Cases";
 import Partners from "./pages/Partners";
 import Contact from "./pages/Contact";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 import VillaVieResidences from "./pages/cases/VillaVieResidences";
 import Bedreklima from "./pages/cases/Bedreklima";
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/cases" element={<Cases />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/cases/villa-vie-residences" element={<VillaVieResidences />} />
           <Route path="/cases/bedreklima" element={<Bedreklima />} />
           <Route path="/cases/nikolinehus" element={<Nicolinehus />} />

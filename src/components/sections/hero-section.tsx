@@ -37,8 +37,7 @@ const HeroSection = () => {
 
             {/* Subtitle */}
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
-              Build, customize, and scale your marketing campaigns with our proprietary SMS and email platform. 
-              AI-driven automation, intelligent targeting, and enterprise-grade performance.
+            For 6+ years, we’ve run end-to-end SMS and email campaigns for brands of all sizes. From strategy to optimization, we handle it all. Leveraging AI since ChatGPT’s launch, we combine cutting-edge automation with human expertise to deliver results at scale.
             </p>
 
             {/* CTA Buttons */}

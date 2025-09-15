@@ -76,12 +76,12 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-border">
           <div className="text-white/70 mb-4 md:mb-0">
-            © 2019 Westpoint Capital. All rights reserved.
+            © 2025 Westpoint Capital. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
-            <a href="#" className="text-white/70 hover:text-white transition-colors text-sm">
+            <Link to="/privacy-policy" className="text-white/70 hover:text-white transition-colors text-sm">
               Privacy Policy
-            </a>
+            </Link>
             <a href="#" className="text-white/70 hover:text-white transition-colors text-sm">
               Terms of Service
             </a>
