@@ -33,11 +33,11 @@ const ContactCTA = () => {
           (e.target as HTMLFormElement).reset();
         }, 3000);
       } else {
-        alert('Failed to send message. Please try again or contact us directly at hello@goauto.ai');
+        alert('Failed to send message. Please try again or contact us directly at contact@westpoint.capital');
       }
     } catch (error) {
       console.error('Form submission error:', error);
-      alert('Failed to send message. Please try again or contact us directly at contact@westpoint.eu');
+      alert('Failed to send message. Please try again or contact us directly at contact@westpoint.capital');
     } finally {
       setIsSubmitting(false);
     }
@@ -71,7 +71,7 @@ const ContactCTA = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-white">Email Us</div>
-                  <div className="text-white/70">hello@goauto.ai</div>
+                  <div className="text-white/70">contact@westpoint.capital</div>
                 </div>
               </div>
               <div className="flex items-center gap-4">

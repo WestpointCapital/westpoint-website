@@ -53,7 +53,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-white">Contact</h4>
             <ul className="space-y-3">
               <li className="text-white/70">
-                hello@goauto.ai
+                contact@westpoint.capital
               </li>
               <li>
                 <a href="tel:+17439026451" className="text-white/70 hover:text-white transition-colors">

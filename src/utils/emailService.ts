@@ -6,7 +6,7 @@ export const EMAIL_CONFIG = {
   SERVICE_ID: 'service_westpoint', // Your EmailJS service ID
   TEMPLATE_ID: 'template_contact', // Your EmailJS template ID
   PUBLIC_KEY: 'your_public_key_here', // Your EmailJS public key
-  TO_EMAIL: 'hello@goauto.ai' // Your email address
+  TO_EMAIL: 'contact@westpoint.capital' // Your email address
 };
 
 export interface ContactFormData {
@@ -46,7 +46,7 @@ ${data.message}
     
     // Show success message and open email client
     alert('Form submitted successfully! Your email client will open to send the message.');
-    window.location.href = `mailto:hello@goauto.ai?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:contact@westpoint.capital?subject=${subject}&body=${body}`;
     
     return true;
   } catch (error) {
@@ -75,7 +75,7 @@ ${data.message}
     
     // Show success message and open email client
     alert('Application submitted successfully! Your email client will open to send the message.');
-    window.location.href = `mailto:hello@goauto.ai?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:contact@westpoint.capital?subject=${subject}&body=${body}`;
     
     return true;
   } catch (error) {

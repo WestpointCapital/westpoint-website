@@ -197,7 +197,7 @@ const PrivacyPolicy = () => {
                 <div className="bg-slate-800/50 rounded-lg p-6 border border-blue-500/20">
                   <p className="text-white/80 leading-relaxed">
                     <strong className="text-white">Westpoint Capital</strong><br />
-                    Email: <a href="mailto:hello@goauto.ai" className="text-blue-400 hover:text-blue-300">hello@goauto.ai</a><br />
+                    Email: <a href="mailto:contact@westpoint.capital" className="text-blue-400 hover:text-blue-300">contact@westpoint.capital</a><br />
                     Phone: <a href="tel:+17439026451" className="text-blue-400 hover:text-blue-300">+1 (743) 902-6451</a><br />
                     <br />
                     <strong className="text-white">Headquarters:</strong><br />

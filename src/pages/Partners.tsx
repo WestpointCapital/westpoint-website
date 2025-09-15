@@ -37,11 +37,11 @@ const Partners = () => {
           (e.target as HTMLFormElement).reset();
         }, 3000);
       } else {
-        alert('Failed to send application. Please try again or contact us directly at hello@goauto.ai');
+        alert('Failed to send application. Please try again or contact us directly at contact@westpoint.capital');
       }
     } catch (error) {
       console.error('Form submission error:', error);
-      alert('Failed to send application. Please try again or contact us directly at contact@westpoint.eu');
+      alert('Failed to send application. Please try again or contact us directly at contact@westpoint.capital');
     } finally {
       setIsSubmitting(false);
     }
