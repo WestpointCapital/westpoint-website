@@ -251,39 +251,6 @@ const Partners = () => {
           </div>
         </section>
 
-        {/* Partner Types */}
-        <section className="py-24 bg-slate-950">
-          <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-white">Partnership <span className="text-blue-400">opportunities</span></h2>
-              <p className="text-xl text-white/70 max-w-3xl mx-auto">
-                Choose the partnership model that aligns best with your business goals and capabilities.
-              </p>
-            </div>
-
-            <div className="grid lg:grid-cols-3 gap-6 sm:gap-8">
-              {partnerTypes.map((type, index) => (
-                <div key={index} className="glass-container rounded-2xl p-8 bg-slate-900/50 border border-blue-500/20">
-                  <h3 className="text-2xl font-bold mb-4 text-white">{type.title}</h3>
-                  <p className="text-white/70 mb-6 leading-relaxed">
-                    {type.description}
-                  </p>
-                  <ul className="space-y-3 mb-8">
-                    {type.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center gap-3">
-                        <CheckCircle className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                        <span className="text-white/70">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Button className="hero-button w-full">
-                    Read more
-                  </Button>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* Application Form */}
         <section id="partnership-form" className="py-24 bg-slate-950">

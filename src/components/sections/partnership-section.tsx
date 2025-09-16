@@ -32,39 +32,55 @@ const PartnershipSection = () => {
           {/* Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              Partnership <span className="text-blue-400">opportunities</span>
+              Join Our <span className="text-blue-400">Partner Program</span>
             </h2>
             <p className="text-xl text-white/70 mb-8 leading-relaxed">
-              We believe in building lasting partnerships that drive mutual success. Our collaborative 
-              approach ensures that together, we create solutions that exceed expectations and deliver 
-              exceptional value.
-            </p>
-            <p className="text-lg text-white/70 mb-8 leading-relaxed">
-              Whether you're looking for strategic collaboration, technology integration, or expert 
-              consulting, our partnership models are designed to be flexible and aligned with your 
-              business objectives.
+              Partner with us to unlock new revenue streams and grow your business. Our comprehensive 
+              partner program offers exclusive benefits, dedicated support, and proven strategies to 
+              help you succeed.
             </p>
             
             <div className="mb-8">
-              <Button size="lg" className="hero-button">
-                Explore Partnership Options
+              <Button size="lg" className="hero-button" asChild>
+                <a href="/partners">Join Our Partner Program</a>
               </Button>
             </div>
 
           </div>
 
-          {/* Partnership Types Grid */}
+          {/* Benefits Grid */}
           <div className="grid grid-cols-1 gap-6">
-            {partnerships.map((partnership, index) => (
+            {[
+              {
+                icon: <Target className="w-6 h-6" />,
+                title: "Exclusive Revenue Share",
+                description: "Earn competitive commissions on every successful partnership referral."
+              },
+              {
+                icon: <Zap className="w-6 h-6" />,
+                title: "Dedicated Support",
+                description: "Get personalized support from our partnership team to maximize your success."
+              },
+              {
+                icon: <Users className="w-6 h-6" />,
+                title: "Marketing Resources",
+                description: "Access to co-marketing materials, case studies, and proven strategies."
+              },
+              {
+                icon: <Handshake className="w-6 h-6" />,
+                title: "Training & Certification",
+                description: "Comprehensive training programs to help you become a successful partner."
+              }
+            ].map((benefit, index) => (
               <div key={index} className="glass-container rounded-xl p-6 group hover:scale-105 transition-all duration-300 bg-slate-900/50 border border-blue-500/20">
                 <div className="flex items-start gap-4">
                   <div className="text-blue-400 group-hover:scale-110 transition-transform duration-300 mt-1">
-                    {partnership.icon}
+                    {benefit.icon}
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold mb-2 text-white">{partnership.title}</h3>
+                    <h3 className="text-lg font-bold mb-2 text-white">{benefit.title}</h3>
                     <p className="text-white/70 leading-relaxed">
-                      {partnership.description}
+                      {benefit.description}
                     </p>
                   </div>
                 </div>
