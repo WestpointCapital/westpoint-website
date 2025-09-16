@@ -33,19 +33,23 @@ const Bedreklima = () => {
                 </h1>
                 
                 <p className="text-xl text-white/80 mb-8 leading-relaxed">
-                  We helped scale this HVAC company to 40% of sales online through strategic SMS marketing campaigns and digital transformation.
+                  We helped scale this Danish HVAC company to 42% online sales growth through strategic SMS marketing campaigns and digital transformation, revolutionizing their lead management and customer engagement.
                 </p>
                 
-                <div className="flex items-center gap-6 mb-8">
-                  <div className="flex items-center gap-2">
-                    <TrendingUp className="w-5 h-5 text-green-400" />
-                    <span className="text-2xl font-bold text-white">40%</span>
-                    <span className="text-white/70">Online Sales</span>
+                <div className="grid grid-cols-2 gap-6 mb-8">
+                  <div className="glass-container rounded-xl p-4 bg-slate-900/50 border border-green-500/20">
+                    <div className="flex items-center gap-2 mb-2">
+                      <TrendingUp className="w-5 h-5 text-green-400" />
+                      <span className="text-2xl font-bold text-white">+42%</span>
+                    </div>
+                    <span className="text-white/70 text-sm">Online Sales Growth</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <DollarSign className="w-5 h-5 text-blue-400" />
-                    <span className="text-2xl font-bold text-white">250%</span>
-                    <span className="text-white/70">Revenue Growth</span>
+                  <div className="glass-container rounded-xl p-4 bg-slate-900/50 border border-blue-500/20">
+                    <div className="flex items-center gap-2 mb-2">
+                      <DollarSign className="w-5 h-5 text-blue-400" />
+                      <span className="text-2xl font-bold text-white">+22%</span>
+                    </div>
+                    <span className="text-white/70 text-sm">Revenue Increase</span>
                   </div>
                 </div>
               </div>
@@ -68,11 +72,17 @@ const Bedreklima = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-4xl font-bold text-white mb-6">
-                  The <span className="text-green-400">Challenge</span>
+                  About <span className="text-green-400">Bedreklima</span>
                 </h2>
                 <p className="text-lg text-white/80 mb-6 leading-relaxed">
-                  Bedreklima, a traditional HVAC company, was struggling to adapt to the digital age. They relied heavily on traditional marketing methods and had minimal online presence, limiting their growth potential.
+                  Bedreklima is a leading Danish HVAC company specializing in high-quality heat pumps with over 20 years of industry experience. Based in Vejle & Aarhus, they offer a comprehensive range of air-to-water, air-to-air, and propane heat pumps from brands like LG, Nordic, and Panasonic. With VE-approved installers and free delivery within 5-12 days, they serve customers across Denmark with professional installation and maintenance services.
                 </p>
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold text-white mb-4">The Challenge</h3>
+                  <p className="text-lg text-white/80 mb-6 leading-relaxed">
+                    Despite their expertise in heat pump installation and maintenance, Bedreklima was struggling with lead management and digital customer engagement. They had a strong offline presence but were missing opportunities to convert online inquiries and nurture leads effectively through digital channels.
+                  </p>
+                </div>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
@@ -90,9 +100,10 @@ const Bedreklima = () => {
               </div>
               <div className="relative">
                 <img 
-                  src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Bedre-klima-vogn-1024x768.webp" 
+                  src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/nordic-refrigeration.jpg" 
                   alt="Bedreklima Project Overview" 
                   className="w-full h-[400px] object-cover rounded-2xl shadow-2xl"
+                  style={{ objectPosition: 'center center', aspectRatio: '9/16' }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl"></div>
               </div>
@@ -156,21 +167,21 @@ const Bedreklima = () => {
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="text-5xl font-bold text-green-400 mb-2">40%</div>
+              <div className="glass-container rounded-2xl p-6 bg-slate-900/50 border border-green-500/20 text-center">
+                <div className="text-5xl font-bold text-green-400 mb-2">+42%</div>
                 <div className="text-white/70">Online Sales Growth</div>
               </div>
-              <div className="text-center">
-                <div className="text-5xl font-bold text-blue-400 mb-2">250%</div>
+              <div className="glass-container rounded-2xl p-6 bg-slate-900/50 border border-blue-500/20 text-center">
+                <div className="text-5xl font-bold text-blue-400 mb-2">+11%</div>
+                <div className="text-white/70">Conversion Rate</div>
+              </div>
+              <div className="glass-container rounded-2xl p-6 bg-slate-900/50 border border-purple-500/20 text-center">
+                <div className="text-5xl font-bold text-purple-400 mb-2">+22%</div>
                 <div className="text-white/70">Revenue Increase</div>
               </div>
-              <div className="text-center">
-                <div className="text-5xl font-bold text-purple-400 mb-2">65%</div>
-                <div className="text-white/70">Customer Retention</div>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl font-bold text-orange-400 mb-2">4x</div>
-                <div className="text-white/70">Digital Engagement</div>
+              <div className="glass-container rounded-2xl p-6 bg-slate-900/50 border border-orange-500/20 text-center">
+                <div className="text-5xl font-bold text-orange-400 mb-2">+11%</div>
+                <div className="text-white/70">Engagement</div>
               </div>
             </div>
           </div>
