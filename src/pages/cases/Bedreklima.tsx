@@ -164,6 +164,9 @@ const Bedreklima = () => {
               <h2 className="text-4xl font-bold text-white mb-6">
                 The <span className="text-green-400">Results</span>
               </h2>
+              <p className="text-xl text-white/70 max-w-3xl mx-auto">
+                Within the first 3 months with us, Bedreklima achieved remarkable improvements across all key performance indicators.
+              </p>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

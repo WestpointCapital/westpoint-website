@@ -33,19 +33,23 @@ const Nicolinehus = () => {
                 </h1>
                 
                 <p className="text-xl text-white/80 mb-8 leading-relaxed">
-                  We developed a comprehensive software solution to manage apartment availability and launched targeted email campaigns that transformed dead leads into active prospects.
+                  We helped Nicolinehus Apartments overcome their email marketing struggles by implementing SMS marketing that opened new doors for customer engagement, transforming their lead nurturing process and dramatically improving their apartment rental and sales performance.
                 </p>
                 
-                <div className="flex items-center gap-6 mb-8">
-                  <div className="flex items-center gap-2">
-                    <Building2 className="w-5 h-5 text-blue-400" />
-                    <span className="text-2xl font-bold text-white">85%</span>
-                    <span className="text-white/70">Lead Re-engagement</span>
+                <div className="grid grid-cols-2 gap-6 mb-8">
+                  <div className="glass-container rounded-xl p-4 bg-slate-900/50 border border-blue-500/20">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Building2 className="w-5 h-5 text-blue-400" />
+                      <span className="text-2xl font-bold text-white">+8</span>
+                    </div>
+                    <span className="text-white/70 text-sm">Apartments Rented</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <TrendingUp className="w-5 h-5 text-green-400" />
-                    <span className="text-2xl font-bold text-white">340%</span>
-                    <span className="text-white/70">Email Open Rate</span>
+                  <div className="glass-container rounded-xl p-4 bg-slate-900/50 border border-green-500/20">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Users className="w-5 h-5 text-green-400" />
+                      <span className="text-2xl font-bold text-white">+93</span>
+                    </div>
+                    <span className="text-white/70 text-sm">Calls Generated</span>
                   </div>
                 </div>
               </div>
@@ -71,20 +75,20 @@ const Nicolinehus = () => {
                   The <span className="text-blue-400">Challenge</span>
                 </h2>
                 <p className="text-lg text-white/80 mb-6 leading-relaxed">
-                  Nicolinehus Apartments was struggling with manual apartment management and had thousands of dead leads in their database. They needed a modern solution to manage availability and re-engage potential tenants through targeted marketing campaigns.
+                  Nicolinehus Apartments was struggling to maintain contact with customers through email marketing and online channels. Despite having many leads coming in, they were losing potential tenants due to poor lead management, lack of proper nurturing, and ineffective communication strategies. Their email campaigns were failing to engage prospects, and they needed a more direct and effective way to reach their target audience.
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-white/80">Manual apartment availability tracking</span>
+                    <span className="text-white/80">Poor email marketing performance and low engagement rates</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-white/80">Over 2,500 dead leads in database</span>
+                    <span className="text-white/80">Losing leads due to lack of proper nurturing and follow-up</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-white/80">Low email engagement rates (8% open rate)</span>
+                    <span className="text-white/80">No overview of lead status and communication history</span>
                   </li>
                 </ul>
               </div>
@@ -108,7 +112,7 @@ const Nicolinehus = () => {
                 Our <span className="text-blue-400">Solution</span>
               </h2>
               <p className="text-xl text-white/70 max-w-3xl mx-auto">
-                We developed a comprehensive apartment management software and launched targeted email and SMS campaigns that transformed dead leads into active prospects.
+                We implemented SMS marketing as the primary communication channel, which opened new doors for customer engagement and lead nurturing, while also developing apartment management software to track availability and tenant communications.
               </p>
             </div>
             
@@ -127,9 +131,9 @@ const Nicolinehus = () => {
                 <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Mail className="w-8 h-8 text-green-400" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">Email Campaigns</h3>
+                <h3 className="text-xl font-bold text-white mb-3">SMS Lead Nurturing</h3>
                 <p className="text-white/70">
-                  Segmented email campaigns targeting different lead types with personalized content and automated follow-ups.
+                  Implemented SMS marketing as the primary channel for lead nurturing, providing immediate and direct communication with prospects.
                 </p>
               </div>
               
@@ -137,9 +141,9 @@ const Nicolinehus = () => {
                 <div className="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <MessageSquare className="w-8 h-8 text-purple-400" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">SMS Marketing</h3>
+                <h3 className="text-xl font-bold text-white mb-3">Lead Management</h3>
                 <p className="text-white/70">
-                  Automated SMS campaigns for immediate availability notifications and appointment reminders.
+                  Created comprehensive lead tracking and management system to prevent losing prospects and ensure proper follow-up.
                 </p>
               </div>
             </div>
@@ -153,24 +157,27 @@ const Nicolinehus = () => {
               <h2 className="text-4xl font-bold text-white mb-6">
                 The <span className="text-blue-400">Results</span>
               </h2>
+              <p className="text-xl text-white/70 max-w-3xl mx-auto">
+                Within the first 3 months with us, Nicolinehus Apartments achieved remarkable improvements in lead conversion and apartment occupancy.
+              </p>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="text-5xl font-bold text-blue-400 mb-2">85%</div>
-                <div className="text-white/70">Dead Lead Re-engagement</div>
+              <div className="glass-container rounded-2xl p-6 bg-slate-900/50 border border-blue-500/20 text-center">
+                <div className="text-5xl font-bold text-blue-400 mb-2">+8</div>
+                <div className="text-white/70">Apartments Rented</div>
               </div>
-              <div className="text-center">
-                <div className="text-5xl font-bold text-green-400 mb-2">340%</div>
-                <div className="text-white/70">Email Open Rate Increase</div>
+              <div className="glass-container rounded-2xl p-6 bg-slate-900/50 border border-green-500/20 text-center">
+                <div className="text-5xl font-bold text-green-400 mb-2">+93</div>
+                <div className="text-white/70">Calls Generated</div>
               </div>
-              <div className="text-center">
-                <div className="text-5xl font-bold text-purple-400 mb-2">2,100</div>
-                <div className="text-white/70">SMS Messages Sent</div>
+              <div className="glass-container rounded-2xl p-6 bg-slate-900/50 border border-purple-500/20 text-center">
+                <div className="text-5xl font-bold text-purple-400 mb-2">+5</div>
+                <div className="text-white/70">Apartments Sold</div>
               </div>
-              <div className="text-center">
-                <div className="text-5xl font-bold text-orange-400 mb-2">67%</div>
-                <div className="text-white/70">SMS Response Rate</div>
+              <div className="glass-container rounded-2xl p-6 bg-slate-900/50 border border-orange-500/20 text-center">
+                <div className="text-5xl font-bold text-orange-400 mb-2">+78%</div>
+                <div className="text-white/70">Lead Conversion</div>
               </div>
             </div>
             

@@ -33,19 +33,23 @@ const NordicRefrigeration = () => {
                 </h1>
                 
                 <p className="text-xl text-white/80 mb-8 leading-relaxed">
-                  We implemented comprehensive SMS marketing campaigns for all signed up leads, automating customer communication and streamlining the sales process with AI-powered responses that dramatically reduced manual work and response times.
+                  We integrated AI into their customer conversations through SMS marketing, enabling them to respond to customers within seconds instead of days, dramatically improving their lead processing and conversion rates.
                 </p>
                 
-                <div className="flex items-center gap-6 mb-8">
-                  <div className="flex items-center gap-2">
-                    <Snowflake className="w-5 h-5 text-blue-400" />
-                    <span className="text-2xl font-bold text-white">95%</span>
-                    <span className="text-white/70">Manual Work Reduction</span>
+                <div className="grid grid-cols-2 gap-6 mb-8">
+                  <div className="glass-container rounded-xl p-4 bg-slate-900/50 border border-blue-500/20">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Snowflake className="w-5 h-5 text-blue-400" />
+                      <span className="text-2xl font-bold text-white">-90%</span>
+                    </div>
+                    <span className="text-white/70 text-sm">Work Reduction (Hours)</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Clock className="w-5 h-5 text-green-400" />
-                    <span className="text-2xl font-bold text-white">98%</span>
-                    <span className="text-white/70">Faster Response Time</span>
+                  <div className="glass-container rounded-xl p-4 bg-slate-900/50 border border-green-500/20">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Clock className="w-5 h-5 text-green-400" />
+                      <span className="text-2xl font-bold text-white">2.3s</span>
+                    </div>
+                    <span className="text-white/70 text-sm">Average Response Time</span>
                   </div>
                 </div>
               </div>
@@ -72,20 +76,20 @@ const NordicRefrigeration = () => {
                   The <span className="text-blue-400">Challenge</span>
                 </h2>
                 <p className="text-lg text-white/80 mb-6 leading-relaxed">
-                  Nordic Refrigeration Solutions was struggling with manual lead management and slow response times. Their sales team was overwhelmed with hundreds of signed-up leads, leading to missed opportunities and poor customer experience.
+                  Nordic Refrigeration Solutions was struggling with lead processing and customer communication. Before our intervention, it could take days to get back to customers, and they were losing many prospects in the process due to delayed responses and poor follow-up systems.
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-white/80">Manual lead follow-up processes taking hours</span>
+                    <span className="text-white/80">Days-long response times causing customer loss</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-white/80">Average response time of 24+ hours</span>
+                    <span className="text-white/80">Manual lead processing taking hours per customer</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-white/80">Low conversion rates due to delayed responses</span>
+                    <span className="text-white/80">Poor lead nurturing leading to lost opportunities</span>
                   </li>
                 </ul>
               </div>
@@ -110,7 +114,7 @@ const NordicRefrigeration = () => {
                 Our <span className="text-blue-400">Solution</span>
               </h2>
               <p className="text-xl text-white/70 max-w-3xl mx-auto">
-                We implemented an AI-powered SMS marketing system that automated lead communication, reduced manual work by 95%, and decreased response times by 98% through intelligent automated responses.
+                We integrated AI into their customer conversations through SMS marketing, enabling instant responses and automated lead processing that transformed their customer communication from days to seconds.
               </p>
             </div>
             
@@ -129,9 +133,9 @@ const NordicRefrigeration = () => {
                 <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Zap className="w-8 h-8 text-green-400" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">AI Responses</h3>
+                <h3 className="text-xl font-bold text-white mb-3">AI Integration</h3>
                 <p className="text-white/70">
-                  AI-powered instant responses to customer inquiries, reducing response time from 24 hours to under 30 seconds.
+                  Integrated AI into customer conversations to provide instant, intelligent responses that help answer customer questions within seconds instead of days.
                 </p>
               </div>
               
@@ -155,22 +159,25 @@ const NordicRefrigeration = () => {
               <h2 className="text-4xl font-bold text-white mb-6">
                 The <span className="text-blue-400">Results</span>
               </h2>
+              <p className="text-xl text-white/70 max-w-3xl mx-auto">
+                Within the first 3 months, these metrics show the improvements in lead processing only, demonstrating the power of AI-integrated customer communication.
+              </p>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="text-5xl font-bold text-blue-400 mb-2">95%</div>
-                <div className="text-white/70">Manual Work Reduction</div>
+              <div className="glass-container rounded-2xl p-6 bg-slate-900/50 border border-blue-500/20 text-center">
+                <div className="text-5xl font-bold text-blue-400 mb-2">-90%</div>
+                <div className="text-white/70">Work Reduction (In hours)</div>
               </div>
-              <div className="text-center">
+              <div className="glass-container rounded-2xl p-6 bg-slate-900/50 border border-green-500/20 text-center">
                 <div className="text-5xl font-bold text-green-400 mb-2">98%</div>
-                <div className="text-white/70">Faster Response Time</div>
+                <div className="text-white/70">Faster Response Time to customers</div>
               </div>
-              <div className="text-center">
-                <div className="text-5xl font-bold text-purple-400 mb-2">340%</div>
+              <div className="glass-container rounded-2xl p-6 bg-slate-900/50 border border-purple-500/20 text-center">
+                <div className="text-5xl font-bold text-purple-400 mb-2">63%</div>
                 <div className="text-white/70">More Deals Closed</div>
               </div>
-              <div className="text-center">
+              <div className="glass-container rounded-2xl p-6 bg-slate-900/50 border border-orange-500/20 text-center">
                 <div className="text-5xl font-bold text-orange-400 mb-2">2.3s</div>
                 <div className="text-white/70">Average Response Time</div>
               </div>
