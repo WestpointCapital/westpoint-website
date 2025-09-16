@@ -34,11 +34,11 @@ const Testimonials = () => {
       rating: 5
     },
     {
-      name: "David Kim",
-      role: "CEO",
-      company: "StartupTech Inc",
-      image: sarahImage, // Reusing image for now
-      content: "Westpoint Capital's strategic insights helped us scale from startup to enterprise-level operations in just 18 months.",
+      name: "Gert S.",
+      role: "Owner",
+      company: "Danbolig Vejle",
+      image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/gert.png",
+      content: "As a real estate business, we needed a way to stay connected with our clients throughout their property journey. Westpoint Capital's SMS marketing platform has been a game-changer for us. We can now send timely updates about property viewings, market insights, and personalized recommendations directly to our customers' phones. The response rates are incredible - our clients appreciate the instant communication, and we've seen a 35% increase in client engagement since implementing their SMS solution. It's transformed how we nurture relationships in the real estate market.",
       rating: 5
     },
     {
