@@ -40,8 +40,8 @@ const HeroSection = () => {
             </h1>
 
             {/* Subtitle */}
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
-              For over 6 years, we've been running complete SMS and email campaigns for brands of all sizes. Our team handles everything from strategy, copy, design, targeting, and optimization - so you don't have to, leveraging AI since the launch of ChatGPT, combining cutting-edge automation with real human expertise to deliver campaigns that perform at scale.
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
+              For 6+ years, we've managed end-to-end SMS and email campaigns for brands of all sizes—covering strategy, copy, design, targeting, and optimization. By combining AI with human expertise, we deliver scalable campaigns that perform.
             </p>
 
             {/* CTA Buttons */}
