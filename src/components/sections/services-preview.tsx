@@ -6,13 +6,13 @@ const ServicesPreview = () => {
   const services = [
     {
       icon: <Mail className="w-8 h-8" />,
-      title: "EMAIL & SMS Software",
+      title: "Reengage customers",
       description: "AI-powered messaging platform that automates customer communication, follow-ups, and campaigns across email and SMS channels.",
       features: ["Automated follow-ups", "Campaign management", "Real-time messaging"]
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "Automation Tools",
+      title: "Automated followup",
       description: "Streamline operations and eliminate manual processes with intelligent workflow automation.",
       features: ["Process optimization", "Workflow automation", "Integration services"]
     },

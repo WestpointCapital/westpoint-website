@@ -40,7 +40,7 @@ const HeroSection = () => {
             </h1>
 
             {/* Subtitle */}
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-200 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
               For 6+ years, we've managed end-to-end SMS and email campaigns for brands of all sizes—covering strategy, copy, design, targeting, and optimization. By combining AI with human expertise, we deliver scalable campaigns that perform.
             </p>
 
