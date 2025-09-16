@@ -7,10 +7,20 @@ import { Handshake, Globe, TrendingUp, Users, CheckCircle, ArrowRight, DollarSig
 import DarkVeil from '../components/DarkVeil';
 import { useState } from 'react';
 import { sendPartnershipForm, PartnershipFormData } from '../utils/emailService';
+import Notification from '../components/ui/notification';
 
 const Partners = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [notification, setNotification] = useState<{
+    message: string;
+    type: 'success' | 'error';
+    isVisible: boolean;
+  }>({
+    message: '',
+    type: 'success',
+    isVisible: false
+  });
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -31,17 +41,30 @@ const Partners = () => {
       
       if (success) {
         setIsSubmitted(true);
+        setNotification({
+          message: 'Application submitted successfully!',
+          type: 'success',
+          isVisible: true
+        });
         // Reset form after 3 seconds
         setTimeout(() => {
           setIsSubmitted(false);
           (e.target as HTMLFormElement).reset();
         }, 3000);
       } else {
-        alert('Failed to send application. Please try again or contact us directly at contact@westpoint.capital');
+        setNotification({
+          message: 'Failed to send application. Please try again.',
+          type: 'error',
+          isVisible: true
+        });
       }
     } catch (error) {
       console.error('Form submission error:', error);
-      alert('Failed to send application. Please try again or contact us directly at contact@westpoint.capital');
+      setNotification({
+        message: 'Failed to send application. Please try again.',
+        type: 'error',
+        isVisible: true
+      });
     } finally {
       setIsSubmitting(false);
     }
@@ -344,6 +367,13 @@ const Partners = () => {
 
       </main>
       <Footer />
+      
+      <Notification
+        message={notification.message}
+        type={notification.type}
+        isVisible={notification.isVisible}
+        onClose={() => setNotification(prev => ({ ...prev, isVisible: false }))}
+      />
     </div>
   );
 };

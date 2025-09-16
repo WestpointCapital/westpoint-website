@@ -4,10 +4,20 @@ import { Textarea } from '../ui/textarea';
 import { ArrowRight, Mail, Phone } from 'lucide-react';
 import { useState } from 'react';
 import { sendContactForm, ContactFormData } from '../../utils/emailService';
+import Notification from '../ui/notification';
 
 const ContactCTA = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [notification, setNotification] = useState<{
+    message: string;
+    type: 'success' | 'error';
+    isVisible: boolean;
+  }>({
+    message: '',
+    type: 'success',
+    isVisible: false
+  });
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -27,17 +37,30 @@ const ContactCTA = () => {
       
       if (success) {
         setIsSubmitted(true);
+        setNotification({
+          message: 'Form submitted successfully!',
+          type: 'success',
+          isVisible: true
+        });
         // Reset form after 3 seconds
         setTimeout(() => {
           setIsSubmitted(false);
           (e.target as HTMLFormElement).reset();
         }, 3000);
       } else {
-        alert('Failed to send message. Please try again or contact us directly at contact@westpoint.capital');
+        setNotification({
+          message: 'Failed to send message. Please try again.',
+          type: 'error',
+          isVisible: true
+        });
       }
     } catch (error) {
       console.error('Form submission error:', error);
-      alert('Failed to send message. Please try again or contact us directly at contact@westpoint.capital');
+      setNotification({
+        message: 'Failed to send message. Please try again.',
+        type: 'error',
+        isVisible: true
+      });
     } finally {
       setIsSubmitting(false);
     }
@@ -128,6 +151,13 @@ const ContactCTA = () => {
           </div>
         </div>
       </div>
+      
+      <Notification
+        message={notification.message}
+        type={notification.type}
+        isVisible={notification.isVisible}
+        onClose={() => setNotification(prev => ({ ...prev, isVisible: false }))}
+      />
     </section>
   );
 };
