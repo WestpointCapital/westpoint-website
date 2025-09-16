@@ -42,11 +42,11 @@ const Testimonials = () => {
       rating: 5
     },
     {
-      name: "Lisa Wang",
-      role: "CFO", 
-      company: "Manufacturing Solutions",
-      image: emmaImage, // Reusing image for now
-      content: "The ROI analysis and financial optimization tools exceeded our expectations, saving us millions annually.",
+      name: "Pernille A.",
+      role: "Owner of",
+      company: "Proudstone",
+      image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Skaermbillede_2023-06-20_kl._18.28.28_720x.png",
+      content: "Running a jewelry business online, I needed a way to connect personally with my customers beyond just selling products. Westpoint Capital's email and SMS marketing platform has been transformative for Proudstone. The personalized outreach campaigns make each customer feel truly seen and valued. We can send tailored messages about new collections, care instructions, and even birthday reminders. Our customers love the personal touch - they often tell us how much they appreciate receiving messages that feel like they're coming from a friend, not just a business. This personal approach has increased our online sales by 45% and created a loyal community of customers who feel genuinely connected to our brand.",
       rating: 5
     }
   ];
