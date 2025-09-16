@@ -95,7 +95,7 @@ const NordicRefrigeration = () => {
               </div>
               <div className="relative">
                 <img 
-                  src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/nrs1.png" 
+                  src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/nordic-refrigeration.jpg" 
                   alt="Nordic Refrigeration Project Overview" 
                   className="w-full h-[400px] object-cover rounded-2xl shadow-2xl"
                   style={{ objectPosition: 'center center' }}
