@@ -30,18 +30,18 @@ const HeroSection = () => {
             <div className="inline-flex items-center gap-2 glass-container rounded-full px-4 py-2 mb-8">
               <Sparkles className="w-4 h-4 text-white" />
               <span className="text-sm font-medium text-white">
-                AI-Powered SMS & Email Marketing Platform
+                AI-Powered SMS & Email Marketing Team
               </span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight text-white/90">
-            Your SMS & Email Marketing Team
+              Your inhouse SMS & Email Marketing team - Powered by AI
             </h1>
 
             {/* Subtitle */}
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
-            For 6+ years, we’ve run end-to-end SMS and email campaigns for brands of all sizes. From strategy to optimization, we handle it all. Leveraging AI since ChatGPT’s launch, we combine cutting-edge automation with human expertise to deliver results at scale.
+              For over 6 years, we've been running complete SMS and email campaigns for brands of all sizes. Our team handles everything from strategy, copy, design, targeting, and optimization - so you don't have to, leveraging AI since the launch of ChatGPT, combining cutting-edge automation with real human expertise to deliver campaigns that perform at scale.
             </p>
 
             {/* CTA Buttons */}
@@ -52,7 +52,7 @@ const HeroSection = () => {
                 className="px-8 py-4 text-lg"
                 onClick={() => setIsCalModalOpen(true)}
               >
-                Get Your Platform Demo
+                Get a free strategy call
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </div>
@@ -73,6 +73,7 @@ const HeroSection = () => {
       
       {/* Cal.com Modal */}
       <CalModal isOpen={isCalModalOpen} onClose={() => setIsCalModalOpen(false)} />
+
     </>
   );
 };
