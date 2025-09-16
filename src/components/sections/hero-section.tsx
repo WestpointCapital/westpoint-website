@@ -1,8 +1,12 @@
 import { Button } from '../ui/button';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import SilkR3F from '../effects/SilkR3F';
+import CalModal from '../CalModal';
+import { useState } from 'react';
 
 const HeroSection = () => {
+  const [isCalModalOpen, setIsCalModalOpen] = useState(false);
+  
   return (
     <>
       <section className="relative min-h-screen flex items-center justify-center pt-20 pb-32 bg-slate-900">
@@ -46,6 +50,7 @@ const HeroSection = () => {
                 variant="hero" 
                 size="lg" 
                 className="px-8 py-4 text-lg"
+                onClick={() => setIsCalModalOpen(true)}
               >
                 Get Your Platform Demo
                 <ArrowRight className="w-5 h-5 ml-2" />
@@ -65,6 +70,9 @@ const HeroSection = () => {
           />
         </div>
       </div>
+      
+      {/* Cal.com Modal */}
+      <CalModal isOpen={isCalModalOpen} onClose={() => setIsCalModalOpen(false)} />
     </>
   );
 };

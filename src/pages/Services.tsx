@@ -122,12 +122,8 @@ const Services = () => {
               At Westpoint Capital, we help businesses unlock growth by combining AI, automation, and digital strategy. Instead of offering one-off tools, we design solutions that work together — giving you smarter systems, stronger customer connections, and scalable results.
             </p>
 
-            {/* Call-to-Action Buttons */}
-            <div className="relative z-40 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-6 sm:mb-8">
-              <Button variant="outline" size="lg" className="bg-transparent border-white/20 text-white hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto">
-                <div className="w-4 h-4 border-l-2 border-t-2 border-b-2 border-white transform rotate-45 mr-3"></div>
-                Watch Demo
-              </Button>
+            {/* Call-to-Action Button */}
+            <div className="relative z-40 flex justify-center items-center mb-6 sm:mb-8">
               <Button 
                 size="lg" 
                 className="bg-blue-400 hover:bg-blue-500 text-white px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"

@@ -26,11 +26,11 @@ const Testimonials = () => {
       rating: 5
     },
     {
-      name: "Emma Rodriguez",
-      role: "Head of Digital Innovation",
-      company: "Financial Services Group",
-      image: emmaImage,
-      content: "Their chatbot solution handles 85% of our customer inquiries automatically, allowing our team to focus on complex cases that truly need human expertise.",
+      name: "Refrigeration Group",
+      role: "Owners of",
+      company: "Nordic Refrigeration Solutions",
+      image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/NRS-billede-e1641558732467.webp",
+      content: "We used to struggle with managing and nurturing leads effectively. Our sales team was overwhelmed with manual follow-ups and we were losing potential customers in the process. Since implementing Westpoint Capital's SMS and email marketing platform, we've seen an instant 40% increase in revenue. The automated lead nurturing sequences ensure no opportunity falls through the cracks, and our conversion rates have improved dramatically.",
       rating: 5
     },
     {
