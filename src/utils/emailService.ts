@@ -2,7 +2,11 @@ import { Resend } from 'resend';
 
 // Get API key with fallback
 const getResendApiKey = () => {
-  return process.env.REACT_APP_RESEND_API_KEY || process.env.RESEND_API_KEY || '';
+  const apiKey = process.env.REACT_APP_RESEND_API_KEY || process.env.RESEND_API_KEY || '';
+  console.log('Resend API Key found:', apiKey ? 'Yes' : 'No');
+  console.log('REACT_APP_RESEND_API_KEY:', process.env.REACT_APP_RESEND_API_KEY ? 'Set' : 'Not set');
+  console.log('RESEND_API_KEY:', process.env.RESEND_API_KEY ? 'Set' : 'Not set');
+  return apiKey;
 };
 
 // Initialize Resend only when needed
@@ -64,7 +68,8 @@ ${data.message}
 This email was sent from the Westpoint website contact form.
     `;
 
-    const { error } = await resend.emails.send({
+    console.log('Sending email via Resend...');
+    const { data: emailData, error } = await resend.emails.send({
       from: `${EMAIL_CONFIG.FROM_NAME} <${EMAIL_CONFIG.FROM_EMAIL}>`,
       to: [EMAIL_CONFIG.TO_EMAIL],
       subject: EMAIL_CONFIG.SUBJECT,
@@ -93,6 +98,7 @@ This email was sent from the Westpoint website contact form.
       return false;
     }
 
+    console.log('Email sent successfully:', emailData);
     return true;
   } catch (error) {
     console.error('Error sending contact form:', error);
@@ -126,7 +132,8 @@ ${data.message}
 This email was sent from the Westpoint website partnership form.
     `;
 
-    const { error } = await resend.emails.send({
+    console.log('Sending partnership email via Resend...');
+    const { data: emailData, error } = await resend.emails.send({
       from: `${EMAIL_CONFIG.FROM_NAME} <${EMAIL_CONFIG.FROM_EMAIL}>`,
       to: [EMAIL_CONFIG.TO_EMAIL],
       subject: EMAIL_CONFIG.SUBJECT,
@@ -156,6 +163,7 @@ This email was sent from the Westpoint website partnership form.
       return false;
     }
 
+    console.log('Partnership email sent successfully:', emailData);
     return true;
   } catch (error) {
     console.error('Error sending partnership form:', error);
