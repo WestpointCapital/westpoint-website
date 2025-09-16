@@ -88,26 +88,13 @@ const Validation = () => {
                   </li>
                 </ul>
               </div>
-              <div className="glass-container rounded-2xl p-8 bg-slate-900/50 border border-purple-500/20">
-                <h3 className="text-2xl font-bold text-white mb-4">Project Overview</h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between">
-                    <span className="text-white/70">Industry:</span>
-                    <span className="text-white">Healthcare</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-white/70">Duration:</span>
-                    <span className="text-white">5 months</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-white/70">Team Size:</span>
-                    <span className="text-white">7 specialists</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-white/70">Budget:</span>
-                    <span className="text-white">$90,000</span>
-                  </div>
-                </div>
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/7a7a5c28-6b77-4460-95c1-697247c62b74.png" 
+                  alt="Validation Project Overview" 
+                  className="w-full h-[400px] object-cover rounded-2xl shadow-2xl"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl"></div>
               </div>
             </div>
           </div>

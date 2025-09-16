@@ -98,26 +98,13 @@ const VillaVieResidences = () => {
                   </li>
                 </ul>
               </div>
-              <div className="glass-container rounded-2xl p-8 bg-slate-900/50 border border-blue-500/20">
-                <h3 className="text-2xl font-bold text-white mb-4">Project Overview</h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between">
-                    <span className="text-white/70">Industry:</span>
-                    <span className="text-white">Residential Cruise</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-white/70">Duration:</span>
-                    <span className="text-white">6 months</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-white/70">Team Size:</span>
-                    <span className="text-white">5 specialists</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-white/70">Target:</span>
-                    <span className="text-white">Lead Reactivation</span>
-                  </div>
-                </div>
+              <div className="relative">
+                <img 
+                  src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Screenshot%202025-09-16%20at%2013.45.14.png" 
+                  alt="Villa Vie Residences Project Overview" 
+                  className="w-full h-[400px] object-cover rounded-2xl shadow-2xl"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl"></div>
               </div>
             </div>
           </div>
