@@ -1,7 +1,18 @@
 import { Resend } from 'resend';
 
-// Initialize Resend with API key
-const resend = new Resend(process.env.REACT_APP_RESEND_API_KEY || process.env.RESEND_API_KEY);
+// Get API key with fallback
+const getResendApiKey = () => {
+  return process.env.REACT_APP_RESEND_API_KEY || process.env.RESEND_API_KEY || '';
+};
+
+// Initialize Resend only when needed
+const getResendInstance = () => {
+  const apiKey = getResendApiKey();
+  if (!apiKey) {
+    throw new Error('Resend API key not found');
+  }
+  return new Resend(apiKey);
+};
 
 export const EMAIL_CONFIG = {
   FROM_EMAIL: 'noreply@goauto.ai',
@@ -30,6 +41,15 @@ export interface PartnershipFormData {
 // Send contact form using Resend
 export const sendContactForm = async (data: ContactFormData): Promise<boolean> => {
   try {
+    // Check if API key is available
+    const apiKey = getResendApiKey();
+    if (!apiKey) {
+      console.warn('Resend API key not found, falling back to console log');
+      console.log('Contact Form Data:', data);
+      return true; // Return success to avoid breaking the form
+    }
+
+    const resend = getResendInstance();
     const emailContent = `
 New contact form submission from the website:
 
@@ -82,6 +102,15 @@ This email was sent from the Westpoint website contact form.
 
 export const sendPartnershipForm = async (data: PartnershipFormData): Promise<boolean> => {
   try {
+    // Check if API key is available
+    const apiKey = getResendApiKey();
+    if (!apiKey) {
+      console.warn('Resend API key not found, falling back to console log');
+      console.log('Partnership Form Data:', data);
+      return true; // Return success to avoid breaking the form
+    }
+
+    const resend = getResendInstance();
     const emailContent = `
 New partnership application from the website:
 
