@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const CasesSectionV2 = () => {
   const cases = [
     {
-      title: "Villa Vie Residences",
-      description: "We helped them reactivate old and new leads and gain more than 5 million+ revenue.",
+      title: "Villa Vie Residences - Cruise Ship",
+      description: "We helped this luxury cruise ship company reactivate old and new leads and gain more than 5 million+ revenue through targeted SMS and email marketing campaigns.",
       image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Odyssey-No-Grain-3k-scaled%20%281%29.webp",
       services: ["SMS Marketing", "Email Marketing"]
     },
@@ -41,11 +41,11 @@ const CasesSectionV2 = () => {
 
         {/* Cases Grid */}
         <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 overflow-visible py-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 overflow-visible py-4">
             {cases.map((caseItem, index) => (
               <div 
                 key={index}
-                className="relative rounded-3xl overflow-hidden h-[500px] w-full"
+                className="relative rounded-3xl overflow-hidden h-[600px] w-full"
               >
                 {/* Full Background Image */}
                 <div 
@@ -68,10 +68,10 @@ const CasesSectionV2 = () => {
                 {/* Glass Overlay - Bottom 70% */}
                 <div className="absolute bottom-0 left-0 right-0 h-[70%] glass-card-overlay text-white flex flex-col justify-end p-6 gap-4 py-0 overflow-visible">
                   <div>
-                    <h3 className="text-xl font-bold mb-3">
+                    <h3 className="text-2xl font-bold mb-4">
                       {caseItem.title}
                     </h3>
-                    <p className="text-white/70 text-sm leading-relaxed mb-3">
+                    <p className="text-white/80 text-base leading-relaxed mb-4">
                       {caseItem.description}
                     </p>
                   </div>
@@ -83,7 +83,7 @@ const CasesSectionV2 = () => {
                           index === 1 ? "/cases/bedreklima" : 
                           index === 2 ? "/cases/nikolinehus" : 
                           "/cases/nordic-refrigeration"}
-                      className="w-full py-3 px-4 bg-white text-black font-medium rounded-full hover:bg-gray-100 transition-colors duration-200 inline-block text-center"
+                      className="w-full py-4 px-6 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-colors duration-200 inline-block text-center text-lg"
                       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                     >
                       Read more
