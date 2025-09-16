@@ -33,19 +33,23 @@ const VillaVieResidences = () => {
                 </h1>
                 
                 <p className="text-xl text-white/80 mb-8 leading-relaxed">
-                  We helped Villa Vie Residences reactivate old and new leads, resulting in over 5 million+ in revenue through strategic SMS marketing campaigns.
+                  We helped Villa Vie Residences reactivate their lead database and generate over $2M+ in revenue from sold cabins, while booking 50+ consultation calls within the first 2 months through strategic SMS marketing campaigns.
                 </p>
                 
-                <div className="flex items-center gap-6 mb-8">
-                  <div className="flex items-center gap-2">
-                    <DollarSign className="w-5 h-5 text-green-400" />
-                    <span className="text-2xl font-bold text-white">5M+</span>
-                    <span className="text-white/70">Revenue</span>
+                <div className="grid grid-cols-2 gap-6 mb-8">
+                  <div className="glass-container rounded-xl p-4 bg-slate-900/50 border border-green-500/20">
+                    <div className="flex items-center gap-2 mb-2">
+                      <DollarSign className="w-5 h-5 text-green-400" />
+                      <span className="text-2xl font-bold text-white">$2M+</span>
+                    </div>
+                    <span className="text-white/70 text-sm">Revenue from Sold Cabins</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <TrendingUp className="w-5 h-5 text-blue-400" />
-                    <span className="text-2xl font-bold text-white">300%</span>
-                    <span className="text-white/70">ROI</span>
+                  <div className="glass-container rounded-xl p-4 bg-slate-900/50 border border-blue-500/20">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Users className="w-5 h-5 text-blue-400" />
+                      <span className="text-2xl font-bold text-white">50+</span>
+                    </div>
+                    <span className="text-white/70 text-sm">Calls Booked (2 months)</span>
                   </div>
                 </div>
               </div>
@@ -68,11 +72,17 @@ const VillaVieResidences = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-4xl font-bold text-white mb-6">
-                  The <span className="text-blue-400">Challenge</span>
+                  About <span className="text-blue-400">Villa Vie Residences</span>
                 </h2>
                 <p className="text-lg text-white/80 mb-6 leading-relaxed">
-                  Villa Vie Residences was struggling with lead conversion and had a large database of cold leads that weren't generating revenue. They needed a way to reactivate these leads and convert them into sales.
+                  Villa Vie Residences offers a revolutionary residential cruise experience, allowing people to live aboard luxury ships while traveling to 425+ destinations across 147 countries every 3.5 years. They provide three main residency options: ownership starting at $129,999, rental segments from 35-120 days, and their new "Golden Passport" lifetime residency program starting at $99,999. With over 7,000 community members, they've created a unique lifestyle where residents can work, live, and explore the world from their home at sea.
                 </p>
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold text-white mb-4">The Challenge</h3>
+                  <p className="text-lg text-white/80 mb-6 leading-relaxed">
+                    Villa Vie Residences was struggling with lead conversion and had a large database of cold leads that weren't generating revenue. They needed a way to reactivate these leads and convert them into sales for their unique residential cruise experience.
+                  </p>
+                </div>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
@@ -93,7 +103,7 @@ const VillaVieResidences = () => {
                 <div className="space-y-4">
                   <div className="flex justify-between">
                     <span className="text-white/70">Industry:</span>
-                    <span className="text-white">Real Estate</span>
+                    <span className="text-white">Residential Cruise</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-white/70">Duration:</span>
@@ -104,8 +114,8 @@ const VillaVieResidences = () => {
                     <span className="text-white">5 specialists</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-white/70">Budget:</span>
-                    <span className="text-white">$50,000</span>
+                    <span className="text-white/70">Target:</span>
+                    <span className="text-white">Lead Reactivation</span>
                   </div>
                 </div>
               </div>
@@ -169,19 +179,19 @@ const VillaVieResidences = () => {
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="text-5xl font-bold text-blue-400 mb-2">5M+</div>
-                <div className="text-white/70">Total Revenue Generated</div>
+              <div className="glass-container rounded-2xl p-6 bg-slate-900/50 border border-green-500/20 text-center">
+                <div className="text-5xl font-bold text-green-400 mb-2">$2M+</div>
+                <div className="text-white/70">Revenue from Sold Cabins</div>
               </div>
-              <div className="text-center">
-                <div className="text-5xl font-bold text-green-400 mb-2">300%</div>
-                <div className="text-white/70">ROI Increase</div>
+              <div className="glass-container rounded-2xl p-6 bg-slate-900/50 border border-blue-500/20 text-center">
+                <div className="text-5xl font-bold text-blue-400 mb-2">50+</div>
+                <div className="text-white/70">Calls Booked (2 months)</div>
               </div>
-              <div className="text-center">
+              <div className="glass-container rounded-2xl p-6 bg-slate-900/50 border border-purple-500/20 text-center">
                 <div className="text-5xl font-bold text-purple-400 mb-2">85%</div>
                 <div className="text-white/70">Lead Reactivation Rate</div>
               </div>
-              <div className="text-center">
+              <div className="glass-container rounded-2xl p-6 bg-slate-900/50 border border-orange-500/20 text-center">
                 <div className="text-5xl font-bold text-orange-400 mb-2">6x</div>
                 <div className="text-white/70">Conversion Improvement</div>
               </div>
