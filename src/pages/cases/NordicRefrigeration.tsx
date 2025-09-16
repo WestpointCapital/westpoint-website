@@ -2,6 +2,7 @@ import Navigation from '../../components/ui/navigation';
 import Footer from '../../components/sections/footer';
 import { ArrowLeft, CheckCircle, TrendingUp, Users, DollarSign, Snowflake, MessageSquare, Clock, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import CalButton from '../../components/CalButton';
 
 const NordicRefrigeration = () => {
   return (

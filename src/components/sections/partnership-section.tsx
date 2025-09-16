@@ -40,7 +40,7 @@ const PartnershipSection = () => {
               help you succeed.
             </p>
             
-            <div className="mb-8">
+            <div className="mb-4">
               <Button size="lg" className="hero-button" asChild>
                 <a href="/partners">Join Our Partner Program</a>
               </Button>
