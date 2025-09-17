@@ -55,7 +55,7 @@ const TermsConditions = () => {
                   <div>
                     <h2 className="text-2xl font-bold text-white mb-4">4. Platform Use and Misuse</h2>
                     <p className="text-white/80 leading-relaxed">
-                      Westpoint Capital provides a platform that enables Clients to use third-party resources, including phone numbers and communication channels. Westpoint Capital is not the provider or owner of the phone numbers used within the platform. Any misuse of the platform, including but not limited to violations of applicable laws, regulations, or malicious intent, is solely the responsibility of the Client. If Westpoint Capital identifies suspicious or unlawful activity, the Client's account may be suspended or terminated immediately without refund.
+                      Westpoint Capital provides a platform that enables Clients to use third-party resources, including phone numbers and communication channels. Westpoint Capital is not the provider or owner of the phone numbers used within the platform. Any misuse of the platform, including but not limited to violations of applicable laws, regulations, or malicious intent, is solely the responsibility of the Client. If Westpoint Capital identifies suspicious or unlawful activity, the Client's account may be suspended or terminated immediately without refund, and reported to authorities.
                     </p>
                   </div>
 
