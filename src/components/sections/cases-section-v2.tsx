@@ -6,7 +6,7 @@ const CasesSectionV2 = () => {
     {
       title: "Villa Vie Residences - Cruise Ship",
       description: "We helped this luxury cruise ship company reactivate old and new leads and gain more than 5 million+ revenue through targeted SMS and email marketing campaigns.",
-      image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Odyssey-No-Grain-3k-scaled%20%281%29.webp",
+      image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Screenshot%202025-09-17%20at%2013.47.33.png",
       services: ["SMS Marketing", "Email Marketing"]
     },
     {
