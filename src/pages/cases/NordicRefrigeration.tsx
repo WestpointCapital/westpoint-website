@@ -244,13 +244,12 @@ const NordicRefrigeration = () => {
               <p className="text-xl text-white/70 mb-8 max-w-2xl mx-auto">
                 Let's discuss how we can help you reduce manual work and dramatically improve your response times with AI-powered SMS marketing.
               </p>
-              <Link 
-                to="/partners" 
+              <CalButton 
                 className="inline-flex items-center gap-2 px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-full transition-colors duration-200"
               >
                 Get Started Today
                 <ArrowLeft className="w-4 h-4 rotate-180" />
-              </Link>
+              </CalButton>
             </div>
           </div>
         </section>

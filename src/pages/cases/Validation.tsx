@@ -2,6 +2,7 @@ import Navigation from '../../components/ui/navigation';
 import Footer from '../../components/sections/footer';
 import { ArrowLeft, CheckCircle, TrendingUp, Users, DollarSign, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import CalButton from '../../components/CalButton';
 
 const Validation = () => {
   return (
@@ -186,13 +187,12 @@ const Validation = () => {
               <p className="text-xl text-white/70 mb-8 max-w-2xl mx-auto">
                 Let's discuss how we can help automate your validation framework and improve compliance tracking.
               </p>
-              <Link 
-                to="/partners" 
+              <CalButton 
                 className="inline-flex items-center gap-2 px-8 py-4 bg-purple-500 hover:bg-purple-600 text-white font-medium rounded-full transition-colors duration-200"
               >
                 Get Started Today
                 <ArrowLeft className="w-4 h-4 rotate-180" />
-              </Link>
+              </CalButton>
             </div>
           </div>
         </section>
