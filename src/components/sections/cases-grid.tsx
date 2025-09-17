@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const CasesGrid = () => {
   const caseItems = [{
-    image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Odyssey-No-Grain-3k-scaled%20%281%29.webp",
+    image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Screenshot%202025-09-17%20at%2013.47.33.png",
     title: "Villa Vie Residences",
     services: ["SMS Marketing", "Email Marketing"],
     description: "We helped them reactivate old and new leads and gain more than 5 million+ revenue.",
