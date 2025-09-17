@@ -64,9 +64,6 @@ const CasesSectionV2 = () => {
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
                   Our <span className="text-blue-400">success stories</span>
                 </h2>
-                <p className="text-xl text-white/70 leading-relaxed mb-8">
-                  Discover how we've helped businesses across industries achieve remarkable growth through strategic SMS and email marketing campaigns. From luxury cruise ships to HVAC companies, our proven strategies deliver measurable results.
-                </p>
               </div>
               
               {/* Current Case Info */}
@@ -79,28 +76,16 @@ const CasesSectionV2 = () => {
                     {cases[currentSlide].description}
                   </p>
                 </div>
-                
-                {/* Services Tags */}
-                <div className="flex flex-wrap gap-2">
-                  {cases[currentSlide].services.map((service, serviceIndex) => (
-                    <span 
-                      key={serviceIndex}
-                      className="px-4 py-2 bg-blue-500/20 text-blue-400 text-sm font-semibold rounded-full border border-blue-500/30"
-                    >
-                      {service}
-                    </span>
-                  ))}
-                </div>
               </div>
 
-              {/* CTA Button */}
+              {/* View All Cases Button */}
               <div className="pt-4">
                 <Link 
-                  to={cases[currentSlide].link}
+                  to="/cases"
                   className="inline-flex items-center gap-2 px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full transition-colors duration-200"
                   onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 >
-                  Read Full Case Study
+                  View All Cases
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </div>
@@ -124,6 +109,18 @@ const CasesSectionV2 = () => {
                         className="absolute inset-0 w-full h-full bg-cover bg-center" 
                         style={{ backgroundImage: `url(${caseItem.image})` }}
                       />
+                      
+                      {/* Services Tags - Top Right Corner */}
+                      <div className="absolute top-4 right-4 flex flex-wrap gap-2 justify-end">
+                        {caseItem.services.map((service, serviceIndex) => (
+                          <span 
+                            key={serviceIndex}
+                            className="px-4 py-2 bg-white/90 text-slate-800 text-sm font-semibold rounded-full shadow-lg backdrop-blur-sm"
+                          >
+                            {service}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -162,17 +159,6 @@ const CasesSectionV2 = () => {
           </div>
         </div>
 
-        {/* View All Cases Button */}
-        <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8 mt-8">
-          <Link 
-            to="/cases" 
-            className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          >
-            <span>View All Cases</span>
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
       </div>
     </section>
   );
