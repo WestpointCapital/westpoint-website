@@ -11,6 +11,16 @@ const Services = () => {
   const services = [
     {
       icon: null, // No icon for this service
+      title: "Email & SMS marketing",
+      description: "We help you reach the right people at the right time with AI-enhanced SMS and email marketing. Instead of sending generic campaigns, we design personalized, automated marketing journeys that increase engagement and drive measurable ROI.",
+      examples: [
+        "Automated SMS/email campaigns",
+        "AI-driven content personalization",
+        "Re-engagement & retention workflows"
+      ]
+    },
+    {
+      icon: null, // No icon for this service
       title: "Intelligent Automation & Custom SaaS",
       description: "We build custom SaaS platforms and AI workflows designed around your business — not the other way around. Whether it's streamlining operations, integrating data across systems, or creating a platform that supports your growth, our solutions are tailored to solve your most pressing challenges.",
       examples: [
@@ -27,16 +37,6 @@ const Services = () => {
         "AI customer service for websites & apps",
         "Virtual sales assistants",
         "Lead qualification and nurturing flows"
-      ]
-    },
-    {
-      icon: null, // No icon for this service
-      title: "Data-Driven Marketing Systems",
-      description: "We help you reach the right people at the right time with AI-enhanced SMS and email marketing. Instead of sending generic campaigns, we design personalized, automated marketing journeys that increase engagement and drive measurable ROI.",
-      examples: [
-        "Automated SMS/email campaigns",
-        "AI-driven content personalization",
-        "Re-engagement & retention workflows"
       ]
     },
     {
@@ -123,7 +123,7 @@ const Services = () => {
             </p>
 
             {/* Call-to-Action Button */}
-            <div className="relative z-40 flex justify-center items-center mb-6 sm:mb-8">
+            <div className="relative z-40 flex justify-center items-center mb-4 sm:mb-6">
               <Button 
                 size="lg" 
                 className="bg-blue-400 hover:bg-blue-500 text-white px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
@@ -220,16 +220,16 @@ const Services = () => {
                     </div>
 
                     <div className="flex items-center justify-end">
-                      {index === 1 ? (
+                      {index === 0 ? (
                         <Button className="hero-button" asChild>
-                          <a href="/chatbot">
+                          <a href="/sms-email">
                             Learn more
                             <ArrowRight className="ml-2 w-4 h-4" />
                           </a>
                         </Button>
                       ) : index === 2 ? (
                         <Button className="hero-button" asChild>
-                          <a href="/sms-email">
+                          <a href="/chatbot">
                             Learn more
                             <ArrowRight className="ml-2 w-4 h-4" />
                           </a>
