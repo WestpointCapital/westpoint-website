@@ -250,7 +250,7 @@ const Services = () => {
                 <div className="relative">
                   <div className="relative w-full h-[780px] flex items-center justify-center">
                     <img 
-                      src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/glassphone.png" 
+                      src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/heart.png" 
                       alt="Westpoint Capital Service Technology" 
                       className="w-full h-full object-contain"
                     />
