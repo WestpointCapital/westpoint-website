@@ -163,8 +163,8 @@ const SmsEmail = () => {
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
                 <img 
-                  src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Ai-Copilot-SMS-e1752951579701.png" 
-                  alt="Contact Database Management"
+                  src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Lead-Management-SMS-e1752951553555-916x1024%20%281%29.png" 
+                  alt="Lead Management SMS Interface"
                   className="max-w-full h-auto rounded-2xl shadow-2xl"
                 />
               </div>
