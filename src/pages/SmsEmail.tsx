@@ -10,19 +10,73 @@ const SmsEmail = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-24 bg-slate-950">
-        <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-              Your complete <span className="text-blue-400">SMS/Email</span> suite to launch, manage, and convert leads.
-            </h1>
-            <p className="text-xl text-white/70 leading-relaxed mb-8">
-              No credit card required • Free credits included
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="hero-button" asChild>
-                <Link to="/contact">Start For Free</Link>
-              </Button>
+      <section className="relative min-h-screen bg-slate-950 flex items-center justify-center overflow-hidden">
+        {/* Background Animation - Glowing Blue Arc */}
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 w-[800px] h-[400px]">
+            <div className="w-full h-full bg-gradient-to-r from-transparent via-blue-400/30 to-transparent rounded-full blur-3xl animate-pulse"></div>
+          </div>
+        </div>
+
+        <div className="relative z-10 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8 text-center">
+          {/* Glowing Quarter-Circle Arc - Planet Horizon Above Text */}
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1800px] h-[1800px] pointer-events-none z-30 overflow-hidden">
+            <div className="w-full h-full relative overflow-hidden">
+              {/* Quarter-circle mask to show only the top arc */}
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full">
+                {/* Main circle - perfect size */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] border-t-2 border-blue-300 rounded-full blur-sm animate-pulse"></div>
+                {/* Bright outward glow - expanded */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1100px] h-[1100px] border-t border-white/90 rounded-full blur-md animate-pulse"></div>
+                {/* Extended bright flare - more outwards */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1300px] h-[1300px] border-t border-blue-100/85 rounded-full blur-lg animate-pulse"></div>
+                {/* Maximum outward flare */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1500px] h-[1500px] border-t border-blue-200/70 rounded-full blur-xl animate-pulse"></div>
+                {/* Ultra-wide outward flare */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1700px] h-[1700px] border-t border-blue-300/50 rounded-full blur-2xl animate-pulse"></div>
+              </div>
+              {/* Mask to show only the top quarter */}
+              <div className="absolute top-1/2 left-0 w-full h-1/2 bg-slate-950"></div>
+            </div>
+          </div>
+
+          {/* New Feature Banner */}
+          <div className="relative z-40 inline-flex items-center gap-3 bg-slate-800/50 border border-blue-500/20 rounded-full px-4 py-2 mb-8">
+            <span className="bg-blue-400 text-white text-xs px-3 py-1 rounded-full font-medium">New feature</span>
+            <span className="text-white/80 text-sm">Check out our latest SMS/Email solutions</span>
+            <ArrowRight className="w-4 h-4 text-white/60" />
+            <ArrowRight className="w-4 h-4 text-white/60" />
+          </div>
+
+          {/* Main Headline */}
+          <h1 className="relative z-40 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
+            Your complete <span className="text-blue-400">SMS/Email</span> suite to launch, manage, and convert leads.
+          </h1>
+
+          {/* Description */}
+          <p className="relative z-40 text-base sm:text-lg md:text-xl text-white/70 max-w-4xl mx-auto mb-8 sm:mb-12 leading-relaxed">
+            No credit card required • Free credits included
+          </p>
+
+          {/* Call-to-Action Button */}
+          <div className="relative z-40 flex justify-center items-center mb-6 sm:mb-8">
+            <Button 
+              size="lg" 
+              className="bg-blue-400 hover:bg-blue-500 text-white px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
+              asChild
+            >
+              <Link to="/contact">Start For Free</Link>
+            </Button>
+          </div>
+
+          {/* Trusted by Section */}
+          <div className="relative z-40 text-center">
+            <p className="text-white/60 text-sm mb-4 sm:mb-6">Trusted by 500+ companies</p>
+            <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-8 opacity-60">
+              <div className="text-white/40 font-semibold text-sm sm:text-base">Boltshift</div>
+              <div className="text-white/40 font-semibold text-sm sm:text-base">Lightbox</div>
+              <div className="text-white/40 font-semibold text-sm sm:text-base">FeatherDev</div>
+              <div className="text-white/40 font-semibold text-sm sm:text-base">GlobalBank</div>
             </div>
           </div>
         </div>
