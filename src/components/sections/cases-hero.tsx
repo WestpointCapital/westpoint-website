@@ -23,7 +23,7 @@ const CasesHero = () => {
       image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Nicolinehus-Aarhus-Oe.webp",
       title: "CASES",
       name: "NICOLINEHUS APARTMENTS", 
-      description: "Help when develop a software to manage the the apartments avalibility and started email campaigns"
+      description: "Helped develop software to manage apartment availability and launch email campaigns."
     },
     {
       image: "https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/nrs1.png",
