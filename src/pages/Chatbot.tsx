@@ -112,78 +112,29 @@ const Chatbot = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center">
-                  <MessageSquare className="w-6 h-6 text-blue-400" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-white mb-2">Customer Message Analysis</h3>
-                  <p className="text-white/70">AI analyzes the customer's message to understand their intent, urgency, and preferred communication style.</p>
-                </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20 text-center">
+              <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <MessageSquare className="w-8 h-8 text-blue-400" />
               </div>
-              
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center">
-                  <Zap className="w-6 h-6 text-blue-400" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-white mb-2">Smart Routing Decision</h3>
-                  <p className="text-white/70">Based on intent analysis, the system automatically routes to AI assistant or human agent for optimal customer experience.</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center">
-                  <Users className="w-6 h-6 text-blue-400" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-white mb-2">Seamless Handoff</h3>
-                  <p className="text-white/70">If escalation is needed, the conversation seamlessly transfers to a human agent with full context preserved.</p>
-                </div>
-              </div>
+              <h3 className="text-xl font-semibold text-white mb-4">Customer Message Analysis</h3>
+              <p className="text-white/70">AI analyzes the customer's message to understand their intent, urgency, and preferred communication style.</p>
             </div>
-
-            <div className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20">
-              <h4 className="text-lg font-semibold text-white mb-6">Customer Preferences Form</h4>
-              <form className="space-y-6">
-                <div className="space-y-4">
-                  <label className="flex items-center space-x-3 cursor-pointer group">
-                    <input 
-                      type="checkbox" 
-                      className="w-5 h-5 text-blue-500 bg-slate-700 border-slate-600 rounded focus:ring-blue-500 focus:ring-2"
-                      defaultChecked
-                    />
-                    <span className="text-white group-hover:text-blue-300 transition-colors">Prefers AI assistance</span>
-                  </label>
-                  
-                  <label className="flex items-center space-x-3 cursor-pointer group">
-                    <input 
-                      type="checkbox" 
-                      className="w-5 h-5 text-yellow-500 bg-slate-700 border-slate-600 rounded focus:ring-yellow-500 focus:ring-2"
-                    />
-                    <span className="text-white group-hover:text-yellow-300 transition-colors">Complex technical issue</span>
-                  </label>
-                  
-                  <label className="flex items-center space-x-3 cursor-pointer group">
-                    <input 
-                      type="checkbox" 
-                      className="w-5 h-5 text-red-500 bg-slate-700 border-slate-600 rounded focus:ring-red-500 focus:ring-2"
-                    />
-                    <span className="text-white group-hover:text-red-300 transition-colors">Urgent support needed</span>
-                  </label>
-                </div>
-                
-                <div className="pt-4 border-t border-slate-600">
-                  <Button 
-                    type="submit" 
-                    className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200"
-                  >
-                    Save Preferences
-                  </Button>
-                </div>
-              </form>
+            
+            <div className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20 text-center">
+              <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Zap className="w-8 h-8 text-blue-400" />
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-4">Smart Routing Decision</h3>
+              <p className="text-white/70">Based on intent analysis, the system automatically routes to AI assistant or human agent for optimal customer experience.</p>
+            </div>
+            
+            <div className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20 text-center">
+              <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Users className="w-8 h-8 text-blue-400" />
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-4">Seamless Handoff</h3>
+              <p className="text-white/70">If escalation is needed, the conversation seamlessly transfers to a human agent with full context preserved.</p>
             </div>
           </div>
         </div>
@@ -199,12 +150,9 @@ const Chatbot = () => {
             <p className="text-xl text-white/70 mb-8 max-w-2xl mx-auto">
               Start nurturing your customers with super fast, intelligent responses that feel personal and engaging.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <Button size="lg" className="hero-button" asChild>
-                <Link to="/contact">Get Started Today</Link>
-              </Button>
-              <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10" asChild>
-                <Link to="/services">View All Services</Link>
+                <Link to="/contact">Wanna hear more?</Link>
               </Button>
             </div>
           </div>
