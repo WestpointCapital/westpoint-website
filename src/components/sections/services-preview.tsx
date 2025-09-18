@@ -76,7 +76,7 @@ const ServicesPreview = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <img 
-                src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/glassphone.png" 
+                src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/chat-glass.png" 
                 alt="Phone illustration showing SMS and email marketing services"
                 className="max-w-full h-auto"
               />
