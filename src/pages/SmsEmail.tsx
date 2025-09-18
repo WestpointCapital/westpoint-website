@@ -40,12 +40,12 @@ const SmsEmail = () => {
             </div>
           </div>
 
-          {/* Chat Glass Image */}
+          {/* iPhone Mockup Image */}
           <div className="relative z-40 flex justify-center mb-8">
             <img 
-              src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/chat-glass.png" 
-              alt="SMS/Email Chat Interface"
-              className="max-w-full h-auto"
+              src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Iphone%20mockup%20for%20assistant.png" 
+              alt="iPhone mockup for SMS/Email assistant"
+              className="max-w-[45%] h-auto"
             />
           </div>
 
