@@ -77,7 +77,7 @@ const Services = () => {
         <section className="relative min-h-screen bg-slate-950 flex items-center justify-center overflow-hidden">
           {/* Background Animation - Glowing Blue Arc */}
           <div className="absolute inset-0">
-            <div className="absolute top-1/6 left-1/2 transform -translate-x-1/2 w-[800px] h-[400px]">
+            <div className="absolute top-1/8 left-1/2 transform -translate-x-1/2 w-[800px] h-[400px]">
               <div className="w-full h-full bg-gradient-to-r from-transparent via-blue-400/30 to-transparent rounded-full blur-3xl animate-pulse"></div>
             </div>
           </div>
