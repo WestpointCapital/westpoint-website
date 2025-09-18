@@ -31,7 +31,7 @@ const PartnershipSection = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <img 
-                src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/illustration-02.png" 
+                src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Iphone%20mockup%20for%20assistant.png" 
                 alt="AI assistant providing fast customer responses"
                 className="max-w-full h-auto"
               />
