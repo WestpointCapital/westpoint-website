@@ -109,7 +109,6 @@ const Services = () => {
               <span className="bg-blue-400 text-white text-xs px-3 py-1 rounded-full font-medium">New feature</span>
               <span className="text-white/80 text-sm">Check out our latest AI solutions</span>
               <ArrowRight className="w-4 h-4 text-white/60" />
-              <ArrowRight className="w-4 h-4 text-white/60" />
             </div>
 
             {/* Main Headline */}
