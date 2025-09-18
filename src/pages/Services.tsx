@@ -21,22 +21,22 @@ const Services = () => {
     },
     {
       icon: null, // No icon for this service
-      title: "Intelligent Automation & Custom SaaS",
-      description: "We build custom SaaS platforms and AI workflows designed around your business — not the other way around. Whether it's streamlining operations, integrating data across systems, or creating a platform that supports your growth, our solutions are tailored to solve your most pressing challenges.",
-      examples: [
-        "Internal dashboards and CRMs",
-        "Workflow automation with AI",
-        "Bespoke software products"
-      ]
-    },
-    {
-      icon: null, // No icon for this service
       title: "AI-Powered Customer Experiences",
       description: "We transform how your business interacts with customers through AI customer service and assistants. Our solutions don't just answer questions — they qualify leads, nurture relationships, and provide real-time support that feels human, at scale.",
       examples: [
         "AI customer service for websites & apps",
         "Virtual sales assistants",
         "Lead qualification and nurturing flows"
+      ]
+    },
+    {
+      icon: null, // No icon for this service
+      title: "Intelligent Automation & Custom SaaS",
+      description: "We build custom SaaS platforms and AI workflows designed around your business — not the other way around. Whether it's streamlining operations, integrating data across systems, or creating a platform that supports your growth, our solutions are tailored to solve your most pressing challenges.",
+      examples: [
+        "Internal dashboards and CRMs",
+        "Workflow automation with AI",
+        "Bespoke software products"
       ]
     },
     {
@@ -227,19 +227,14 @@ const Services = () => {
                             <ArrowRight className="ml-2 w-4 h-4" />
                           </a>
                         </Button>
-                      ) : index === 2 ? (
+                      ) : index === 1 ? (
                         <Button className="hero-button" asChild>
                           <a href="/chatbot">
                             Learn more
                             <ArrowRight className="ml-2 w-4 h-4" />
                           </a>
                         </Button>
-                      ) : (
-                        <Button className="hero-button">
-                          Learn more
-                          <ArrowRight className="ml-2 w-4 h-4" />
-                        </Button>
-                      )}
+                      ) : null}
                     </div>
                   </div>
                 </div>
