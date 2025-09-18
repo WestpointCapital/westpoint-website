@@ -220,10 +220,19 @@ const Services = () => {
                     </div>
 
                     <div className="flex items-center justify-end">
-                      <Button className="hero-button">
-                        Learn more
-                        <ArrowRight className="ml-2 w-4 h-4" />
-                      </Button>
+                      {index === 1 ? (
+                        <Button className="hero-button" asChild>
+                          <a href="/chatbot">
+                            Learn more
+                            <ArrowRight className="ml-2 w-4 h-4" />
+                          </a>
+                        </Button>
+                      ) : (
+                        <Button className="hero-button">
+                          Learn more
+                          <ArrowRight className="ml-2 w-4 h-4" />
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </div>

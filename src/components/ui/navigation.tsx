@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from './button';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
   const location = useLocation();
 
   // No longer need scroll detection since we're always using glass effect
@@ -12,6 +13,20 @@ const Navigation = () => {
   // Always use white text for better contrast with the glass effect
   const textColorClass = 'text-white';
   const logoColorClass = 'text-white';
+
+  // Close dropdowns when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (isServicesOpen) {
+        setIsServicesOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isServicesOpen]);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center">
@@ -28,12 +43,33 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link 
-              to="/services" 
-              className={`hover:text-gray-300 transition-colors duration-300 ${textColorClass}`}
-            >
-              Services
-            </Link>
+            <div className="relative">
+              <button
+                onClick={() => setIsServicesOpen(!isServicesOpen)}
+                className={`hover:text-gray-300 transition-colors duration-300 ${textColorClass} flex items-center gap-1`}
+              >
+                Services
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              {isServicesOpen && (
+                <div className="absolute top-full left-0 mt-2 w-48 bg-white/95 backdrop-blur-lg border border-white/20 rounded-xl shadow-xl overflow-hidden z-50">
+                  <Link 
+                    to="/services" 
+                    className="block px-4 py-3 text-gray-800 hover:bg-gray-50 transition-colors duration-300"
+                    onClick={() => setIsServicesOpen(false)}
+                  >
+                    All Services
+                  </Link>
+                  <Link 
+                    to="/chatbot" 
+                    className="block px-4 py-3 text-gray-800 hover:bg-gray-50 transition-colors duration-300"
+                    onClick={() => setIsServicesOpen(false)}
+                  >
+                    Chatbot
+                  </Link>
+                </div>
+              )}
+            </div>
             <Link 
               to="/about" 
               className={`hover:text-gray-300 transition-colors duration-300 ${textColorClass}`}
@@ -72,13 +108,25 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 mt-2 bg-white/95 backdrop-blur-lg border border-white/20 rounded-xl shadow-xl overflow-hidden z-50">
             <div className="flex flex-col p-4">
-              <Link 
-                to="/services" 
-                className="text-foreground hover:text-primary transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-gray-50"
-                onClick={() => setIsOpen(false)}
-              >
-                Services
-              </Link>
+              <div className="py-3 px-4">
+                <div className="text-foreground font-medium mb-2">Services</div>
+                <div className="ml-4 space-y-2">
+                  <Link 
+                    to="/services" 
+                    className="block text-foreground hover:text-primary transition-colors duration-300 py-2 px-4 rounded-lg hover:bg-gray-50"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    All Services
+                  </Link>
+                  <Link 
+                    to="/chatbot" 
+                    className="block text-foreground hover:text-primary transition-colors duration-300 py-2 px-4 rounded-lg hover:bg-gray-50"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Chatbot
+                  </Link>
+                </div>
+              </div>
               <Link 
                 to="/about" 
                 className="text-foreground hover:text-primary transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-gray-50"

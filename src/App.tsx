@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Cases from "./pages/Cases";
 import Partners from "./pages/Partners";
 import Contact from "./pages/Contact";
+import Chatbot from "./pages/Chatbot";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
 import NotFound from "./pages/NotFound";
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/cases" element={<Cases />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/chatbot" element={<Chatbot />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-conditions" element={<TermsConditions />} />
           <Route path="/cases/villa-vie-residences" element={<VillaVieResidences />} />
