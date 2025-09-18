@@ -227,6 +227,13 @@ const Services = () => {
                             <ArrowRight className="ml-2 w-4 h-4" />
                           </a>
                         </Button>
+                      ) : index === 2 ? (
+                        <Button className="hero-button" asChild>
+                          <a href="/sms-email">
+                            Learn more
+                            <ArrowRight className="ml-2 w-4 h-4" />
+                          </a>
+                        </Button>
                       ) : (
                         <Button className="hero-button">
                           Learn more

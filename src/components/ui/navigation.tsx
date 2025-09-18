@@ -67,6 +67,13 @@ const Navigation = () => {
                   >
                     Chatbot
                   </Link>
+                  <Link 
+                    to="/sms-email" 
+                    className="block px-4 py-3 text-gray-800 hover:bg-gray-50 transition-colors duration-300"
+                    onClick={() => setIsServicesOpen(false)}
+                  >
+                    SMS & Email
+                  </Link>
                 </div>
               )}
             </div>
@@ -124,6 +131,13 @@ const Navigation = () => {
                     onClick={() => setIsOpen(false)}
                   >
                     Chatbot
+                  </Link>
+                  <Link 
+                    to="/sms-email" 
+                    className="block text-foreground hover:text-primary transition-colors duration-300 py-2 px-4 rounded-lg hover:bg-gray-50"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    SMS & Email
                   </Link>
                 </div>
               </div>
