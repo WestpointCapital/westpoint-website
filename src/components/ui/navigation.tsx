@@ -17,7 +17,10 @@ const Navigation = () => {
   // Close dropdowns when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (isServicesOpen) {
+      const target = event.target as Element;
+      const servicesDropdown = document.querySelector('[data-services-dropdown]');
+      
+      if (isServicesOpen && servicesDropdown && !servicesDropdown.contains(target)) {
         setIsServicesOpen(false);
       }
     };
@@ -45,14 +48,21 @@ const Navigation = () => {
           <div className="hidden md:flex items-center space-x-8">
             <div className="relative">
               <button
-                onClick={() => setIsServicesOpen(!isServicesOpen)}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setIsServicesOpen(!isServicesOpen);
+                }}
                 className={`hover:text-gray-300 transition-colors duration-300 ${textColorClass} flex items-center gap-1`}
               >
                 Services
                 <ChevronDown className="w-4 h-4" />
               </button>
               {isServicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-white/95 backdrop-blur-lg border border-white/20 rounded-xl shadow-xl overflow-hidden z-50">
+                <div 
+                  data-services-dropdown 
+                  className="absolute top-full left-0 mt-2 w-48 bg-white/95 backdrop-blur-lg border border-white/20 rounded-xl shadow-xl overflow-hidden z-50"
+                  onClick={(e) => e.stopPropagation()}
+                >
                   <Link 
                     to="/services" 
                     className="block px-4 py-3 text-gray-800 hover:bg-gray-50 transition-colors duration-300"
