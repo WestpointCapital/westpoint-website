@@ -39,8 +39,8 @@ const Chatbot = () => {
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
                 <img 
-                  src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/illustration-02.png" 
-                  alt="AI assistant providing fast customer responses"
+                  src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Iphone%20mockup%20for%20assistant.png" 
+                  alt="iPhone mockup for AI assistant"
                   className="max-w-full h-auto"
                 />
               </div>
