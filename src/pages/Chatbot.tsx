@@ -146,21 +146,44 @@ const Chatbot = () => {
             </div>
 
             <div className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20">
-              <h4 className="text-lg font-semibold text-white mb-4">Customer Preferences</h4>
-              <div className="space-y-4">
-                <div className="flex items-center justify-between p-3 bg-blue-500/10 rounded-lg">
-                  <span className="text-white">Prefers AI assistance</span>
-                  <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+              <h4 className="text-lg font-semibold text-white mb-6">Customer Preferences Form</h4>
+              <form className="space-y-6">
+                <div className="space-y-4">
+                  <label className="flex items-center space-x-3 cursor-pointer group">
+                    <input 
+                      type="checkbox" 
+                      className="w-5 h-5 text-blue-500 bg-slate-700 border-slate-600 rounded focus:ring-blue-500 focus:ring-2"
+                      defaultChecked
+                    />
+                    <span className="text-white group-hover:text-blue-300 transition-colors">Prefers AI assistance</span>
+                  </label>
+                  
+                  <label className="flex items-center space-x-3 cursor-pointer group">
+                    <input 
+                      type="checkbox" 
+                      className="w-5 h-5 text-yellow-500 bg-slate-700 border-slate-600 rounded focus:ring-yellow-500 focus:ring-2"
+                    />
+                    <span className="text-white group-hover:text-yellow-300 transition-colors">Complex technical issue</span>
+                  </label>
+                  
+                  <label className="flex items-center space-x-3 cursor-pointer group">
+                    <input 
+                      type="checkbox" 
+                      className="w-5 h-5 text-red-500 bg-slate-700 border-slate-600 rounded focus:ring-red-500 focus:ring-2"
+                    />
+                    <span className="text-white group-hover:text-red-300 transition-colors">Urgent support needed</span>
+                  </label>
                 </div>
-                <div className="flex items-center justify-between p-3 bg-blue-500/10 rounded-lg">
-                  <span className="text-white">Complex technical issue</span>
-                  <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                
+                <div className="pt-4 border-t border-slate-600">
+                  <Button 
+                    type="submit" 
+                    className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200"
+                  >
+                    Save Preferences
+                  </Button>
                 </div>
-                <div className="flex items-center justify-between p-3 bg-blue-500/10 rounded-lg">
-                  <span className="text-white">Urgent support needed</span>
-                  <div className="w-3 h-3 bg-red-400 rounded-full"></div>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
