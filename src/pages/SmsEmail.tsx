@@ -40,12 +40,13 @@ const SmsEmail = () => {
             </div>
           </div>
 
-          {/* New Feature Banner */}
-          <div className="relative z-40 inline-flex items-center gap-3 bg-slate-800/50 border border-blue-500/20 rounded-full px-4 py-2 mb-8">
-            <span className="bg-blue-400 text-white text-xs px-3 py-1 rounded-full font-medium">New feature</span>
-            <span className="text-white/80 text-sm">Check out our latest SMS/Email solutions</span>
-            <ArrowRight className="w-4 h-4 text-white/60" />
-            <ArrowRight className="w-4 h-4 text-white/60" />
+          {/* Chat Glass Image */}
+          <div className="relative z-40 flex justify-center mb-8">
+            <img 
+              src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/chat-glass.png" 
+              alt="SMS/Email Chat Interface"
+              className="max-w-full h-auto"
+            />
           </div>
 
           {/* Main Headline */}
