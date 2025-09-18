@@ -45,7 +45,7 @@ const SmsEmail = () => {
             <img 
               src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/chat-glass.png" 
               alt="SMS/Email Chat Interface"
-              className="max-w-full h-auto"
+              className="max-w-[45%] h-auto"
             />
           </div>
 
