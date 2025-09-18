@@ -45,7 +45,7 @@ const SmsEmail = () => {
             <img 
               src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/chat-glass.png" 
               alt="SMS/Email Chat Interface"
-              className="max-w-[45%] h-auto"
+              className="max-w-[27%] h-auto"
             />
           </div>
 
@@ -63,7 +63,7 @@ const SmsEmail = () => {
           <div className="relative z-40 flex justify-center items-center mb-6 sm:mb-8">
             <Button 
               size="lg" 
-              className="bg-blue-400 hover:bg-blue-500 text-white px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
+              className="bg-blue-400 hover:bg-blue-500 text-white px-8 sm:px-12 py-4 sm:py-6 w-full sm:w-auto"
               asChild
             >
               <Link to="/contact">Start For Free</Link>
