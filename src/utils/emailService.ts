@@ -2,14 +2,14 @@ import { Resend } from 'resend';
 
 // Get API key with fallback
 const getResendApiKey = () => {
-  const apiKey = process.env.REACT_APP_RESEND_API_KEY || process.env.RESEND_API_KEY || '';
+  const apiKey = import.meta.env.VITE_RESEND_API_KEY || import.meta.env.RESEND_API_KEY || '';
   
   console.log('=== Environment Variables Debug ===');
-  console.log('All env vars starting with REACT_APP_:', Object.keys(process.env).filter(key => key.startsWith('REACT_APP_')));
-  console.log('REACT_APP_RESEND_API_KEY:', process.env.REACT_APP_RESEND_API_KEY ? 'Set' : 'Not set');
-  console.log('REACT_APP_DEFAULT_FROM_EMAIL:', process.env.REACT_APP_DEFAULT_FROM_EMAIL ? 'Set' : 'Not set');
-  console.log('REACT_APP_DEFAULT_FROM_NAME:', process.env.REACT_APP_DEFAULT_FROM_NAME ? 'Set' : 'Not set');
-  console.log('RESEND_API_KEY:', process.env.RESEND_API_KEY ? 'Set' : 'Not set');
+  console.log('All env vars starting with VITE_:', Object.keys(import.meta.env).filter(key => key.startsWith('VITE_')));
+  console.log('VITE_RESEND_API_KEY:', import.meta.env.VITE_RESEND_API_KEY ? 'Set' : 'Not set');
+  console.log('VITE_DEFAULT_FROM_EMAIL:', import.meta.env.VITE_DEFAULT_FROM_EMAIL ? 'Set' : 'Not set');
+  console.log('VITE_DEFAULT_FROM_NAME:', import.meta.env.VITE_DEFAULT_FROM_NAME ? 'Set' : 'Not set');
+  console.log('RESEND_API_KEY:', import.meta.env.RESEND_API_KEY ? 'Set' : 'Not set');
   console.log('Final API Key:', apiKey ? `${apiKey.substring(0, 10)}...` : 'Not found');
   console.log('===================================');
   
@@ -26,8 +26,8 @@ const getResendInstance = () => {
 };
 
 export const EMAIL_CONFIG = {
-  FROM_EMAIL: process.env.REACT_APP_DEFAULT_FROM_EMAIL || 'noreply@goauto.ai',
-  FROM_NAME: process.env.REACT_APP_DEFAULT_FROM_NAME || 'Westpoint Form',
+  FROM_EMAIL: import.meta.env.VITE_DEFAULT_FROM_EMAIL || 'noreply@goauto.ai',
+  FROM_NAME: import.meta.env.VITE_DEFAULT_FROM_NAME || 'Westpoint Form',
   TO_EMAIL: 'contact@westpoint.capital',
   SUBJECT: 'Website Form Submission'
 };
