@@ -337,9 +337,9 @@ const Partners = () => {
                   <div>
                     <label className="block text-sm font-medium mb-2 text-white">Partnership Type</label>
                     <select name="partnershipType" className="w-full p-3 glass-container border-none rounded-lg bg-slate-800/50 text-white">
-                      <option>Technology Partner</option>
-                      <option>Reseller Partner</option>
-                      <option>Implementation Partner</option>
+                      <option value="Technology Partner" className="bg-slate-800 text-white">Technology Partner</option>
+                      <option value="Reseller Partner" className="bg-slate-800 text-white">Reseller Partner</option>
+                      <option value="Implementation Partner" className="bg-slate-800 text-white">Implementation Partner</option>
                     </select>
                   </div>
                   <div>
