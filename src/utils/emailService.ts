@@ -1,32 +1,8 @@
-import { Resend } from 'resend';
-
-// Get API key with fallback
-const getResendApiKey = () => {
-  const apiKey = import.meta.env.VITE_RESEND_API_KEY || import.meta.env.RESEND_API_KEY || '';
-  
-  console.log('=== Environment Variables Debug ===');
-  console.log('All env vars starting with VITE_:', Object.keys(import.meta.env).filter(key => key.startsWith('VITE_')));
-  console.log('VITE_RESEND_API_KEY:', import.meta.env.VITE_RESEND_API_KEY ? 'Set' : 'Not set');
-  console.log('VITE_DEFAULT_FROM_EMAIL:', import.meta.env.VITE_DEFAULT_FROM_EMAIL ? 'Set' : 'Not set');
-  console.log('VITE_DEFAULT_FROM_NAME:', import.meta.env.VITE_DEFAULT_FROM_NAME ? 'Set' : 'Not set');
-  console.log('RESEND_API_KEY:', import.meta.env.RESEND_API_KEY ? 'Set' : 'Not set');
-  console.log('Final API Key:', apiKey ? `${apiKey.substring(0, 10)}...` : 'Not found');
-  console.log('===================================');
-  
-  return apiKey;
-};
-
-// Initialize Resend only when needed
-const getResendInstance = () => {
-  const apiKey = getResendApiKey();
-  if (!apiKey) {
-    throw new Error('Resend API key not found');
-  }
-  return new Resend(apiKey);
-};
+// API endpoints for email sending
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '';
 
 export const EMAIL_CONFIG = {
-  FROM_EMAIL: import.meta.env.VITE_DEFAULT_FROM_EMAIL || 'noreply@goauto.ai',
+  FROM_EMAIL: import.meta.env.VITE_DEFAULT_FROM_EMAIL || 'noreply@westpoint.capital',
   FROM_NAME: import.meta.env.VITE_DEFAULT_FROM_NAME || 'Westpoint Form',
   TO_EMAIL: 'contact@westpoint.capital',
   SUBJECT: 'Website Form Submission'
@@ -49,63 +25,27 @@ export interface PartnershipFormData {
   message: string;
 }
 
-// Send contact form using Resend
+// Send contact form via Vercel API
 export const sendContactForm = async (data: ContactFormData): Promise<boolean> => {
   try {
-    // Check if API key is available
-    const apiKey = getResendApiKey();
-    if (!apiKey) {
-      console.warn('Resend API key not found, falling back to console log');
-      console.log('Contact Form Data:', data);
-      return true; // Return success to avoid breaking the form
-    }
-
-    const resend = getResendInstance();
-    const emailContent = `
-New contact form submission from the website:
-
-Name: ${data.firstName} ${data.lastName}
-Email: ${data.email}
-Company: ${data.company}
-
-Message:
-${data.message}
-
----
-This email was sent from the Westpoint website contact form.
-    `;
-
-    console.log('Sending email via Resend...');
-    const { data: emailData, error } = await resend.emails.send({
-      from: `${EMAIL_CONFIG.FROM_NAME} <${EMAIL_CONFIG.FROM_EMAIL}>`,
-      to: [EMAIL_CONFIG.TO_EMAIL],
-      subject: EMAIL_CONFIG.SUBJECT,
-      text: emailContent,
-      html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #333;">New Contact Form Submission</h2>
-          <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <p><strong>Name:</strong> ${data.firstName} ${data.lastName}</p>
-            <p><strong>Email:</strong> ${data.email}</p>
-            <p><strong>Company:</strong> ${data.company}</p>
-            <p><strong>Message:</strong></p>
-            <div style="background: white; padding: 15px; border-radius: 4px; margin-top: 10px;">
-              ${data.message.replace(/\n/g, '<br>')}
-            </div>
-          </div>
-          <p style="color: #666; font-size: 12px;">
-            This email was sent from the Westpoint website contact form.
-          </p>
-        </div>
-      `
+    console.log('Sending contact form via API...');
+    
+    const response = await fetch(`${API_BASE_URL}/api/send-contact`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
     });
 
-    if (error) {
-      console.error('Resend error:', error);
+    if (!response.ok) {
+      const errorData = await response.json();
+      console.error('API error:', errorData);
       return false;
     }
 
-    console.log('Email sent successfully:', emailData);
+    const result = await response.json();
+    console.log('Contact form sent successfully:', result);
     return true;
   } catch (error) {
     console.error('Error sending contact form:', error);
@@ -113,64 +53,27 @@ This email was sent from the Westpoint website contact form.
   }
 };
 
+// Send partnership form via Vercel API
 export const sendPartnershipForm = async (data: PartnershipFormData): Promise<boolean> => {
   try {
-    // Check if API key is available
-    const apiKey = getResendApiKey();
-    if (!apiKey) {
-      console.warn('Resend API key not found, falling back to console log');
-      console.log('Partnership Form Data:', data);
-      return true; // Return success to avoid breaking the form
-    }
-
-    const resend = getResendInstance();
-    const emailContent = `
-New partnership application from the website:
-
-Name: ${data.firstName} ${data.lastName}
-Email: ${data.email}
-Company: ${data.company}
-Partnership Type: ${data.partnershipType}
-
-Message:
-${data.message}
-
----
-This email was sent from the Westpoint website partnership form.
-    `;
-
-    console.log('Sending partnership email via Resend...');
-    const { data: emailData, error } = await resend.emails.send({
-      from: `${EMAIL_CONFIG.FROM_NAME} <${EMAIL_CONFIG.FROM_EMAIL}>`,
-      to: [EMAIL_CONFIG.TO_EMAIL],
-      subject: EMAIL_CONFIG.SUBJECT,
-      text: emailContent,
-      html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #333;">New Partnership Application</h2>
-          <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <p><strong>Name:</strong> ${data.firstName} ${data.lastName}</p>
-            <p><strong>Email:</strong> ${data.email}</p>
-            <p><strong>Company:</strong> ${data.company}</p>
-            <p><strong>Partnership Type:</strong> ${data.partnershipType}</p>
-            <p><strong>Message:</strong></p>
-            <div style="background: white; padding: 15px; border-radius: 4px; margin-top: 10px;">
-              ${data.message.replace(/\n/g, '<br>')}
-            </div>
-          </div>
-          <p style="color: #666; font-size: 12px;">
-            This email was sent from the Westpoint website partnership form.
-          </p>
-        </div>
-      `
+    console.log('Sending partnership form via API...');
+    
+    const response = await fetch(`${API_BASE_URL}/api/send-partnership`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
     });
 
-    if (error) {
-      console.error('Resend error:', error);
+    if (!response.ok) {
+      const errorData = await response.json();
+      console.error('API error:', errorData);
       return false;
     }
 
-    console.log('Partnership email sent successfully:', emailData);
+    const result = await response.json();
+    console.log('Partnership form sent successfully:', result);
     return true;
   } catch (error) {
     console.error('Error sending partnership form:', error);
