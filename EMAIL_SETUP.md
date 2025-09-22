@@ -13,6 +13,8 @@ TO_EMAIL=contact@westpoint.capital
 EMAIL_SUBJECT=Website Form Submission
 ```
 
+**Important:** The backend uses `RESEND_API_KEY` (not `VITE_RESEND_API_KEY`). The `VITE_` prefix is only for frontend environment variables.
+
 ### For Local Development (Optional)
 Create a `.env.local` file in the project root:
 
