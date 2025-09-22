@@ -1,19 +1,38 @@
-import { Resend } from 'resend';
+const { Resend } = require('resend');
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function handler(req, res) {
+  // Set CORS headers
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+  // Handle preflight requests
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
+  }
+
   // Only allow POST requests
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
   try {
+    console.log('Contact form request received:', req.body);
+    
     const { firstName, lastName, email, company, message } = req.body;
 
     // Validate required fields
     if (!firstName || !lastName || !email || !message) {
+      console.log('Missing required fields:', { firstName, lastName, email, message });
       return res.status(400).json({ error: 'Missing required fields' });
+    }
+
+    // Check if Resend API key is available
+    if (!process.env.RESEND_API_KEY) {
+      console.error('RESEND_API_KEY not found in environment variables');
+      return res.status(500).json({ error: 'Email service not configured' });
     }
 
     const emailContent = `

@@ -39,12 +39,24 @@ export const sendContactForm = async (data: ContactFormData): Promise<boolean> =
     });
 
     if (!response.ok) {
-      const errorData = await response.json();
+      let errorData;
+      try {
+        errorData = await response.json();
+      } catch (e) {
+        errorData = { error: `HTTP ${response.status}: ${response.statusText}` };
+      }
       console.error('API error:', errorData);
       return false;
     }
 
-    const result = await response.json();
+    let result;
+    try {
+      result = await response.json();
+    } catch (e) {
+      console.error('Failed to parse response as JSON:', e);
+      return false;
+    }
+    
     console.log('Contact form sent successfully:', result);
     return true;
   } catch (error) {
@@ -67,12 +79,24 @@ export const sendPartnershipForm = async (data: PartnershipFormData): Promise<bo
     });
 
     if (!response.ok) {
-      const errorData = await response.json();
+      let errorData;
+      try {
+        errorData = await response.json();
+      } catch (e) {
+        errorData = { error: `HTTP ${response.status}: ${response.statusText}` };
+      }
       console.error('API error:', errorData);
       return false;
     }
 
-    const result = await response.json();
+    let result;
+    try {
+      result = await response.json();
+    } catch (e) {
+      console.error('Failed to parse response as JSON:', e);
+      return false;
+    }
+    
     console.log('Partnership form sent successfully:', result);
     return true;
   } catch (error) {
