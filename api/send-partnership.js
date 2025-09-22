@@ -51,7 +51,7 @@ This email was sent from the Westpoint website partnership form.
     `;
 
     const { data, error } = await resend.emails.send({
-      from: `${process.env.FROM_NAME || 'Westpoint Form'} <${process.env.FROM_EMAIL || 'noreply@westpoint.capital'}>`,
+      from: `${process.env.FROM_NAME || 'Westpoint Form'} <${process.env.FROM_EMAIL || 'noreply@goauto.ai'}>`,
       to: [process.env.TO_EMAIL || 'contact@westpoint.capital'],
       subject: process.env.EMAIL_SUBJECT || 'Partnership Application',
       text: emailContent,
