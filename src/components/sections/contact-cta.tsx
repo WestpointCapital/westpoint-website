@@ -1,6 +1,7 @@
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
+import { PhoneInput } from '../ui/phone-input';
 import { ArrowRight, Mail, Phone } from 'lucide-react';
 import { useState } from 'react';
 import { sendContactForm, ContactFormData } from '../../utils/emailService';
@@ -28,6 +29,7 @@ const ContactCTA = () => {
       firstName: formData.get('firstName') as string,
       lastName: formData.get('lastName') as string,
       email: formData.get('email') as string,
+      phone: formData.get('phone') as string,
       company: formData.get('company') as string,
       message: formData.get('message') as string,
     };
@@ -125,6 +127,14 @@ const ContactCTA = () => {
               <div>
                 <label className="block text-sm font-medium mb-2 text-white">Company Email</label>
                 <Input name="email" type="email" placeholder="john@company.com" className="bg-slate-800/50 border-slate-700 text-white placeholder:text-white/50" />
+              </div>
+              <div>
+                <label className="block text-sm font-medium mb-2 text-white">Phone Number (Optional)</label>
+                <PhoneInput 
+                  name="phone" 
+                  placeholder="Enter your phone number"
+                  className="bg-slate-800/50 border-slate-700 text-white placeholder:text-white/50"
+                />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2 text-white">Company Name</label>

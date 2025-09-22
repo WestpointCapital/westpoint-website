@@ -21,7 +21,7 @@ export default async function handler(req, res) {
   try {
     console.log('Contact form request received:', req.body);
     
-    const { firstName, lastName, email, company, message } = req.body;
+    const { firstName, lastName, email, phone, company, message } = req.body;
 
     // Validate required fields
     if (!firstName || !lastName || !email || !message) {
@@ -40,6 +40,7 @@ New contact form submission from the website:
 
 Name: ${firstName} ${lastName}
 Email: ${email}
+Phone: ${phone || 'Not provided'}
 Company: ${company || 'Not provided'}
 
 Message:
@@ -60,6 +61,7 @@ This email was sent from the Westpoint website contact form.
           <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <p><strong>Name:</strong> ${firstName} ${lastName}</p>
             <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
             <p><strong>Company:</strong> ${company || 'Not provided'}</p>
             <p><strong>Message:</strong></p>
             <div style="background: white; padding: 15px; border-radius: 4px; margin-top: 10px;">
