@@ -70,7 +70,7 @@ const PartnershipSection = () => {
               <img 
                 src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/convo.png" 
                 alt="Personalized customer communication"
-                className="max-w-full h-auto rounded-xl shadow-lg"
+                className="max-w-full h-auto rounded-xl shadow-lg scale-60"
               />
             </div>
           </div>
