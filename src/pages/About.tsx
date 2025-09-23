@@ -127,7 +127,7 @@ const About = () => {
           <div className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] mx-auto px-6 sm:px-8">
             <div className="text-center mb-8 sm:mb-12 lg:mb-16">
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
-                Partnered with most of the <span className="text-blue-400">top people at each industry</span>
+                <span className="text-blue-400">Meet the management team</span>
               </h2>
               <p className="text-base sm:text-lg md:text-xl text-white/70 max-w-3xl mx-auto">
                 Meet the core team behind our solutions, supported by trusted partners and freelancers worldwide.
