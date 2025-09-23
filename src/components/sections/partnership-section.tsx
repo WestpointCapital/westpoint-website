@@ -6,7 +6,18 @@ const PartnershipSection = () => {
       <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
-          {/* Left Side - Text Content */}
+          {/* Left Side - Illustration */}
+          <div className="flex justify-center lg:justify-start">
+            <div className="relative">
+              <img 
+                src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Iphone%20mockup%20for%20assistant.png" 
+                alt="AI assistant providing fast customer responses"
+                className="max-w-full h-auto scale-70"
+              />
+            </div>
+          </div>
+
+          {/* Right Side - Text Content */}
           <div className="space-y-8 text-center lg:text-left max-w-lg">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
@@ -22,19 +33,45 @@ const PartnershipSection = () => {
             {/* CTA Button */}
             <div className="pt-4 flex justify-center lg:justify-start">
               <Button size="lg" className="hero-button" asChild>
-                <a href="/contact">Get Started Today</a>
+                <a href="/contact">Start for free today</a>
               </Button>
             </div>
           </div>
+        </div>
 
-          {/* Right Side - Illustration */}
-          <div className="flex justify-center lg:justify-end">
+        {/* New Personalized Communication Section */}
+        <div className="grid lg:grid-cols-2 gap-16 items-center mt-24">
+          
+          {/* Left Side - Illustration */}
+          <div className="flex justify-center lg:justify-start">
             <div className="relative">
               <img 
-                src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Iphone%20mockup%20for%20assistant.png" 
-                alt="AI assistant providing fast customer responses"
+                src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/ChatGPT%20Image%20Sep%2023%2C%202025%2C%2012_39_11%20PM.png" 
+                alt="Personalized customer communication"
                 className="max-w-full h-auto"
               />
+            </div>
+          </div>
+
+          {/* Right Side - Text Content */}
+          <div className="space-y-8 text-center lg:text-left max-w-lg">
+            <div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+                Make every customer feel <span className="text-blue-400">special and seen</span>
+              </h2>
+              <p className="text-xl text-white/70 leading-relaxed mb-8">
+                While most brands send generic, impersonal messages with no-reply addresses, 
+                we focus on creating meaningful 2-way conversations. Our platform ensures every 
+                customer interaction feels personal, engaging, and truly human - making your 
+                customers feel valued and heard.
+              </p>
+            </div>
+
+            {/* CTA Button */}
+            <div className="pt-4 flex justify-center lg:justify-start">
+              <Button size="lg" className="hero-button" asChild>
+                <a href="/contact">Start for free today</a>
+              </Button>
             </div>
           </div>
         </div>
