@@ -42,18 +42,7 @@ const PartnershipSection = () => {
         {/* New Personalized Communication Section */}
         <div className="grid lg:grid-cols-2 gap-16 items-center mt-24">
           
-          {/* Left Side - Illustration */}
-          <div className="flex justify-center lg:justify-start">
-            <div className="relative">
-              <img 
-                src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/ChatGPT%20Image%20Sep%2023%2C%202025%2C%2012_39_11%20PM.png" 
-                alt="Personalized customer communication"
-                className="max-w-full h-auto"
-              />
-            </div>
-          </div>
-
-          {/* Right Side - Text Content */}
+          {/* Left Side - Text Content */}
           <div className="space-y-8 text-center lg:text-left max-w-lg">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
@@ -72,6 +61,17 @@ const PartnershipSection = () => {
               <Button size="lg" className="hero-button" asChild>
                 <a href="/contact">Start for free today</a>
               </Button>
+            </div>
+          </div>
+
+          {/* Right Side - Illustration */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative">
+              <img 
+                src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/convo.png" 
+                alt="Personalized customer communication"
+                className="max-w-full h-auto rounded-xl shadow-lg"
+              />
             </div>
           </div>
         </div>
