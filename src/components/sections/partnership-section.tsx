@@ -71,7 +71,7 @@ const PartnershipSection = () => {
                 src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/convo.png" 
                 alt="Personalized customer communication"
                 className="max-w-full h-auto rounded-xl shadow-lg"
-                style={{ transform: 'scale(0.12)' }}
+                style={{ transform: 'scale(0.4)' }}
               />
             </div>
           </div>
