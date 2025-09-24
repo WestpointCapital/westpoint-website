@@ -46,12 +46,12 @@ const PartnershipSection = () => {
           <div className="grid lg:grid-cols-2 gap-2 items-center">
             
             {/* Left Side - Text Content */}
-            <div className="space-y-0 text-center lg:text-left max-w-lg ml-8">
+            <div className="space-y-5 text-center lg:text-left max-w-lg ml-8">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-1 text-white">
+                <h2 className="text-3xl md:text-4xl font-bold mb-5 text-white">
                   Make every customer feel <span className="text-blue-400">special and seen</span>
                 </h2>
-                <p className="text-lg text-white/70 leading-tight mb-1">
+                <p className="text-lg text-white/70 leading-tight mb-5">
                   While most brands send generic, impersonal messages with no-reply addresses, 
                   we focus on creating meaningful 2-way conversations. Our platform ensures every 
                   customer interaction feels personal, engaging, and truly human - making your 
@@ -60,7 +60,7 @@ const PartnershipSection = () => {
               </div>
 
               {/* CTA Button */}
-              <div className="pt-0 flex justify-center lg:justify-start">
+              <div className="pt-5 flex justify-center lg:justify-start">
                 <Button size="sm" className="hero-button" asChild>
                   <a href="/contact">Start for free today</a>
                 </Button>
