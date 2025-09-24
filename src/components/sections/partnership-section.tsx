@@ -42,7 +42,7 @@ const PartnershipSection = () => {
         </div>
 
         {/* New Personalized Communication Section */}
-        <div className="glass-container rounded-2xl p-8 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20 mt-24">
+        <div className="glass-container rounded-2xl p-6 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20 mt-24">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             
             {/* Left Side - Text Content */}
