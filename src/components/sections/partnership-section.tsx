@@ -4,7 +4,7 @@ const PartnershipSection = () => {
   return (
     <section className="py-24 bg-slate-950">
       <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
-        <div className="glass-container rounded-2xl p-12 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20">
+        <div className="glass-container rounded-2xl p-8 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             
             {/* Left Side - Text Content */}
@@ -42,39 +42,41 @@ const PartnershipSection = () => {
         </div>
 
         {/* New Personalized Communication Section */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mt-24">
-          
-          {/* Left Side - Text Content */}
-          <div className="space-y-8 text-center lg:text-left max-w-lg">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-                Make every customer feel <span className="text-blue-400">special and seen</span>
-              </h2>
-              <p className="text-xl text-white/70 leading-relaxed mb-8">
-                While most brands send generic, impersonal messages with no-reply addresses, 
-                we focus on creating meaningful 2-way conversations. Our platform ensures every 
-                customer interaction feels personal, engaging, and truly human - making your 
-                customers feel valued and heard.
-              </p>
+        <div className="glass-container rounded-2xl p-8 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20 mt-24">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            
+            {/* Left Side - Text Content */}
+            <div className="space-y-8 text-center lg:text-left max-w-lg">
+              <div>
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+                  Make every customer feel <span className="text-blue-400">special and seen</span>
+                </h2>
+                <p className="text-xl text-white/70 leading-relaxed mb-8">
+                  While most brands send generic, impersonal messages with no-reply addresses, 
+                  we focus on creating meaningful 2-way conversations. Our platform ensures every 
+                  customer interaction feels personal, engaging, and truly human - making your 
+                  customers feel valued and heard.
+                </p>
+              </div>
+
+              {/* CTA Button */}
+              <div className="pt-4 flex justify-center lg:justify-start">
+                <Button size="lg" className="hero-button" asChild>
+                  <a href="/contact">Start for free today</a>
+                </Button>
+              </div>
             </div>
 
-            {/* CTA Button */}
-            <div className="pt-4 flex justify-center lg:justify-start">
-              <Button size="lg" className="hero-button" asChild>
-                <a href="/contact">Start for free today</a>
-              </Button>
-            </div>
-          </div>
-
-          {/* Right Side - Illustration */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              <img 
-                src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/convo.png" 
-                alt="Personalized customer communication"
-                className="max-w-full h-auto rounded-xl shadow-lg"
-                style={{ transform: 'scale(0.6)' }}
-              />
+            {/* Right Side - Illustration */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                <img 
+                  src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/convo.png" 
+                  alt="Personalized customer communication"
+                  className="max-w-full h-auto rounded-xl shadow-lg"
+                  style={{ transform: 'scale(0.6)' }}
+                />
+              </div>
             </div>
           </div>
         </div>
