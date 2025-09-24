@@ -4,16 +4,16 @@ const PartnershipSection = () => {
   return (
     <section className="py-24 bg-slate-950">
       <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
-        <div className="glass-container rounded-2xl p-8 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="glass-container rounded-2xl p-6 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             
             {/* Left Side - Text Content */}
-            <div className="space-y-8 text-center lg:text-left max-w-lg">
+            <div className="space-y-6 text-center lg:text-left max-w-lg">
               <div>
-                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+                <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
                   Nurture customers with <span className="text-blue-400">super fast responses</span>
                 </h2>
-                <p className="text-xl text-white/70 leading-relaxed mb-8">
+                <p className="text-xl text-white/70 leading-relaxed mb-6">
                   Our AI assistant provides instant, intelligent responses to your customers 24/7. 
                   Never miss an opportunity to engage, convert, and retain customers with lightning-fast 
                   automated interactions that feel personal and professional.
@@ -21,7 +21,7 @@ const PartnershipSection = () => {
               </div>
 
               {/* CTA Button */}
-              <div className="pt-4 flex justify-center lg:justify-start">
+              <div className="pt-2 flex justify-center lg:justify-start">
                 <Button size="lg" className="hero-button" asChild>
                   <a href="/contact">Start for free today</a>
                 </Button>
@@ -42,7 +42,7 @@ const PartnershipSection = () => {
         </div>
 
         {/* New Personalized Communication Section */}
-        <div className="glass-container rounded-2xl p-4 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20 mt-24">
+        <div className="glass-container rounded-2xl p-3 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20 mt-24">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             
             {/* Left Side - Text Content */}
