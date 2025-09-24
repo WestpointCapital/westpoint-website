@@ -42,16 +42,16 @@ const PartnershipSection = () => {
         </div>
 
         {/* New Personalized Communication Section */}
-        <div className="glass-container rounded-2xl p-6 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20 mt-24">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="glass-container rounded-2xl p-4 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20 mt-24">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             
             {/* Left Side - Text Content */}
-            <div className="space-y-8 text-center lg:text-left max-w-lg">
+            <div className="space-y-6 text-center lg:text-left max-w-lg">
               <div>
-                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+                <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
                   Make every customer feel <span className="text-blue-400">special and seen</span>
                 </h2>
-                <p className="text-xl text-white/70 leading-relaxed mb-8">
+                <p className="text-xl text-white/70 leading-relaxed mb-6">
                   While most brands send generic, impersonal messages with no-reply addresses, 
                   we focus on creating meaningful 2-way conversations. Our platform ensures every 
                   customer interaction feels personal, engaging, and truly human - making your 
@@ -60,7 +60,7 @@ const PartnershipSection = () => {
               </div>
 
               {/* CTA Button */}
-              <div className="pt-4 flex justify-center lg:justify-start">
+              <div className="pt-2 flex justify-center lg:justify-start">
                 <Button size="lg" className="hero-button" asChild>
                   <a href="/contact">Start for free today</a>
                 </Button>
