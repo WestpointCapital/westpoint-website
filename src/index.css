@@ -420,6 +420,32 @@ html, body {
     cursor: pointer;
   }
 
+  /* Mobile responsive testimonial slides */
+  @media (max-width: 640px) {
+    .testimonial-slide {
+      width: 280px !important;
+      height: 400px;
+      margin: 0 10px;
+    }
+    
+    .testimonial-slide img {
+      height: 400px;
+    }
+    
+    .testimonial-content {
+      padding: 12px;
+    }
+    
+    .swiper-slide-active.testimonial-slide {
+      width: 300px !important;
+      height: 450px;
+    }
+    
+    .swiper-slide-active.testimonial-slide img {
+      height: 450px;
+    }
+  }
+
   .testimonial-slide::after {
     content: "";
     position: absolute;

@@ -75,8 +75,40 @@ const Testimonials = () => {
             spaceBetween={10}
             speed={1000}
             freeMode={false}
+            touchRatio={1}
+            touchAngle={45}
+            threshold={5}
+            longSwipesRatio={0.5}
+            longSwipesMs={300}
+            followFinger={true}
+            allowTouchMove={true}
+            touchStartPreventDefault={false}
+            touchStartForcePreventDefault={false}
+            touchMoveStopPropagation={false}
             mousewheel={{
               thresholdDelta: 30,
+            }}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                centeredSlides: true,
+              },
+              640: {
+                slidesPerView: 1.2,
+                spaceBetween: 15,
+                centeredSlides: true,
+              },
+              768: {
+                slidesPerView: 1.5,
+                spaceBetween: 15,
+                centeredSlides: true,
+              },
+              1024: {
+                slidesPerView: "auto",
+                spaceBetween: 10,
+                centeredSlides: true,
+              }
             }}
             onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
             onClick={(swiper, event) => {
