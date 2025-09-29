@@ -4,16 +4,16 @@ const PartnershipSection = () => {
   return (
     <section className="py-24 bg-slate-950">
       <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
-        <div className="glass-container rounded-2xl px-6 py-2 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20">
+        <div className="glass-container rounded-2xl px-6 py-6 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20">
           <div className="grid lg:grid-cols-2 gap-12 items-center justify-items-center">
             
             {/* Left Side - Text Content */}
             <div className="space-y-6 text-center lg:text-left max-w-lg">
               <div>
-                <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">
                   Nurture customers with <span className="text-blue-400">super fast responses</span>
                 </h2>
-                <p className="text-xl text-white/70 leading-relaxed mb-6">
+                <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed mb-6">
                   Our AI assistant provides instant, intelligent responses to your customers 24/7. 
                   Never miss an opportunity to engage, convert, and retain customers with lightning-fast 
                   automated interactions that feel personal and professional.
@@ -48,10 +48,10 @@ const PartnershipSection = () => {
             {/* Left Side - Text Content */}
             <div className="space-y-0 text-center lg:text-left max-w-lg ml-8">
               <div>
-                <h2 className="font-bold text-white" style={{ fontSize: '48px', lineHeight: '48px', marginBottom: '35px' }}>
+                <h2 className="font-bold text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl" style={{ marginBottom: '35px' }}>
                   Make every customer feel <span className="text-blue-400">special and seen</span>
                 </h2>
-                <p className="text-white/70" style={{ fontSize: '20px', lineHeight: '33px', marginBottom: '35px' }}>
+                <p className="text-white/70 text-sm sm:text-base md:text-lg lg:text-xl" style={{ marginBottom: '35px' }}>
                   While most brands send generic, impersonal messages with no-reply addresses, 
                   we focus on creating meaningful 2-way conversations. Our platform ensures every 
                   customer interaction feels personal, engaging, and truly human - making your 
