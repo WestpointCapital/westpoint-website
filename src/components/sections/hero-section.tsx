@@ -60,16 +60,6 @@ const HeroSection = () => {
         </div>
       </section>
 
-      {/* Floating Dashboard Preview - positioned between sections */}
-      <div className="relative z-20 -mt-64 mb-12">
-        <div className="mx-auto px-6 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
-          <img 
-            src="/lovable-uploads/87b4aeb1-a16e-424f-8ed4-e124df3d5e72.png" 
-            alt="Dashboard preview showing SMS marketing platform interface"
-            className="w-full max-w-6xl mx-auto rounded-2xl"
-          />
-        </div>
-      </div>
       
       {/* Cal.com Modal */}
       <CalModal isOpen={isCalModalOpen} onClose={() => setIsCalModalOpen(false)} />

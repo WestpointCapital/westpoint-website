@@ -423,26 +423,53 @@ html, body {
   /* Mobile responsive testimonial slides */
   @media (max-width: 640px) {
     .testimonial-slide {
-      width: 280px !important;
-      height: 400px;
-      margin: 0 10px;
+      width: 90vw !important;
+      max-width: 320px;
+      height: 350px;
+      margin: 0 5px;
+      border-radius: 16px;
     }
     
     .testimonial-slide img {
-      height: 400px;
+      height: 350px;
+      object-fit: cover;
     }
     
     .testimonial-content {
-      padding: 12px;
+      padding: 16px;
+      justify-content: space-between;
+    }
+    
+    .testimonial-quote p {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    
+    .testimonial-author h4 {
+      font-size: 16px;
+    }
+    
+    .testimonial-author p {
+      font-size: 12px;
     }
     
     .swiper-slide-active.testimonial-slide {
-      width: 300px !important;
-      height: 450px;
+      width: 95vw !important;
+      max-width: 340px;
+      height: 380px;
+      transform: scale(1.02);
     }
     
     .swiper-slide-active.testimonial-slide img {
-      height: 450px;
+      height: 380px;
+    }
+    
+    .swiper-slide-active .testimonial-header,
+    .swiper-slide-active .testimonial-quote,
+    .swiper-slide-active .testimonial-author {
+      opacity: 1;
+      transform: translateY(0);
+      display: block;
     }
   }
 
