@@ -24,7 +24,7 @@ const HeroSection = () => {
         {/* Dark Transparent Overlay for Better Readability */}
         <div className="absolute inset-0 bg-black/30 backdrop-blur-[1px]"></div>
 
-        <div className="mx-auto px-6 sm:px-8 relative z-10 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
+        <div className="mx-auto px-6 sm:px-8 relative z-10 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] flex items-center justify-center min-h-full">
           <div className="text-center max-w-4xl mx-auto">
             {/* New Badge */}
             <div className="inline-flex items-center gap-2 glass-container rounded-full px-4 py-2 mb-8">

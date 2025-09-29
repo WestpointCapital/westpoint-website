@@ -21,44 +21,36 @@ const ServicesPreview = () => {
             
             {/* Service Features */}
             <div className="space-y-6">
-              <div className="flex items-start space-x-4 lg:justify-start justify-center">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center">
+              <div className="text-center lg:text-left">
+                <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-4">
                   <Phone className="w-6 h-6 text-blue-400" />
                 </div>
-                <div className="text-center lg:text-left">
-                  <h3 className="text-lg font-semibold text-white mb-2">Phone Number Management</h3>
-                  <p className="text-white/70">We handle all your SMS phone numbers, ensuring compliance and optimal deliverability across all campaigns.</p>
-                </div>
+                <h3 className="text-lg font-semibold text-white mb-2">Phone Number Management</h3>
+                <p className="text-white/70">We handle all your SMS phone numbers, ensuring compliance and optimal deliverability across all campaigns.</p>
               </div>
               
-              <div className="flex items-start space-x-4 lg:justify-start justify-center">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center">
+              <div className="text-center lg:text-left">
+                <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-4">
                   <MessageSquare className="w-6 h-6 text-blue-400" />
                 </div>
-                <div className="text-center lg:text-left">
-                  <h3 className="text-lg font-semibold text-white mb-2">Campaign Posting</h3>
-                  <p className="text-white/70">From strategy to execution, we create, schedule, and manage all your SMS and email campaigns.</p>
-                </div>
+                <h3 className="text-lg font-semibold text-white mb-2">Campaign Posting</h3>
+                <p className="text-white/70">From strategy to execution, we create, schedule, and manage all your SMS and email campaigns.</p>
               </div>
               
-              <div className="flex items-start space-x-4 lg:justify-start justify-center">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center">
+              <div className="text-center lg:text-left">
+                <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-4">
                   <BarChart3 className="w-6 h-6 text-blue-400" />
                 </div>
-                <div className="text-center lg:text-left">
-                  <h3 className="text-lg font-semibold text-white mb-2">Detailed Reports</h3>
-                  <p className="text-white/70">Get comprehensive analytics and performance reports to track your campaign success and ROI.</p>
-                </div>
+                <h3 className="text-lg font-semibold text-white mb-2">Detailed Reports</h3>
+                <p className="text-white/70">Get comprehensive analytics and performance reports to track your campaign success and ROI.</p>
               </div>
               
-              <div className="flex items-start space-x-4 lg:justify-start justify-center">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center">
+              <div className="text-center lg:text-left">
+                <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-4">
                   <Mail className="w-6 h-6 text-blue-400" />
                 </div>
-                <div className="text-center lg:text-left">
-                  <h3 className="text-lg font-semibold text-white mb-2">Regular Updates</h3>
-                  <p className="text-white/70">Stay informed with regular updates on campaign performance, industry insights, and optimization recommendations.</p>
-                </div>
+                <h3 className="text-lg font-semibold text-white mb-2">Regular Updates</h3>
+                <p className="text-white/70">Stay informed with regular updates on campaign performance, industry insights, and optimization recommendations.</p>
               </div>
             </div>
 
