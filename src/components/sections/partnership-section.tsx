@@ -5,10 +5,10 @@ const PartnershipSection = () => {
     <section className="py-24 bg-slate-950">
       <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
         <div className="glass-container rounded-2xl px-6 py-2 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center justify-items-center">
             
             {/* Left Side - Text Content */}
-            <div className="space-y-6 text-center lg:text-left max-w-lg ml-8">
+            <div className="space-y-6 text-center lg:text-left max-w-lg">
               <div>
                 <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
                   Nurture customers with <span className="text-blue-400">super fast responses</span>
