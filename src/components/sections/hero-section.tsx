@@ -30,7 +30,7 @@ const HeroSection = () => {
             <div className="inline-flex items-center gap-2 glass-container rounded-full px-4 py-2 mb-8">
               <Sparkles className="w-4 h-4 text-white" />
               <span className="text-sm font-medium text-white">
-                AI-Powered SMS & Email Marketing Team
+                AI SMS & Email Marketing
               </span>
             </div>
 
@@ -45,7 +45,7 @@ const HeroSection = () => {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex justify-center items-center mb-16">
+            <div className="flex justify-center items-center mb-16" style={{ marginTop: '15px' }}>
               <Button 
                 variant="hero" 
                 size="lg" 
