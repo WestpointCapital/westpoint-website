@@ -42,11 +42,11 @@ const PartnershipSection = () => {
         </div>
 
         {/* New Personalized Communication Section */}
-        <div className="glass-container rounded-2xl px-3 py-0 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20 mt-24 -my-12">
-          <div className="grid lg:grid-cols-2 gap-2 items-center">
+        <div className="glass-container rounded-2xl px-3 py-6 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20 mt-24">
+          <div className="grid lg:grid-cols-2 gap-8 items-center justify-items-center">
             
             {/* Left Side - Text Content */}
-            <div className="space-y-0 text-center lg:text-left max-w-lg ml-8">
+            <div className="space-y-0 text-center lg:text-left max-w-lg">
               <div>
                 <h2 className="font-bold text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl" style={{ marginBottom: '35px' }}>
                   Make every customer feel <span className="text-blue-400">special and seen</span>

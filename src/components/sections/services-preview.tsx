@@ -65,7 +65,7 @@ const ServicesPreview = () => {
           </div>
 
           {/* Right Side - Phone Illustration */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="hidden lg:flex justify-center lg:justify-end">
             <div className="relative">
               <img 
                 src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/chat-glass.png" 
