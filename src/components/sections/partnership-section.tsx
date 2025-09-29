@@ -45,8 +45,20 @@ const PartnershipSection = () => {
         <div className="glass-container rounded-2xl px-3 py-6 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20 mt-24">
           <div className="grid lg:grid-cols-2 gap-8 items-center justify-items-center">
             
-            {/* Left Side - Text Content */}
-            <div className="space-y-0 text-center lg:text-left max-w-lg">
+            {/* Mobile First - Image */}
+            <div className="flex justify-center lg:justify-end order-1 lg:order-2">
+              <div className="relative">
+                <img 
+                  src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/convo.png" 
+                  alt="Personalized customer communication"
+                  className="max-w-full h-auto rounded-xl shadow-lg"
+                  style={{ transform: 'scale(0.69)' }}
+                />
+              </div>
+            </div>
+
+            {/* Mobile Second - Text Content */}
+            <div className="space-y-0 text-center lg:text-left max-w-lg order-2 lg:order-1">
               <div>
                 <h2 className="font-bold text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl" style={{ marginBottom: '35px' }}>
                   Make every customer feel <span className="text-blue-400">special and seen</span>
@@ -64,18 +76,6 @@ const PartnershipSection = () => {
                 <Button size="sm" className="hero-button" asChild>
                   <a href="/contact">Start for free today</a>
                 </Button>
-              </div>
-            </div>
-
-            {/* Right Side - Illustration */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative">
-                <img 
-                  src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/convo.png" 
-                  alt="Personalized customer communication"
-                  className="max-w-full h-auto rounded-xl shadow-lg"
-                  style={{ transform: 'scale(0.6)' }}
-                />
               </div>
             </div>
           </div>
