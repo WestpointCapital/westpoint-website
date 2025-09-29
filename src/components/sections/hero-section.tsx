@@ -9,7 +9,7 @@ const HeroSection = () => {
   
   return (
     <>
-      <section className="relative min-h-screen flex items-center justify-center pt-20 pb-32 bg-slate-900">
+      <section className="relative min-h-[115vh] sm:min-h-screen flex items-center justify-center pt-20 pb-32 bg-slate-900">
         {/* Silk R3F Background */}
         <div className="absolute inset-0 overflow-hidden">
           <SilkR3F
