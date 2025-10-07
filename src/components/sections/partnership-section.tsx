@@ -8,7 +8,7 @@ const PartnershipSection = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center justify-items-center">
             
             {/* Left Side - Text Content */}
-            <div className="space-y-6 text-center lg:text-left max-w-lg">
+            <div className="space-y-6 text-center lg:text-left max-w-lg" style={{ paddingLeft: '30px' }}>
               <div>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">
                   Nurture customers with <span className="text-blue-400">super fast responses</span>
@@ -58,7 +58,7 @@ const PartnershipSection = () => {
             </div>
 
             {/* Mobile Second - Text Content */}
-            <div className="space-y-0 text-center lg:text-left max-w-lg order-2 lg:order-1">
+            <div className="space-y-0 text-center lg:text-left max-w-lg order-2 lg:order-1" style={{ paddingLeft: '30px' }}>
               <div>
                 <h2 className="font-bold text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl" style={{ marginBottom: '35px' }}>
                   Make every customer feel <span className="text-blue-400">special and seen</span>
