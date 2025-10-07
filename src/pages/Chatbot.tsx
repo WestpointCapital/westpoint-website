@@ -1,5 +1,6 @@
 import Navigation from '../components/ui/navigation';
 import Footer from '../components/sections/footer';
+import ServicesPreview from '../components/sections/services-preview';
 import { Button } from '../components/ui/button';
 import { MessageSquare, Users, Zap, Shield, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -142,6 +143,9 @@ const Chatbot = () => {
           </div>
         </div>
       </section>
+
+      {/* Our Core Services Section */}
+      <ServicesPreview />
 
       {/* CTA Section */}
       <section className="py-24 bg-slate-950">
