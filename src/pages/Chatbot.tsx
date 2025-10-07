@@ -35,12 +35,15 @@ const Chatbot = () => {
               </div>
             </div>
 
-            {/* Right Side - Illustration */}
+            {/* Right Side - Video */}
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
-                <img 
-                  src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Iphone%20mockup%20for%20assistant.png" 
-                  alt="iPhone mockup for AI assistant"
+                <video 
+                  src="https://www.goauto.ai/wp-content/uploads/2025/06/Chat-animation-v1.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="max-w-full h-auto"
                 />
               </div>
