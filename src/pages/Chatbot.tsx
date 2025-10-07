@@ -105,6 +105,37 @@ const Chatbot = () => {
         </div>
       </section>
 
+      {/* AI Automation Section */}
+      <section className="py-24 bg-slate-950">
+        <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            
+            {/* Left Side - Text Content */}
+            <div className="space-y-8 text-center lg:text-left">
+              <div>
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+                  Deliver on-point answers with <span className="text-blue-400">AI automation</span>
+                </h2>
+                <p className="text-xl text-white/70 leading-relaxed">
+                  Ensure continuous customer engagement and human-like support without expanding your team.
+                </p>
+              </div>
+            </div>
+
+            {/* Right Side - Image */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                <img 
+                  src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%207%2C%202025%2C%2003_04_23%20PM.png" 
+                  alt="AI automation delivering on-point answers"
+                  className="max-w-sm w-80 h-auto rounded-xl"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="py-24 bg-slate-950">
         <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
