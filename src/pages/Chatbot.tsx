@@ -20,33 +20,21 @@ const Chatbot = () => {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
                   Cut <span className="text-blue-400">support</span> costs by 80%
                 </h1>
-                <p className="text-xl text-white/70 leading-relaxed mb-8">
-                  Transform your customer support with intelligent chatbots that handle 80% of inquiries automatically, 
-                  while delivering human-like responses that keep your customers satisfied and your team focused on high-value tasks.
-                </p>
-                <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4 mb-6">
-                  <p className="text-sm text-blue-300 font-medium mb-2">Why AI Chatbots?</p>
-                  <p className="text-sm text-white/80">
-                    Modern businesses need instant, intelligent customer support that scales. Our AI chatbots provide 
-                    24/7 availability, instant responses, and consistent quality—exactly what today's customers expect.
-                  </p>
+                
+                {/* Iframe Embed */}
+                <div className="w-full">
+                  <iframe 
+                    src="https://genia-psi.vercel.app/embed/campaign/1759853260622-7yyqth6" 
+                    width="100%" 
+                    height="600" 
+                    frameBorder="0" 
+                    style={{ border: 'none', borderRadius: '8px' }}
+                    allow="camera; microphone; geolocation"
+                    sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
+                    onError={() => console.log('Iframe failed to load')}
+                    onLoad={() => console.log('Iframe loaded successfully')}
+                  ></iframe>
                 </div>
-              </div>
-
-              {/* CTA Button */}
-              <div className="pt-4 flex justify-center lg:justify-start">
-                <Button 
-                  size="lg" 
-                  className="hero-button"
-                  onClick={() => {
-                    const formSection = document.getElementById('chatbot-demo-form');
-                    if (formSection) {
-                      formSection.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }}
-                >
-                  Get a free demo now
-                </Button>
               </div>
             </div>
 
