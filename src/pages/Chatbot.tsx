@@ -15,7 +15,7 @@ const Chatbot = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             
             {/* Left Side - Text Content */}
-            <div className="space-y-8 text-center lg:text-left" style={{ paddingLeft: '30px' }}>
+            <div className="space-y-8 text-center lg:text-left">
               <div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
                   Nurture customers with <span className="text-blue-400">super fast responses</span>
