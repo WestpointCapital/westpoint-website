@@ -30,8 +30,17 @@ const Chatbot = () => {
 
               {/* CTA Button */}
               <div className="pt-4 flex justify-center lg:justify-start">
-                <Button size="lg" className="hero-button" asChild>
-                  <a href="/contact">Get Started Today</a>
+                <Button 
+                  size="lg" 
+                  className="hero-button"
+                  onClick={() => {
+                    const formSection = document.getElementById('chatbot-demo-form');
+                    if (formSection) {
+                      formSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                >
+                  Get a free demo now
                 </Button>
               </div>
             </div>
@@ -54,7 +63,7 @@ const Chatbot = () => {
       </section>
 
       {/* Chatbot Demo Form Section */}
-      <section className="py-16 bg-slate-950">
+      <section id="chatbot-demo-form" className="py-16 bg-slate-950">
         <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="glass-container rounded-2xl px-6 py-8 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20">
             <div className="text-center mb-8">

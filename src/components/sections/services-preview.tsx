@@ -28,7 +28,6 @@ const ServicesPreview = () => {
 
   return (
     <section className="py-24 relative" style={{ backgroundColor: '#020617' }}>
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-transparent to-blue-400/20"></div>
       <div className="mx-auto px-6 max-w-7xl relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
