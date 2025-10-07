@@ -18,13 +18,19 @@ const Chatbot = () => {
             <div className="space-y-8 text-center lg:text-left">
               <div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-                  Nurture customers with <span className="text-blue-400">super fast responses</span>
+                  Cut support costs by <span className="text-blue-400">80%</span> with AI automation
                 </h1>
                 <p className="text-xl text-white/70 leading-relaxed mb-8">
-                  Our AI assistant provides instant, intelligent responses to your customers 24/7. 
-                  Never miss an opportunity to engage, convert, and retain customers with lightning-fast 
-                  automated interactions that feel personal and professional.
+                  Transform your customer support with intelligent chatbots that handle 80% of inquiries automatically, 
+                  while delivering human-like responses that keep your customers satisfied and your team focused on high-value tasks.
                 </p>
+                <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4 mb-6">
+                  <p className="text-sm text-blue-300 font-medium mb-2">Why AI Chatbots?</p>
+                  <p className="text-sm text-white/80">
+                    Modern businesses need instant, intelligent customer support that scales. Our AI chatbots provide 
+                    24/7 availability, instant responses, and consistent quality—exactly what today's customers expect.
+                  </p>
+                </div>
               </div>
 
               {/* CTA Button */}
