@@ -18,7 +18,7 @@ const Chatbot = () => {
             <div className="space-y-8 text-center lg:text-left">
               <div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-                  Cut support costs by <span className="text-blue-400">80%</span> with AI automation
+                  Cut <span className="text-blue-400">support</span> costs by 80%
                 </h1>
                 <p className="text-xl text-white/70 leading-relaxed mb-8">
                   Transform your customer support with intelligent chatbots that handle 80% of inquiries automatically, 
