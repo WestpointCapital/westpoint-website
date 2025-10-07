@@ -44,6 +44,39 @@ const PartnershipSection = () => {
           </div>
         </div>
 
+        {/* Chatbot Demo Form Section */}
+        <div className="glass-container rounded-2xl px-6 py-8 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20 mt-12">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+              Ready to see your <span className="text-blue-400">chatbot in action?</span>
+            </h3>
+            <p className="text-lg text-white/70 max-w-2xl mx-auto">
+              Enter your website URL and we'll show you exactly how our AI assistant can transform your customer experience.
+            </p>
+          </div>
+          
+          <div className="max-w-md mx-auto">
+            <form className="space-y-4">
+              <div>
+                <input
+                  type="url"
+                  placeholder="Enter your website URL (e.g., https://yourwebsite.com)"
+                  className="w-full px-4 py-3 rounded-lg bg-slate-800/50 border border-blue-500/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
+                />
+              </div>
+              <div>
+                <Button 
+                  type="submit" 
+                  size="lg" 
+                  className="w-full hero-button"
+                >
+                  Get my chatbot demo now
+                </Button>
+              </div>
+            </form>
+          </div>
+        </div>
+
         {/* New Personalized Communication Section */}
         <div className="glass-container rounded-2xl px-3 py-6 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20 mt-24">
           <div className="grid lg:grid-cols-2 gap-8 items-center justify-items-center">
