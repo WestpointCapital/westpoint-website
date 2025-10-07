@@ -136,6 +136,37 @@ const Chatbot = () => {
         </div>
       </section>
 
+      {/* Built-in Return Flow Section */}
+      <section className="py-24 bg-slate-950">
+        <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            
+            {/* Left Side - Image */}
+            <div className="flex justify-center lg:justify-start order-1">
+              <div className="relative">
+                <img 
+                  src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%207%2C%202025%2C%2003_32_03%20PM.png" 
+                  alt="Built-in return flow automation"
+                  className="max-w-sm w-80 h-auto rounded-xl"
+                />
+              </div>
+            </div>
+
+            {/* Right Side - Text Content */}
+            <div className="space-y-8 text-center lg:text-left order-2">
+              <div>
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+                  Turn every conversation into <span className="text-blue-400">revenue opportunities</span>
+                </h2>
+                <p className="text-xl text-white/70 leading-relaxed">
+                  Our built-in return flow automatically identifies upsell opportunities, re-engages dormant customers, and converts conversations into sales—all while maintaining that personal touch your customers love.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="py-24 bg-slate-950">
         <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
