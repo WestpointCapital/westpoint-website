@@ -53,7 +53,7 @@ const Chatbot = () => {
                   loop
                   muted
                   playsInline
-                  className="max-w-sm w-80 h-auto rounded-xl"
+                  className="max-w-md w-96 h-auto rounded-xl"
                 />
               </div>
             </div>
@@ -73,7 +73,8 @@ const Chatbot = () => {
                 <img 
                   src="https://cdn-icons-png.flaticon.com/512/25/25694.png" 
                   alt="Computer cursor" 
-                  className="w-8 h-8 animate-bounce brightness-0 invert"
+                  className="w-8 h-8 animate-bounce"
+                  style={{ filter: 'brightness(0) invert(1)' }}
                 />
               </div>
               <p className="text-lg text-white/70 max-w-2xl mx-auto">
