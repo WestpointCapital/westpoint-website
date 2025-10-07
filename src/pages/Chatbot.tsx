@@ -73,7 +73,7 @@ const Chatbot = () => {
                 <img 
                   src="https://cdn-icons-png.flaticon.com/512/25/25694.png" 
                   alt="Click cursor" 
-                  className="w-8 h-8 animate-bounce"
+                  className="w-8 h-8 animate-bounce brightness-0 invert"
                 />
               </div>
               <p className="text-lg text-white/70 max-w-2xl mx-auto">
@@ -147,7 +147,7 @@ const Chatbot = () => {
                 <img 
                   src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%207%2C%202025%2C%2003_32_03%20PM.png" 
                   alt="Built-in return flow automation"
-                  className="max-w-sm w-80 h-auto rounded-xl"
+                  className="max-w-md w-96 h-auto rounded-xl"
                 />
               </div>
             </div>
