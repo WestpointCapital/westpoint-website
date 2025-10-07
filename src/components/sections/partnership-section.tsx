@@ -37,7 +37,7 @@ const PartnershipSection = () => {
                   loop
                   muted
                   playsInline
-                  className="max-w-xs w-64 h-auto rounded-xl scale-60"
+                  className="max-w-sm w-80 h-auto rounded-xl scale-60"
                 />
               </div>
             </div>
