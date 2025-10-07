@@ -78,7 +78,7 @@ const ServicesPreview = () => {
               <img 
                 src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/chat-glass.png" 
                 alt="Phone illustration showing SMS and email marketing services"
-                className="max-w-full h-auto"
+                className="max-w-xs w-64 h-auto"
               />
             </div>
           </div>
