@@ -47,6 +47,21 @@ const Chatbot = () => {
                     ></iframe>
                   </div>
                 </div>
+                
+                {/* Read More Button */}
+                <div className="flex justify-center lg:justify-start mt-6">
+                  <button className="flex items-center gap-2 px-6 py-3 bg-blue-500/20 hover:bg-blue-500/30 border border-blue-500/30 rounded-lg text-white transition-all duration-300 group">
+                    <span>Read more</span>
+                    <svg 
+                      className="w-4 h-4 animate-bounce group-hover:translate-y-1 transition-transform duration-300" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
 
