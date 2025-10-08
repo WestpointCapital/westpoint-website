@@ -249,6 +249,57 @@ const Chatbot = () => {
         </div>
       </section>
 
+      {/* Case Studies Section */}
+      <section className="py-24 bg-slate-900/50">
+        <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+              Amazing <span className="text-blue-400">Results</span>
+            </h2>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto">
+              See how our AI chatbots have transformed businesses and delivered incredible results for our clients.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Case Study 1 */}
+            <div className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20 text-center group hover:scale-105 transition-all duration-300">
+              <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-green-400">80%</span>
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-4">Support Cost Reduction</h3>
+              <p className="text-white/70 mb-4">
+                E-commerce company reduced support costs by 80% while improving customer satisfaction scores.
+              </p>
+              <div className="text-sm text-blue-400 font-medium">TechCorp Solutions</div>
+            </div>
+
+            {/* Case Study 2 */}
+            <div className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20 text-center group hover:scale-105 transition-all duration-300">
+              <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-blue-400">24/7</span>
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-4">24/7 Availability</h3>
+              <p className="text-white/70 mb-4">
+                SaaS startup achieved 24/7 customer support with 95% query resolution rate using our AI chatbot.
+              </p>
+              <div className="text-sm text-blue-400 font-medium">CloudFlow Inc</div>
+            </div>
+
+            {/* Case Study 3 */}
+            <div className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20 text-center group hover:scale-105 transition-all duration-300">
+              <div className="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-yellow-400">3x</span>
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-4">Response Time Improvement</h3>
+              <p className="text-white/70 mb-4">
+                Financial services firm improved response times by 3x and increased customer engagement by 150%.
+              </p>
+              <div className="text-sm text-blue-400 font-medium">FinanceFirst</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section className="py-24 bg-slate-950">
