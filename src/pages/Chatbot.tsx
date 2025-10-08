@@ -21,6 +21,10 @@ const Chatbot = () => {
                   Cut <span className="text-blue-400">support</span> costs by 80%
                 </h1>
                 
+                <p className="text-xl text-white/70 leading-relaxed mb-8">
+                  Fill out the form below and get instant access to try your chatbot demo
+                </p>
+                
                 {/* Iframe Embed */}
                 <div className="w-full">
                   <iframe 
