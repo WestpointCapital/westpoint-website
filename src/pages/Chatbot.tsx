@@ -145,6 +145,59 @@ const Chatbot = () => {
         </div>
       </section>
 
+      {/* User Insights Section */}
+      <section className="py-24 bg-slate-950">
+        <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+              "User Insights"
+            </h2>
+            <p className="text-xl text-white/70 max-w-4xl mx-auto">
+              Based on the answers from User interviews and Survey, I found some key insights which help us to observe any pattern and similarity in what potential users may want.
+            </p>
+          </div>
+
+          {/* Data Cards */}
+          <div className="grid md:grid-cols-3 gap-0">
+            {/* Card 1 */}
+            <div className="bg-slate-800/30 p-8 border-r border-green-500/30">
+              <div className="text-center">
+                <div className="text-6xl font-bold text-green-400 mb-4">55.5%</div>
+                <p className="text-white/70 leading-relaxed">
+                  About 55.7% of users go outside for food once or twice a month. Users were mostly influenced by social media(eg. Facebook, Instagram) when it comes to choosing a place to eat.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-slate-800/30 p-8 border-r border-yellow-500/30">
+              <div className="text-center">
+                <div className="text-6xl font-bold text-yellow-400 mb-4">66.7%</div>
+                <p className="text-white/70 leading-relaxed">
+                  Approximately 66.7% of users' food ordering experience is influenced by their allergies. They have to care about what they are ordering.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-slate-800/30 p-8">
+              <div className="text-center">
+                <div className="text-6xl font-bold text-orange-400 mb-4">40.2%</div>
+                <p className="text-white/70 leading-relaxed">
+                  A wide number of audiences were not impressed by the food they ordered. Certain times foods were not the same as they ordered or the rider has delayed their delivery time.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="py-24 bg-slate-950">
         <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
