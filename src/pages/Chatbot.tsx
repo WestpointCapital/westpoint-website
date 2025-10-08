@@ -254,7 +254,7 @@ const Chatbot = () => {
         <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-              Amazing <span className="text-blue-400">Results</span>
+              Our results speaks for <span className="text-blue-400">itself</span>
             </h2>
             <p className="text-xl text-white/70 max-w-3xl mx-auto">
               See how our AI chatbots have transformed businesses and delivered incredible results for our clients.
@@ -263,60 +263,75 @@ const Chatbot = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Case Study 1 */}
-            <div className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20 group hover:scale-105 transition-all duration-300">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-lg font-bold text-green-400">80%</span>
+            <div className="relative rounded-2xl p-8 border border-blue-500/20 group hover:scale-105 transition-all duration-300 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-blue-500/10"></div>
+              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center opacity-20"></div>
+              <div className="relative z-10">
+                <div className="text-center mb-6">
+                  <div className="text-4xl font-bold text-green-400 mb-2">80%</div>
+                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className="w-8 h-8" />
+                  </div>
                 </div>
-                <div>
+                <div className="text-center mb-6">
                   <h3 className="text-xl font-semibold text-white">NordicTech Solutions</h3>
                   <p className="text-sm text-blue-400">E-commerce Platform</p>
                 </div>
+                <p className="text-white/70 leading-relaxed mb-4">
+                  "We were drowning in support tickets. Our team of 8 was working 12-hour days just to keep up. 
+                  After implementing the AI chatbot, we reduced support costs by 80% and our customer satisfaction 
+                  actually improved. The chatbot handles 90% of inquiries instantly."
+                </p>
+                <div className="text-sm text-white/60">- Sarah Chen, Customer Success Director</div>
               </div>
-              <p className="text-white/70 leading-relaxed mb-4">
-                "We were drowning in support tickets. Our team of 8 was working 12-hour days just to keep up. 
-                After implementing the AI chatbot, we reduced support costs by 80% and our customer satisfaction 
-                actually improved. The chatbot handles 90% of inquiries instantly."
-              </p>
-              <div className="text-sm text-white/60">- Sarah Chen, Customer Success Director</div>
             </div>
 
             {/* Case Study 2 */}
-            <div className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20 group hover:scale-105 transition-all duration-300">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-lg font-bold text-blue-400">24/7</span>
+            <div className="relative rounded-2xl p-8 border border-blue-500/20 group hover:scale-105 transition-all duration-300 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10"></div>
+              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1576091160395-0366d4c4b8b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center opacity-20"></div>
+              <div className="relative z-10">
+                <div className="text-center mb-6">
+                  <div className="text-4xl font-bold text-blue-400 mb-2">24/7</div>
+                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className="w-8 h-8" />
+                  </div>
                 </div>
-                <div>
+                <div className="text-center mb-6">
                   <h3 className="text-xl font-semibold text-white">MediFlow Systems</h3>
                   <p className="text-sm text-blue-400">Healthcare SaaS</p>
                 </div>
+                <p className="text-white/70 leading-relaxed mb-4">
+                  "As a healthcare company, we needed 24/7 support but couldn't afford round-the-clock staff. 
+                  The AI chatbot became our lifeline, handling 95% of queries instantly. Our clients love 
+                  the immediate responses, especially during emergencies."
+                </p>
+                <div className="text-sm text-white/60">- Dr. Michael Rodriguez, CTO</div>
               </div>
-              <p className="text-white/70 leading-relaxed mb-4">
-                "As a healthcare company, we needed 24/7 support but couldn't afford round-the-clock staff. 
-                The AI chatbot became our lifeline, handling 95% of queries instantly. Our clients love 
-                the immediate responses, especially during emergencies."
-              </p>
-              <div className="text-sm text-white/60">- Dr. Michael Rodriguez, CTO</div>
             </div>
 
             {/* Case Study 3 */}
-            <div className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20 group hover:scale-105 transition-all duration-300">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-yellow-500/20 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-lg font-bold text-yellow-400">3x</span>
+            <div className="relative rounded-2xl p-8 border border-blue-500/20 group hover:scale-105 transition-all duration-300 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-orange-500/10"></div>
+              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center opacity-20"></div>
+              <div className="relative z-10">
+                <div className="text-center mb-6">
+                  <div className="text-4xl font-bold text-yellow-400 mb-2">3x</div>
+                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className="w-8 h-8" />
+                  </div>
                 </div>
-                <div>
+                <div className="text-center mb-6">
                   <h3 className="text-xl font-semibold text-white">CapitalBridge Financial</h3>
                   <p className="text-sm text-blue-400">Investment Firm</p>
                 </div>
+                <p className="text-white/70 leading-relaxed mb-4">
+                  "Our clients expect lightning-fast responses. The AI chatbot cut our response time from 
+                  2 hours to 20 minutes. We've seen a 150% increase in client engagement and our team 
+                  can focus on high-value advisory work instead of routine inquiries."
+                </p>
+                <div className="text-sm text-white/60">- Jennifer Walsh, Operations Manager</div>
               </div>
-              <p className="text-white/70 leading-relaxed mb-4">
-                "Our clients expect lightning-fast responses. The AI chatbot cut our response time from 
-                2 hours to 20 minutes. We've seen a 150% increase in client engagement and our team 
-                can focus on high-value advisory work instead of routine inquiries."
-              </p>
-              <div className="text-sm text-white/60">- Jennifer Walsh, Operations Manager</div>
             </div>
           </div>
         </div>
