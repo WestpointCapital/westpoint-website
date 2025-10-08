@@ -69,10 +69,9 @@ const Chatbot = () => {
                   Get your demo chatbot in <span className="text-blue-400">one click</span>
                 </h3>
                 <img 
-                  src="https://cdn-icons-png.flaticon.com/512/25/25694.png" 
+                  src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/cursor.svg" 
                   alt="Computer cursor" 
                   className="w-8 h-8 animate-bounce"
-                  style={{ filter: 'brightness(0) invert(1)' }}
                 />
               </div>
               <p className="text-lg text-white/70 max-w-2xl mx-auto">
