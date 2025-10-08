@@ -49,7 +49,7 @@ const Chatbot = () => {
                 </div>
                 
                 {/* Read More Indicator */}
-                <div className="flex justify-center mt-6 w-full">
+                <div className="flex justify-center items-center mt-6 w-full">
                   <div className="flex flex-col items-center gap-1 text-white/70 group cursor-pointer">
                     <span className="text-sm">Read more</span>
                     <svg 
