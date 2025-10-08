@@ -45,7 +45,7 @@ const Chatbot = () => {
             </div>
 
             {/* Right Side - Video */}
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex justify-center lg:justify-end lg:-mt-8">
               <div className="relative">
                 <video 
                   src="https://www.goauto.ai/wp-content/uploads/2025/06/Chat-animation-v1.mp4"
