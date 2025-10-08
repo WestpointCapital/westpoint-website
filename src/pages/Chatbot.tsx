@@ -88,11 +88,11 @@ const Chatbot = () => {
             {/* Right Side - Image */}
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
-                <img 
-                  src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%207%2C%202025%2C%2003_04_23%20PM.png" 
-                  alt="AI automation delivering on-point answers"
-                  className="max-w-sm w-80 h-auto rounded-xl"
-                />
+                      <img 
+                        src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%207%2C%202025%2C%2003_04_23%20PM.png" 
+                        alt="AI automation delivering on-point answers"
+                        className="max-w-md w-96 h-auto rounded-xl"
+                      />
               </div>
             </div>
           </div>
