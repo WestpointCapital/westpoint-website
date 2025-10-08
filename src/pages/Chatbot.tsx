@@ -10,7 +10,7 @@ const Chatbot = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-24 bg-slate-950">
+      <section className="pt-40 pb-24 bg-slate-950">
         <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             
@@ -19,7 +19,7 @@ const Chatbot = () => {
               <div>
                 <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
                   <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-                    Get your demo chatbot in <span className="text-blue-400">one click</span>
+                    Get your <span className="text-blue-400">free demo chatbot</span> in one click
                   </h1>
                   <img 
                     src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/cursor.svg" 
