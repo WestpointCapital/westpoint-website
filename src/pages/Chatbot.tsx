@@ -50,7 +50,7 @@ const Chatbot = () => {
                 
                 {/* Read More Indicator */}
                 <div className="flex justify-center items-center mt-6 w-full">
-                  <div className="flex flex-col items-center gap-1 text-white/70 group cursor-pointer mx-auto">
+                  <div className="flex flex-col items-center gap-1 text-white/70 group cursor-pointer">
                     <span className="text-sm">Read more</span>
                     <svg 
                       className="w-4 h-4 animate-bounce group-hover:translate-y-1 transition-transform duration-500" 
