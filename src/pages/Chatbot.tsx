@@ -27,7 +27,7 @@ const Chatbot = () => {
                 
                 {/* Iframe Embed */}
                 <div className="w-full flex justify-center lg:justify-start">
-                  <div className="w-full max-w-md lg:max-w-lg lg:-ml-8">
+                  <div className="w-full max-w-md lg:max-w-lg lg:-ml-4">
                     <iframe 
                       src="https://genia-psi.vercel.app/embed/campaign/1759853260622-7yyqth6" 
                       width="100%" 
