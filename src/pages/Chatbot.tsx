@@ -32,7 +32,8 @@ const Chatbot = () => {
                     width="100%" 
                     height="600" 
                     frameBorder="0" 
-                    style={{ border: 'none', borderRadius: '8px' }}
+                    style={{ border: 'none', borderRadius: '8px', maxWidth: '500px' }}
+                    className="w-full max-w-md lg:max-w-lg"
                     allow="camera; microphone; geolocation"
                     sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
                     onError={() => console.log('Iframe failed to load')}
