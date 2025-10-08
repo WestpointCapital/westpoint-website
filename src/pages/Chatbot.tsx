@@ -195,46 +195,6 @@ const Chatbot = () => {
         </div>
       </section>
 
-      {/* How It Works Section */}
-      <section className="py-24 bg-slate-900/50">
-        <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-              How Intent Recognition <span className="text-blue-400">Works</span>
-            </h2>
-            <p className="text-xl text-white/70 max-w-3xl mx-auto">
-              Our AI analyzes customer messages to understand their intent and automatically 
-              determines the best response path for optimal customer satisfaction.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20 text-center">
-              <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <MessageSquare className="w-8 h-8 text-blue-400" />
-              </div>
-              <h3 className="text-xl font-semibold text-white mb-4">Customer Message Analysis</h3>
-              <p className="text-white/70">AI analyzes the customer's message to understand their intent, urgency, and preferred communication style.</p>
-            </div>
-            
-            <div className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20 text-center">
-              <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Zap className="w-8 h-8 text-blue-400" />
-              </div>
-              <h3 className="text-xl font-semibold text-white mb-4">Smart Routing Decision</h3>
-              <p className="text-white/70">Based on intent analysis, the system automatically routes to AI assistant or human agent for optimal customer experience.</p>
-            </div>
-            
-            <div className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20 text-center">
-              <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="w-8 h-8 text-blue-400" />
-              </div>
-              <h3 className="text-xl font-semibold text-white mb-4">Seamless Handoff</h3>
-              <p className="text-white/70">If escalation is needed, the conversation seamlessly transfers to a human agent with full context preserved.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-24 bg-slate-950">
