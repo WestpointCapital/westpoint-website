@@ -17,7 +17,7 @@ const Chatbot = () => {
             {/* Left Side - Text Content */}
             <div className="space-y-8 text-center lg:text-left">
               <div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
                   Cut <span className="text-blue-400">support</span> costs by 80%
                 </h1>
                 
