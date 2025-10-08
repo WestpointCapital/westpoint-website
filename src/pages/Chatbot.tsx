@@ -17,29 +17,35 @@ const Chatbot = () => {
             {/* Left Side - Text Content */}
             <div className="space-y-8 text-center lg:text-left">
               <div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
                   Cut <span className="text-blue-400">support</span> costs by 80%
                 </h1>
                 
+                <p className="text-xl text-white/70 leading-relaxed mb-4">
+                  Fill out the form below and get instant access to try your chatbot demo
+                </p>
+                
                 {/* Iframe Embed */}
-                <div className="w-full">
-                  <iframe 
-                    src="https://genia-psi.vercel.app/embed/campaign/1759853260622-7yyqth6" 
-                    width="100%" 
-                    height="600" 
-                    frameBorder="0" 
-                    style={{ border: 'none', borderRadius: '8px' }}
-                    allow="camera; microphone; geolocation"
-                    sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
-                    onError={() => console.log('Iframe failed to load')}
-                    onLoad={() => console.log('Iframe loaded successfully')}
-                  ></iframe>
+                <div className="w-full flex justify-center lg:justify-start">
+                  <div className="w-full max-w-md lg:max-w-lg lg:-ml-4">
+                    <iframe 
+                      src="https://genia-psi.vercel.app/embed/campaign/1759853260622-7yyqth6" 
+                      width="100%" 
+                      height="600" 
+                      frameBorder="0" 
+                      style={{ border: 'none', borderRadius: '8px' }}
+                      allow="camera; microphone; geolocation"
+                      sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
+                      onError={() => console.log('Iframe failed to load')}
+                      onLoad={() => console.log('Iframe loaded successfully')}
+                    ></iframe>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Right Side - Video */}
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex justify-center lg:justify-end" style={{ marginTop: '-78px' }}>
               <div className="relative">
                 <video 
                   src="https://www.goauto.ai/wp-content/uploads/2025/06/Chat-animation-v1.mp4"
