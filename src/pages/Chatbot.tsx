@@ -50,7 +50,7 @@ const Chatbot = () => {
                 
                 {/* Read More Indicator */}
                 <div className="flex justify-center items-center mt-6 w-full">
-                  <div className="flex flex-col items-center gap-1 text-white/70 group cursor-pointer">
+                  <div className="flex flex-col items-center gap-1 text-white/70 group cursor-pointer mx-auto">
                     <span className="text-sm">Read more</span>
                     <svg 
                       className="w-4 h-4 animate-bounce group-hover:translate-y-1 transition-transform duration-500" 
@@ -263,39 +263,60 @@ const Chatbot = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Case Study 1 */}
-            <div className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20 text-center group hover:scale-105 transition-all duration-300">
-              <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl font-bold text-green-400">80%</span>
+            <div className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20 group hover:scale-105 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-lg font-bold text-green-400">80%</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white">NordicTech Solutions</h3>
+                  <p className="text-sm text-blue-400">E-commerce Platform</p>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-white mb-4">Support Cost Reduction</h3>
-              <p className="text-white/70 mb-4">
-                E-commerce company reduced support costs by 80% while improving customer satisfaction scores.
+              <p className="text-white/70 leading-relaxed mb-4">
+                "We were drowning in support tickets. Our team of 8 was working 12-hour days just to keep up. 
+                After implementing the AI chatbot, we reduced support costs by 80% and our customer satisfaction 
+                actually improved. The chatbot handles 90% of inquiries instantly."
               </p>
-              <div className="text-sm text-blue-400 font-medium">TechCorp Solutions</div>
+              <div className="text-sm text-white/60">- Sarah Chen, Customer Success Director</div>
             </div>
 
             {/* Case Study 2 */}
-            <div className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20 text-center group hover:scale-105 transition-all duration-300">
-              <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl font-bold text-blue-400">24/7</span>
+            <div className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20 group hover:scale-105 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-lg font-bold text-blue-400">24/7</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white">MediFlow Systems</h3>
+                  <p className="text-sm text-blue-400">Healthcare SaaS</p>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-white mb-4">24/7 Availability</h3>
-              <p className="text-white/70 mb-4">
-                SaaS startup achieved 24/7 customer support with 95% query resolution rate using our AI chatbot.
+              <p className="text-white/70 leading-relaxed mb-4">
+                "As a healthcare company, we needed 24/7 support but couldn't afford round-the-clock staff. 
+                The AI chatbot became our lifeline, handling 95% of queries instantly. Our clients love 
+                the immediate responses, especially during emergencies."
               </p>
-              <div className="text-sm text-blue-400 font-medium">CloudFlow Inc</div>
+              <div className="text-sm text-white/60">- Dr. Michael Rodriguez, CTO</div>
             </div>
 
             {/* Case Study 3 */}
-            <div className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20 text-center group hover:scale-105 transition-all duration-300">
-              <div className="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl font-bold text-yellow-400">3x</span>
+            <div className="bg-slate-800/50 rounded-2xl p-8 border border-blue-500/20 group hover:scale-105 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-yellow-500/20 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-lg font-bold text-yellow-400">3x</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white">CapitalBridge Financial</h3>
+                  <p className="text-sm text-blue-400">Investment Firm</p>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-white mb-4">Response Time Improvement</h3>
-              <p className="text-white/70 mb-4">
-                Financial services firm improved response times by 3x and increased customer engagement by 150%.
+              <p className="text-white/70 leading-relaxed mb-4">
+                "Our clients expect lightning-fast responses. The AI chatbot cut our response time from 
+                2 hours to 20 minutes. We've seen a 150% increase in client engagement and our team 
+                can focus on high-value advisory work instead of routine inquiries."
               </p>
-              <div className="text-sm text-blue-400 font-medium">FinanceFirst</div>
+              <div className="text-sm text-white/60">- Jennifer Walsh, Operations Manager</div>
             </div>
           </div>
         </div>
