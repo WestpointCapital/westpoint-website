@@ -27,18 +27,19 @@ const Chatbot = () => {
                 
                 {/* Iframe Embed */}
                 <div className="w-full flex justify-center lg:justify-start">
-                  <iframe 
-                    src="https://genia-psi.vercel.app/embed/campaign/1759853260622-7yyqth6" 
-                    width="100%" 
-                    height="600" 
-                    frameBorder="0" 
-                    style={{ border: 'none', borderRadius: '8px', maxWidth: '500px' }}
-                    className="w-full max-w-md lg:max-w-lg"
-                    allow="camera; microphone; geolocation"
-                    sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
-                    onError={() => console.log('Iframe failed to load')}
-                    onLoad={() => console.log('Iframe loaded successfully')}
-                  ></iframe>
+                  <div className="w-full max-w-md lg:max-w-lg lg:-ml-8">
+                    <iframe 
+                      src="https://genia-psi.vercel.app/embed/campaign/1759853260622-7yyqth6" 
+                      width="100%" 
+                      height="600" 
+                      frameBorder="0" 
+                      style={{ border: 'none', borderRadius: '8px' }}
+                      allow="camera; microphone; geolocation"
+                      sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
+                      onError={() => console.log('Iframe failed to load')}
+                      onLoad={() => console.log('Iframe loaded successfully')}
+                    ></iframe>
+                  </div>
                 </div>
               </div>
             </div>
