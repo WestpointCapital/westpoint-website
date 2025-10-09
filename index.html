@@ -50,32 +50,38 @@
         }
       }
       
-      /* Custom mobile Cal.com button - styled like desktop version */
+      /* Custom mobile Cal.com button - icon only */
       .custom-cal-mobile-btn {
         display: none;
         position: fixed;
         bottom: 1rem;
         right: 1rem;
-        height: 4rem;
+        width: 3.5rem;
+        height: 3.5rem;
         background-color: #1d71e9;
-        border-radius: 9999px;
+        border-radius: 50%;
         border: none;
         cursor: pointer;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         transition: all 0.3s ease;
         z-index: 999999999;
-        padding: 1rem 1.5rem;
-        color: white;
-        font-size: 1rem;
-        font-weight: 600;
+        padding: 0;
         display: flex;
         align-items: center;
-        gap: 0.75rem;
+        justify-content: center;
       }
       
+      /* Only show custom button on mobile */
       @media (max-width: 768px) {
         .custom-cal-mobile-btn {
           display: flex !important;
+        }
+      }
+      
+      /* Hide custom button on desktop */
+      @media (min-width: 769px) {
+        .custom-cal-mobile-btn {
+          display: none !important;
         }
       }
       
@@ -92,7 +98,11 @@
         width: 1.75rem;
         height: 1.75rem;
         color: white;
-        flex-shrink: 0;
+      }
+      
+      /* Hide text on mobile button */
+      .custom-cal-mobile-btn span {
+        display: none;
       }
     </style>
   </head>
