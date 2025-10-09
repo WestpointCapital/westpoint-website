@@ -277,21 +277,21 @@ const Chatbot = () => {
               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1576091160395-0366d4c4b8b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center opacity-20"></div>
               <div className="relative z-10">
                 <div className="text-center mb-6">
-                  <div className="text-4xl font-bold text-blue-400 mb-2">24/7</div>
-                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className="w-8 h-8" />
+                  <div className="text-4xl font-bold text-blue-400 mb-2">85%</div>
+                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <img src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/gmka-logo.svg" alt="GMKA" className="w-12 h-12" />
                   </div>
                 </div>
                 <div className="text-center mb-6">
-                  <h3 className="text-xl font-semibold text-white">MediFlow Systems</h3>
-                  <p className="text-sm text-blue-400">Healthcare SaaS</p>
+                  <h3 className="text-xl font-semibold text-white">GMKA</h3>
+                  <p className="text-sm text-blue-400">Corporate Services</p>
                 </div>
                 <p className="text-white/70 leading-relaxed mb-4">
-                  "As a healthcare company, we needed 24/7 support but couldn't afford round-the-clock staff. 
-                  The AI chatbot became our lifeline, handling 95% of queries instantly. Our clients love 
-                  the immediate responses, especially during emergencies."
+                  "We deployed an internal AI chatbot to streamline employee information access. The results were 
+                  staggering—85% reduction in manual information requests. Our team now gets instant answers to 
+                  policy questions, procedures, and company resources without waiting for HR responses."
                 </p>
-                <div className="text-sm text-white/60">- Dr. Michael Rodriguez, CTO</div>
+                <div className="text-sm text-white/60">- Anna Johansson, Operations Director</div>
               </div>
             </div>
 
