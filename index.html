@@ -39,6 +39,22 @@
     fbq('track', 'PageView');
     </script>
     <!-- End Meta Pixel Code -->
+    
+    <!-- Hide Cal.com button on mobile -->
+    <style>
+      @media (max-width: 768px) {
+        /* Hide Cal.com floating button on mobile */
+        button[data-cal-namespace="30min"],
+        button.fixed.rounded-full.z-\\[999999999999\\],
+        .z-\\[999999999999\\].fixed.bottom-4,
+        button.fixed.flex.h-16.rounded-full {
+          display: none !important;
+          visibility: hidden !important;
+          opacity: 0 !important;
+          pointer-events: none !important;
+        }
+      }
+    </style>
   </head>
 
   <body>
