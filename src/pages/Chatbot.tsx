@@ -52,15 +52,15 @@ const Chatbot = () => {
             </div>
 
             {/* Right Side - Video */}
-            <div className="flex justify-center lg:justify-end" style={{ marginTop: '-78px' }}>
-              <div className="relative">
+            <div className="flex justify-center" style={{ marginTop: '-78px' }}>
+              <div className="relative w-full flex justify-center">
                 <video 
                   src="https://www.goauto.ai/wp-content/uploads/2025/06/Chat-animation-v1.mp4"
                   autoPlay
                   loop
                   muted
                   playsInline
-                  className="max-w-md w-96 h-auto rounded-xl"
+                  className="w-full max-w-[90%] sm:max-w-md lg:max-w-lg h-auto rounded-xl mx-auto"
                 />
               </div>
             </div>
@@ -87,12 +87,12 @@ const Chatbot = () => {
             </div>
 
             {/* Right Side - Image */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative">
+            <div className="flex justify-center">
+              <div className="relative w-full flex justify-center">
                       <img 
                         src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%207%2C%202025%2C%2003_04_23%20PM.png" 
                         alt="AI automation delivering on-point answers"
-                        className="max-w-md w-96 h-auto rounded-xl"
+                        className="w-full max-w-[90%] sm:max-w-md lg:max-w-lg h-auto rounded-xl mx-auto"
                       />
               </div>
             </div>
@@ -106,12 +106,12 @@ const Chatbot = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center px-4">
             
             {/* Left Side - Image */}
-            <div className="flex justify-center lg:justify-start order-1">
-              <div className="relative">
+            <div className="flex justify-center order-1">
+              <div className="relative w-full flex justify-center">
                       <img 
                         src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/chatbot2.png" 
                         alt="Built-in return flow automation"
-                        className="max-w-md w-96 h-auto rounded-xl"
+                        className="w-full max-w-[90%] sm:max-w-md lg:max-w-lg h-auto rounded-xl mx-auto"
                       />
               </div>
             </div>
