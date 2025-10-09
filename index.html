@@ -40,51 +40,55 @@
     </script>
     <!-- End Meta Pixel Code -->
     
-    <!-- Cal.com button mobile styling - icon only -->
+    <!-- Cal.com button styling -->
     <style>
+      /* Hide original Cal.com floating button on mobile */
       @media (max-width: 768px) {
-        /* Make Cal.com button icon-only on mobile - hide text */
-        button.fixed.rounded-full div#button {
-          display: none !important;
-          width: 0 !important;
-          height: 0 !important;
-          opacity: 0 !important;
-          visibility: hidden !important;
-        }
-        
-        button.fixed.rounded-full .font-semibold,
-        button.fixed.rounded-full .antialiased,
-        button.fixed.rounded-full .leading-5 {
-          display: none !important;
-          width: 0 !important;
-          height: 0 !important;
-          opacity: 0 !important;
-          visibility: hidden !important;
-        }
-        
-        /* Resize button to icon size */
+        button[data-cal-namespace="30min"],
         button.fixed.rounded-full.flex.h-16 {
-          width: 3.5rem !important;
-          height: 3.5rem !important;
-          min-width: 3.5rem !important;
-          min-height: 3.5rem !important;
-          padding: 0.75rem !important;
-          justify-content: center !important;
-          align-items: center !important;
+          display: none !important;
         }
-        
-        /* Center the icon and remove margins */
-        button.fixed.rounded-full div#button-icon {
-          margin: 0 !important;
-          margin-right: 0 !important;
-          margin-left: 0 !important;
+      }
+      
+      /* Custom mobile Cal.com button */
+      .custom-cal-mobile-btn {
+        display: none;
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: #1d71e9;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        transition: all 0.3s ease;
+        z-index: 999999999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      @media (max-width: 768px) {
+        .custom-cal-mobile-btn {
+          display: flex !important;
         }
-        
-        /* Make sure icon is visible and centered */
-        button.fixed.rounded-full div#button-icon svg {
-          width: 1.75rem !important;
-          height: 1.75rem !important;
-        }
+      }
+      
+      .custom-cal-mobile-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+      
+      .custom-cal-mobile-btn:active {
+        transform: scale(0.95);
+      }
+      
+      .custom-cal-mobile-btn svg {
+        width: 1.75rem;
+        height: 1.75rem;
+        color: white;
       }
     </style>
   </head>
@@ -94,6 +98,29 @@
       <img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=1317250183411160&ev=PageView&noscript=1" />
     </noscript>
+    
+    <!-- Custom mobile Cal.com button -->
+    <button 
+      class="custom-cal-mobile-btn"
+      data-cal-link="goauto/30min"
+      data-cal-namespace="30min"
+      data-cal-config='{"layout":"month_view"}'
+      aria-label="Book a consultation"
+    >
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+      </svg>
+    </button>
+    
+    <!-- Cal element-click embed code begins -->
+    <script type="text/javascript">
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", "30min", {origin:"https://app.cal.com"});
+      
+      Cal.ns["30min"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#329b88"},"dark":{"cal-brand":"#fafafa"}},"hideEventTypeDetails":false,"layout":"month_view"});
+    </script>
+    <!-- Cal element-click embed code ends -->
+    
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
