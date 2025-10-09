@@ -40,18 +40,31 @@
     </script>
     <!-- End Meta Pixel Code -->
     
-    <!-- Hide Cal.com button on mobile -->
+    <!-- Cal.com button mobile styling - icon only -->
     <style>
       @media (max-width: 768px) {
-        /* Hide Cal.com floating button on mobile */
-        button[data-cal-namespace="30min"],
-        button.fixed.rounded-full.z-\\[999999999999\\],
-        .z-\\[999999999999\\].fixed.bottom-4,
-        button.fixed.flex.h-16.rounded-full {
+        /* Make Cal.com button icon-only on mobile */
+        button[data-cal-namespace="30min"] div#button,
+        button.fixed.rounded-full div#button,
+        button[data-cal-namespace="30min"] .font-semibold,
+        button.fixed.rounded-full .font-semibold {
           display: none !important;
-          visibility: hidden !important;
-          opacity: 0 !important;
-          pointer-events: none !important;
+        }
+        
+        /* Resize button to icon size */
+        button[data-cal-namespace="30min"],
+        button.fixed.rounded-full.z-\\[999999999999\\] {
+          width: 3.5rem !important;
+          height: 3.5rem !important;
+          min-width: 3.5rem !important;
+          min-height: 3.5rem !important;
+          padding: 0.5rem !important;
+        }
+        
+        /* Center the icon and remove margins */
+        button[data-cal-namespace="30min"] div#button-icon,
+        button.fixed.rounded-full div#button-icon {
+          margin: 0 !important;
         }
       }
     </style>
