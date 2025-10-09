@@ -81,7 +81,7 @@ const Chatbot = () => {
                   Deliver on-point answers with <span className="text-blue-400">AI automation</span>
                 </h2>
                 <p className="text-xl text-white/70 leading-relaxed">
-                  Ensure continuous customer engagement and human-like support without expanding your team.
+                  An AI-powered chatbot delivers instant support, automates common questions, and ensures customers get fast, accurate answers—anytime, without waiting in line.
                 </p>
               </div>
             </div>
