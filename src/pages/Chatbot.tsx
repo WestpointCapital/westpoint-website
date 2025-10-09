@@ -108,11 +108,11 @@ const Chatbot = () => {
             {/* Left Side - Image */}
             <div className="flex justify-center lg:justify-start order-1">
               <div className="relative">
-                <img 
-                  src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%207%2C%202025%2C%2003_32_03%20PM.png" 
-                  alt="Built-in return flow automation"
-                  className="max-w-md w-96 h-auto rounded-xl"
-                />
+                      <img 
+                        src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/chatbot.png" 
+                        alt="Built-in return flow automation"
+                        className="max-w-md w-96 h-auto rounded-xl"
+                      />
               </div>
             </div>
 
