@@ -9,42 +9,34 @@ const CalEmbed = () => {
       cal("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#329b88"},"dark":{"cal-brand":"#fafafa"}},"hideEventTypeDetails":false,"layout":"month_view"});
     })();
 
-    // Add custom CSS to hide button text on mobile or hide entire button
-    const style = document.createElement('style');
-    style.id = 'cal-mobile-style';
-    style.textContent = `
-      @media (max-width: 768px) {
-        /* Hide the button completely on mobile */
-        button[data-cal-namespace="30min"] {
-          display: none !important;
+    // Add custom CSS to hide button completely on mobile - wait for button to load
+    const addMobileStyles = () => {
+      const style = document.createElement('style');
+      style.id = 'cal-mobile-style';
+      style.textContent = `
+        @media (max-width: 768px) {
+          /* Hide any Cal.com floating button on mobile */
+          button[data-cal-namespace="30min"],
+          button.fixed.rounded-full[style*="background-color: rgb(29, 113, 233)"],
+          .z-\\[999999999999\\].fixed.rounded-full {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+          }
         }
-        
-        /* Alternative: Show only icon (uncomment if you want icon-only instead)
-        button[data-cal-namespace="30min"] div#button,
-        button[data-cal-namespace="30min"] .font-semibold {
-          display: none !important;
-          visibility: hidden !important;
-          width: 0 !important;
-          height: 0 !important;
-          opacity: 0 !important;
-        }
-        button[data-cal-namespace="30min"] #button-icon,
-        button[data-cal-namespace="30min"] div[id="button-icon"] {
-          margin: 0 !important;
-        }
-        button[data-cal-namespace="30min"] {
-          width: 3.5rem !important;
-          min-width: 3.5rem !important;
-          height: 3.5rem !important;
-          min-height: 3.5rem !important;
-          padding: 0.5rem !important;
-          justify-content: center !important;
-          align-items: center !important;
-        }
-        */
+      `;
+      
+      if (!document.getElementById('cal-mobile-style')) {
+        document.head.appendChild(style);
       }
-    `;
-    document.head.appendChild(style);
+    };
+    
+    // Apply styles immediately
+    addMobileStyles();
+    
+    // Also apply after a delay to catch dynamically loaded button
+    setTimeout(addMobileStyles, 1000);
+    setTimeout(addMobileStyles, 2000);
 
     return () => {
       const existingStyle = document.getElementById('cal-mobile-style');
