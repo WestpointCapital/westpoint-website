@@ -17,17 +17,17 @@ const Chatbot = () => {
             {/* Left Side - Text Content */}
             <div className="space-y-8 text-center lg:text-left">
               <div>
-                <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
-                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+                <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 mb-6">
+                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
                     Get your <span className="text-blue-400">free demo chatbot</span> in one click
                   </h1>
                   <img 
                     src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/cursor.svg" 
                     alt="Computer cursor" 
-                    className="w-8 h-8 animate-bounce"
+                    className="w-6 h-6 sm:w-8 sm:h-8 animate-bounce"
                   />
                 </div>
-                <p className="text-xl text-white/70 leading-relaxed mb-8">
+                <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed mb-8">
                   Enter your website URL and we'll show you exactly how our AI assistant can transform your customer experience.
                 </p>
                 
@@ -77,11 +77,11 @@ const Chatbot = () => {
             {/* Left Side - Text Content */}
             <div className="space-y-8 text-center lg:text-left">
               <div>
-                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
                   Deliver on-point answers with <span className="text-blue-400">AI automation</span>
                 </h2>
-                <p className="text-xl text-white/70 leading-relaxed">
-                  An AI-powered chatbot delivers instant support, automates common questions, and ensures customers get fast, accurate answers—anytime, without waiting in line.
+                <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed">
+                  An AI-powered chatbot delivers instant support, automates common questions, and ensures customers get fast, accurate answers, anytime, without waiting in line.
                 </p>
               </div>
             </div>
@@ -119,10 +119,10 @@ const Chatbot = () => {
             {/* Right Side - Text Content */}
             <div className="space-y-8 text-center lg:text-left order-2">
               <div>
-                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
                   Turn every conversation into <span className="text-blue-400">revenue opportunities</span>
                 </h2>
-                <p className="text-xl text-white/70 leading-relaxed">
+                <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed">
                   Our built-in return flow automatically identifies upsell opportunities, re-engages dormant customers, and converts conversations into sales, all while maintaining that personal touch your customers love.
                 </p>
               </div>
