@@ -255,7 +255,7 @@ const Chatbot = () => {
                 <div className="text-center mb-6">
                   <div className="text-4xl font-bold text-green-400 mb-2">80%</div>
                   <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <img src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%209%2C%202025%2C%2001_36_03%20PM.png" alt="NordicTech Solutions" className="w-12 h-12" />
+                    <img src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Nordictech-2-01.svg" alt="NordicTech Solutions" className="w-12 h-12" />
                   </div>
                 </div>
                 <div className="text-center mb-6">
