@@ -11,7 +11,7 @@ const Chatbot = () => {
       
       {/* Hero Section */}
       <section className="pt-40 pb-24 bg-slate-950">
-        <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
+        <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             
             {/* Left Side - Text Content */}
@@ -71,7 +71,7 @@ const Chatbot = () => {
 
       {/* AI Automation Section */}
       <section className="py-24 bg-slate-950">
-        <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
+        <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             
             {/* Left Side - Text Content */}
@@ -102,7 +102,7 @@ const Chatbot = () => {
 
       {/* Built-in Return Flow Section */}
       <section className="py-24 bg-slate-950">
-        <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
+        <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             
             {/* Left Side - Image */}
@@ -133,7 +133,7 @@ const Chatbot = () => {
 
       {/* User Insights Section */}
       <section className="py-24 bg-slate-950">
-        <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
+        <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           {/* Header */}
           <div className="text-center mb-16">
             <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -186,7 +186,7 @@ const Chatbot = () => {
 
       {/* Features Section */}
       <section className="py-24 bg-slate-950">
-        <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
+        <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               Personal Two-Way <span className="text-blue-400">Communication</span>
@@ -236,7 +236,7 @@ const Chatbot = () => {
 
       {/* Case Studies Section */}
       <section className="py-24 bg-slate-900/50">
-        <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
+        <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               Our results speaks for <span className="text-blue-400">itself</span>
@@ -324,7 +324,7 @@ const Chatbot = () => {
 
       {/* CTA Section */}
       <section className="py-24 bg-slate-950">
-        <div className="mx-auto px-6 sm:px-8 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
+        <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               Ready to Transform Your <span className="text-blue-400">Customer Experience?</span>
