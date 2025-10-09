@@ -152,6 +152,94 @@ const Chatbot = () => {
         </div>
       </section>
 
+      {/* Case Studies Section */}
+      <section className="py-24 bg-slate-900/50">
+        <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
+          <div className="text-center mb-16 px-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+              Our results speaks for <span className="text-blue-400">itself</span>
+            </h2>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto">
+              See how our AI chatbots have transformed businesses and delivered incredible results for our clients.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 px-4">
+            {/* Case Study 1 */}
+            <div className="relative rounded-2xl p-8 border border-blue-500/20 group hover:scale-105 transition-all duration-300 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-blue-500/10"></div>
+              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center opacity-20"></div>
+              <div className="relative z-10">
+                <div className="text-center mb-6">
+                  <div className="text-4xl font-bold text-green-400 mb-2">80%</div>
+                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <img src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Nordictech-2-02.svg" alt="NordicTech Solutions" className="w-12 h-12" />
+                  </div>
+                </div>
+                <div className="text-center mb-6">
+                  <h3 className="text-xl font-semibold text-white">NordicTech Solutions</h3>
+                  <p className="text-sm text-blue-400">E-commerce Platform</p>
+                </div>
+                <p className="text-white/70 leading-relaxed mb-4">
+                  "We were drowning in support tickets. Our team of 8 was working 12-hour days just to keep up. 
+                  After implementing the AI chatbot, we reduced support costs by 80% and our customer satisfaction 
+                  actually improved. The chatbot handles 90% of inquiries instantly."
+                </p>
+                <div className="text-sm text-white/60">- Sarah Chen, Customer Success Director</div>
+              </div>
+            </div>
+
+            {/* Case Study 2 */}
+            <div className="relative rounded-2xl p-8 border border-blue-500/20 group hover:scale-105 transition-all duration-300 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10"></div>
+              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1576091160395-0366d4c4b8b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center opacity-20"></div>
+              <div className="relative z-10">
+                <div className="text-center mb-6">
+                  <div className="text-4xl font-bold text-blue-400 mb-2">85%</div>
+                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <img src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/gmka-logo.svg" alt="GMKA" className="w-12 h-12" />
+                  </div>
+                </div>
+                <div className="text-center mb-6">
+                  <h3 className="text-xl font-semibold text-white">GMKA</h3>
+                  <p className="text-sm text-blue-400">Corporate Services</p>
+                </div>
+                <p className="text-white/70 leading-relaxed mb-4">
+                  "We deployed an internal AI chatbot to streamline employee information access. The results were 
+                  staggering—85% reduction in manual information requests. Our team now gets instant answers to 
+                  policy questions, procedures, and company resources without waiting for HR responses."
+                </p>
+                <div className="text-sm text-white/60">- Anna Johansson, Operations Director</div>
+              </div>
+            </div>
+
+            {/* Case Study 3 */}
+            <div className="relative rounded-2xl p-8 border border-blue-500/20 group hover:scale-105 transition-all duration-300 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-orange-500/10"></div>
+              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center opacity-20"></div>
+              <div className="relative z-10">
+                <div className="text-center mb-6">
+                  <div className="text-4xl font-bold text-yellow-400 mb-2">3x</div>
+                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <img src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Villa-Vie-White-Logo%20%281%29.svg" alt="Villa Vie Residences" className="w-12 h-12" />
+                  </div>
+                </div>
+                <div className="text-center mb-6">
+                  <h3 className="text-xl font-semibold text-white">Villa Vie Residences</h3>
+                  <p className="text-sm text-blue-400">Residential Cruise</p>
+                </div>
+                <p className="text-white/70 leading-relaxed mb-4">
+                  "We deployed an AI chatbot to engage with prospective guests exploring our residential cruise options. 
+                  The results were remarkable—3x increase in qualified leads. The chatbot answers detailed questions about 
+                  our residences, amenities, and voyage schedules, nurturing prospects through personalized conversations."
+                </p>
+                <div className="text-sm text-white/60">- Michael Torres, Sales Director</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* User Insights Section */}
       <section className="py-24 bg-slate-950">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
@@ -250,94 +338,6 @@ const Chatbot = () => {
                 Smart intent detection automatically routes customers to AI assistance or human agents 
                 based on their preferences and the complexity of their needs.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Case Studies Section */}
-      <section className="py-24 bg-slate-900/50">
-        <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
-          <div className="text-center mb-16 px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-              Our results speaks for <span className="text-blue-400">itself</span>
-            </h2>
-            <p className="text-xl text-white/70 max-w-3xl mx-auto">
-              See how our AI chatbots have transformed businesses and delivered incredible results for our clients.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 px-4">
-            {/* Case Study 1 */}
-            <div className="relative rounded-2xl p-8 border border-blue-500/20 group hover:scale-105 transition-all duration-300 overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-blue-500/10"></div>
-              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center opacity-20"></div>
-              <div className="relative z-10">
-                <div className="text-center mb-6">
-                  <div className="text-4xl font-bold text-green-400 mb-2">80%</div>
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <img src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Nordictech-2-02.svg" alt="NordicTech Solutions" className="w-12 h-12" />
-                  </div>
-                </div>
-                <div className="text-center mb-6">
-                  <h3 className="text-xl font-semibold text-white">NordicTech Solutions</h3>
-                  <p className="text-sm text-blue-400">E-commerce Platform</p>
-                </div>
-                <p className="text-white/70 leading-relaxed mb-4">
-                  "We were drowning in support tickets. Our team of 8 was working 12-hour days just to keep up. 
-                  After implementing the AI chatbot, we reduced support costs by 80% and our customer satisfaction 
-                  actually improved. The chatbot handles 90% of inquiries instantly."
-                </p>
-                <div className="text-sm text-white/60">- Sarah Chen, Customer Success Director</div>
-              </div>
-            </div>
-
-            {/* Case Study 2 */}
-            <div className="relative rounded-2xl p-8 border border-blue-500/20 group hover:scale-105 transition-all duration-300 overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10"></div>
-              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1576091160395-0366d4c4b8b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center opacity-20"></div>
-              <div className="relative z-10">
-                <div className="text-center mb-6">
-                  <div className="text-4xl font-bold text-blue-400 mb-2">85%</div>
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <img src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/gmka-logo.svg" alt="GMKA" className="w-12 h-12" />
-                  </div>
-                </div>
-                <div className="text-center mb-6">
-                  <h3 className="text-xl font-semibold text-white">GMKA</h3>
-                  <p className="text-sm text-blue-400">Corporate Services</p>
-                </div>
-                <p className="text-white/70 leading-relaxed mb-4">
-                  "We deployed an internal AI chatbot to streamline employee information access. The results were 
-                  staggering—85% reduction in manual information requests. Our team now gets instant answers to 
-                  policy questions, procedures, and company resources without waiting for HR responses."
-                </p>
-                <div className="text-sm text-white/60">- Anna Johansson, Operations Director</div>
-              </div>
-            </div>
-
-            {/* Case Study 3 */}
-            <div className="relative rounded-2xl p-8 border border-blue-500/20 group hover:scale-105 transition-all duration-300 overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-orange-500/10"></div>
-              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center opacity-20"></div>
-              <div className="relative z-10">
-                <div className="text-center mb-6">
-                  <div className="text-4xl font-bold text-yellow-400 mb-2">3x</div>
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <img src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Villa-Vie-White-Logo%20%281%29.svg" alt="Villa Vie Residences" className="w-12 h-12" />
-                  </div>
-                </div>
-                <div className="text-center mb-6">
-                  <h3 className="text-xl font-semibold text-white">Villa Vie Residences</h3>
-                  <p className="text-sm text-blue-400">Residential Cruise</p>
-                </div>
-                <p className="text-white/70 leading-relaxed mb-4">
-                  "We deployed an AI chatbot to engage with prospective guests exploring our residential cruise options. 
-                  The results were remarkable—3x increase in qualified leads. The chatbot answers detailed questions about 
-                  our residences, amenities, and voyage schedules, nurturing prospects through personalized conversations."
-                </p>
-                <div className="text-sm text-white/60">- Michael Torres, Sales Director</div>
-              </div>
             </div>
           </div>
         </div>
