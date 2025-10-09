@@ -11,19 +11,31 @@ const CalEmbed = () => {
 
     // Add custom CSS to hide button text on mobile
     const style = document.createElement('style');
+    style.id = 'cal-mobile-style';
     style.textContent = `
       @media (max-width: 768px) {
-        button[data-cal-namespace="30min"] #button {
+        button[data-cal-namespace="30min"] div#button,
+        button[data-cal-namespace="30min"] .font-semibold {
           display: none !important;
+          visibility: hidden !important;
+          width: 0 !important;
+          height: 0 !important;
+          opacity: 0 !important;
         }
-        button[data-cal-namespace="30min"] #button-icon {
+        button[data-cal-namespace="30min"] #button-icon,
+        button[data-cal-namespace="30min"] div[id="button-icon"] {
           margin-right: 0 !important;
+          margin-left: 0 !important;
+          margin: 0 !important;
         }
         button[data-cal-namespace="30min"] {
-          width: 4rem !important;
-          height: 4rem !important;
-          padding: 0.75rem !important;
+          width: 3.5rem !important;
+          min-width: 3.5rem !important;
+          height: 3.5rem !important;
+          min-height: 3.5rem !important;
+          padding: 0.5rem !important;
           justify-content: center !important;
+          align-items: center !important;
         }
       }
     `;
