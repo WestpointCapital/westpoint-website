@@ -255,7 +255,7 @@ const Chatbot = () => {
                 <div className="text-center mb-6">
                   <div className="text-4xl font-bold text-green-400 mb-2">80%</div>
                   <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <img src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Nordictech-2-01.svg" alt="NordicTech Solutions" className="w-12 h-12" />
+                    <img src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Nordictech-2-01.svg" alt="NordicTech Solutions" className="w-12 h-12 brightness-0 invert" />
                   </div>
                 </div>
                 <div className="text-center mb-6">
@@ -302,20 +302,20 @@ const Chatbot = () => {
               <div className="relative z-10">
                 <div className="text-center mb-6">
                   <div className="text-4xl font-bold text-yellow-400 mb-2">3x</div>
-                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className="w-8 h-8" />
+                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <img src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Nordictech-2-01.svg" alt="Villa Vie Residences" className="w-12 h-12 brightness-0 invert" />
                   </div>
                 </div>
                 <div className="text-center mb-6">
-                  <h3 className="text-xl font-semibold text-white">CapitalBridge Financial</h3>
-                  <p className="text-sm text-blue-400">Investment Firm</p>
+                  <h3 className="text-xl font-semibold text-white">Villa Vie Residences</h3>
+                  <p className="text-sm text-blue-400">Residential Cruise</p>
                 </div>
                 <p className="text-white/70 leading-relaxed mb-4">
-                  "Our clients expect lightning-fast responses. The AI chatbot cut our response time from 
-                  2 hours to 20 minutes. We've seen a 150% increase in client engagement and our team 
-                  can focus on high-value advisory work instead of routine inquiries."
+                  "We deployed an AI chatbot to engage with prospective guests exploring our residential cruise options. 
+                  The results were remarkable—3x increase in qualified leads. The chatbot answers detailed questions about 
+                  our residences, amenities, and voyage schedules, nurturing prospects through personalized conversations."
                 </p>
-                <div className="text-sm text-white/60">- Jennifer Walsh, Operations Manager</div>
+                <div className="text-sm text-white/60">- Michael Torres, Sales Director</div>
               </div>
             </div>
           </div>
