@@ -123,7 +123,7 @@ const Chatbot = () => {
                   Turn every conversation into <span className="text-blue-400">revenue opportunities</span>
                 </h2>
                 <p className="text-xl text-white/70 leading-relaxed">
-                  Our built-in return flow automatically identifies upsell opportunities, re-engages dormant customers, and converts conversations into sales—all while maintaining that personal touch your customers love.
+                  Our built-in return flow automatically identifies upsell opportunities, re-engages dormant customers, and converts conversations into sales, all while maintaining that personal touch your customers love.
                 </p>
               </div>
             </div>
