@@ -3,7 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import CalEmbed from "./components/CalEmbed"; // Now using custom HTML button
+import CalEmbed from "./components/CalEmbed"; // Desktop version
 import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
@@ -31,7 +31,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      {/* <CalEmbed /> */}
+      <CalEmbed />
       <BrowserRouter>
         <ScrollToTop />
         <Routes>

@@ -50,24 +50,27 @@
         }
       }
       
-      /* Custom mobile Cal.com button */
+      /* Custom mobile Cal.com button - styled like desktop version */
       .custom-cal-mobile-btn {
         display: none;
         position: fixed;
         bottom: 1rem;
         right: 1rem;
-        width: 3.5rem;
-        height: 3.5rem;
+        height: 4rem;
         background-color: #1d71e9;
-        border-radius: 50%;
+        border-radius: 9999px;
         border: none;
         cursor: pointer;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         transition: all 0.3s ease;
         z-index: 999999999;
+        padding: 1rem 1.5rem;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
         display: flex;
         align-items: center;
-        justify-content: center;
+        gap: 0.75rem;
       }
       
       @media (max-width: 768px) {
@@ -89,6 +92,7 @@
         width: 1.75rem;
         height: 1.75rem;
         color: white;
+        flex-shrink: 0;
       }
     </style>
   </head>
@@ -110,6 +114,7 @@
       <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
       </svg>
+      <span>Free Consulting Call</span>
     </button>
     
     <!-- Cal element-click embed code begins -->
