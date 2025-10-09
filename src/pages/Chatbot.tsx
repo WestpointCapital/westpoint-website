@@ -17,15 +17,24 @@ const Chatbot = () => {
             {/* Left Side - Text Content */}
             <div className="space-y-8 text-center lg:text-left">
               <div>
-                <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 mb-6">
-                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-                    Get your <span className="text-blue-400">free demo chatbot</span> in one click
-                  </h1>
-                  <img 
-                    src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/cursor.svg" 
-                    alt="Computer cursor" 
-                    className="w-6 h-6 sm:w-8 sm:h-8 animate-bounce"
-                  />
+                <div className="mb-6">
+                  <div className="flex justify-center lg:justify-start mb-2 lg:hidden">
+                    <img 
+                      src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/cursor.svg" 
+                      alt="Computer cursor" 
+                      className="w-6 h-6 animate-bounce"
+                    />
+                  </div>
+                  <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2">
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+                      Get your <span className="text-blue-400">free demo chatbot</span> in one click
+                    </h1>
+                    <img 
+                      src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/cursor.svg" 
+                      alt="Computer cursor" 
+                      className="w-8 h-8 animate-bounce hidden lg:inline-block"
+                    />
+                  </div>
                 </div>
                 <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed mb-8">
                   Enter your website URL and we'll show you exactly how our AI assistant can transform your customer experience.

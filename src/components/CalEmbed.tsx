@@ -42,7 +42,10 @@ const CalEmbed = () => {
     document.head.appendChild(style);
 
     return () => {
-      document.head.removeChild(style);
+      const existingStyle = document.getElementById('cal-mobile-style');
+      if (existingStyle) {
+        document.head.removeChild(existingStyle);
+      }
     };
   }, []);
 
