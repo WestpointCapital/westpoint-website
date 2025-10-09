@@ -43,28 +43,47 @@
     <!-- Cal.com button mobile styling - icon only -->
     <style>
       @media (max-width: 768px) {
-        /* Make Cal.com button icon-only on mobile */
-        button[data-cal-namespace="30min"] div#button,
-        button.fixed.rounded-full div#button,
-        button[data-cal-namespace="30min"] .font-semibold,
-        button.fixed.rounded-full .font-semibold {
+        /* Make Cal.com button icon-only on mobile - hide text */
+        button.fixed.rounded-full div#button {
           display: none !important;
+          width: 0 !important;
+          height: 0 !important;
+          opacity: 0 !important;
+          visibility: hidden !important;
+        }
+        
+        button.fixed.rounded-full .font-semibold,
+        button.fixed.rounded-full .antialiased,
+        button.fixed.rounded-full .leading-5 {
+          display: none !important;
+          width: 0 !important;
+          height: 0 !important;
+          opacity: 0 !important;
+          visibility: hidden !important;
         }
         
         /* Resize button to icon size */
-        button[data-cal-namespace="30min"],
-        button.fixed.rounded-full.z-\\[999999999999\\] {
+        button.fixed.rounded-full.flex.h-16 {
           width: 3.5rem !important;
           height: 3.5rem !important;
           min-width: 3.5rem !important;
           min-height: 3.5rem !important;
-          padding: 0.5rem !important;
+          padding: 0.75rem !important;
+          justify-content: center !important;
+          align-items: center !important;
         }
         
         /* Center the icon and remove margins */
-        button[data-cal-namespace="30min"] div#button-icon,
         button.fixed.rounded-full div#button-icon {
           margin: 0 !important;
+          margin-right: 0 !important;
+          margin-left: 0 !important;
+        }
+        
+        /* Make sure icon is visible and centered */
+        button.fixed.rounded-full div#button-icon svg {
+          width: 1.75rem !important;
+          height: 1.75rem !important;
         }
       }
     </style>
