@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Chatbot = () => {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-slate-950 overflow-x-hidden">
       <Navigation />
       
       {/* Hero Section */}
@@ -32,14 +32,14 @@ const Chatbot = () => {
                 </p>
                 
                 {/* Iframe Embed */}
-                <div className="w-full flex justify-center lg:justify-start">
-                  <div className="w-full max-w-md lg:max-w-lg lg:-ml-4">
+                <div className="w-full overflow-hidden">
+                  <div className="w-full max-w-md lg:max-w-lg mx-auto lg:mx-0">
                     <iframe 
                       src="https://genia-psi.vercel.app/embed/campaign/1759853260622-7yyqth6" 
                       width="100%" 
                       height="600" 
                       frameBorder="0" 
-                      style={{ border: 'none', borderRadius: '8px' }}
+                      style={{ border: 'none', borderRadius: '8px', maxWidth: '100%' }}
                       allow="camera; microphone; geolocation"
                       sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
                       onError={() => console.log('Iframe failed to load')}
