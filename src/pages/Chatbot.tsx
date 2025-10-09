@@ -89,9 +89,15 @@ const Chatbot = () => {
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
                   Deliver on-point answers with <span className="text-blue-400">AI automation</span>
                 </h2>
-                <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed">
+                <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed mb-8">
                   An AI-powered chatbot delivers instant support, automates common questions, and ensures customers get fast, accurate answers, anytime, without waiting in line.
                 </p>
+                <button 
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                  className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 active:scale-95"
+                >
+                  Get your free demo now
+                </button>
               </div>
             </div>
 
@@ -131,9 +137,15 @@ const Chatbot = () => {
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
                   Turn every conversation into <span className="text-blue-400">revenue opportunities</span>
                 </h2>
-                <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed">
+                <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed mb-8">
                   Our built-in return flow automatically identifies upsell opportunities, re-engages dormant customers, and converts conversations into sales, all while maintaining that personal touch your customers love.
                 </p>
+                <button 
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                  className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 active:scale-95"
+                >
+                  Get your free demo now
+                </button>
               </div>
             </div>
           </div>
