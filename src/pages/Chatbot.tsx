@@ -12,7 +12,7 @@ const Chatbot = () => {
       {/* Hero Section */}
       <section className="pt-40 pb-24 bg-slate-950">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center px-4">
             
             {/* Left Side - Text Content */}
             <div className="space-y-8 text-center lg:text-left">
@@ -72,7 +72,7 @@ const Chatbot = () => {
       {/* AI Automation Section */}
       <section className="py-24 bg-slate-950">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center px-4">
             
             {/* Left Side - Text Content */}
             <div className="space-y-8 text-center lg:text-left">
@@ -103,7 +103,7 @@ const Chatbot = () => {
       {/* Built-in Return Flow Section */}
       <section className="py-24 bg-slate-950">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center px-4">
             
             {/* Left Side - Image */}
             <div className="flex justify-center lg:justify-start order-1">
@@ -153,7 +153,7 @@ const Chatbot = () => {
           <div className="grid md:grid-cols-3 gap-0">
             {/* Card 1 */}
             <div className="bg-slate-800/30 p-4 sm:p-6 md:p-8 border-r border-green-500/30">
-              <div className="text-center">
+              <div className="text-center px-4">
                 <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-green-400 mb-4">55.5%</div>
                 <p className="text-sm sm:text-base text-white/70 leading-relaxed">
                   About 55.5% of users prefer using AI chatbots for quick support before reaching a human agent, mainly because of faster response times.
@@ -163,7 +163,7 @@ const Chatbot = () => {
 
             {/* Card 2 */}
             <div className="bg-slate-800/30 p-4 sm:p-6 md:p-8 border-r border-yellow-500/30">
-              <div className="text-center">
+              <div className="text-center px-4">
                 <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-yellow-400 mb-4">66.7%</div>
                 <p className="text-sm sm:text-base text-white/70 leading-relaxed">
                   Approximately 66.7% of customer issues handled by chatbots are related to simple queries such as order status, returns, or account details.
@@ -173,7 +173,7 @@ const Chatbot = () => {
 
             {/* Card 3 */}
             <div className="bg-slate-800/30 p-4 sm:p-6 md:p-8">
-              <div className="text-center">
+              <div className="text-center px-4">
                 <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-orange-400 mb-4">40.2%</div>
                 <p className="text-sm sm:text-base text-white/70 leading-relaxed">
                   Around 40.2% of users report frustration when chatbots fail to understand complex questions, highlighting the need for smooth handover to human support.
@@ -187,7 +187,7 @@ const Chatbot = () => {
       {/* Features Section */}
       <section className="py-24 bg-slate-950">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 px-4">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               Personal Two-Way <span className="text-blue-400">Communication</span>
             </h2>
@@ -237,7 +237,7 @@ const Chatbot = () => {
       {/* Case Studies Section */}
       <section className="py-24 bg-slate-900/50">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 px-4">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               Our results speaks for <span className="text-blue-400">itself</span>
             </h2>
@@ -246,7 +246,7 @@ const Chatbot = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 px-4">
             {/* Case Study 1 */}
             <div className="relative rounded-2xl p-8 border border-blue-500/20 group hover:scale-105 transition-all duration-300 overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-blue-500/10"></div>
@@ -325,7 +325,7 @@ const Chatbot = () => {
       {/* CTA Section */}
       <section className="py-24 bg-slate-950">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
-          <div className="text-center">
+          <div className="text-center px-4">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               Ready to Transform Your <span className="text-blue-400">Customer Experience?</span>
             </h2>
