@@ -48,21 +48,6 @@ const Chatbot = () => {
                   </div>
                 </div>
                 
-                {/* Read More Indicator */}
-                <div className="flex justify-center items-center mt-6 w-full">
-                  <div className="flex flex-col items-center gap-1 text-white/70 group cursor-pointer">
-                    <span className="text-sm">Read more</span>
-                    <svg 
-                      className="w-4 h-4 animate-bounce group-hover:translate-y-1 transition-transform duration-500" 
-                      style={{ animationDuration: '2s' }}
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                    </svg>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -157,7 +142,7 @@ const Chatbot = () => {
               </svg>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              "User Insights"
+              User Insights
             </h2>
             <p className="text-xl text-white/70 max-w-4xl mx-auto">
               Based on the answers from User interviews and Survey, I found some key insights which help us to observe any pattern and similarity in what potential users may want.
@@ -171,7 +156,7 @@ const Chatbot = () => {
               <div className="text-center">
                 <div className="text-6xl font-bold text-green-400 mb-4">55.5%</div>
                 <p className="text-white/70 leading-relaxed">
-                  About 55.7% of users go outside for food once or twice a month. Users were mostly influenced by social media(eg. Facebook, Instagram) when it comes to choosing a place to eat.
+                  About 55.5% of users prefer using AI chatbots for quick support before reaching a human agent, mainly because of faster response times.
                 </p>
               </div>
             </div>
@@ -181,7 +166,7 @@ const Chatbot = () => {
               <div className="text-center">
                 <div className="text-6xl font-bold text-yellow-400 mb-4">66.7%</div>
                 <p className="text-white/70 leading-relaxed">
-                  Approximately 66.7% of users' food ordering experience is influenced by their allergies. They have to care about what they are ordering.
+                  Approximately 66.7% of customer issues handled by chatbots are related to simple queries such as order status, returns, or account details.
                 </p>
               </div>
             </div>
@@ -191,7 +176,7 @@ const Chatbot = () => {
               <div className="text-center">
                 <div className="text-6xl font-bold text-orange-400 mb-4">40.2%</div>
                 <p className="text-white/70 leading-relaxed">
-                  A wide number of audiences were not impressed by the food they ordered. Certain times foods were not the same as they ordered or the rider has delayed their delivery time.
+                  Around 40.2% of users report frustration when chatbots fail to understand complex questions—highlighting the need for smooth handover to human support.
                 </p>
               </div>
             </div>
