@@ -206,9 +206,9 @@ const Chatbot = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="glass-container rounded-2xl p-8 group hover:scale-105 transition-all duration-300 bg-slate-900/50 border border-blue-500/20">
-              <div className="text-blue-400 mb-6 group-hover:scale-110 transition-transform duration-300">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+            <div className="glass-container rounded-2xl p-8 group hover:scale-105 transition-all duration-300 bg-slate-900/50 border border-blue-500/20 text-center">
+              <div className="text-blue-400 mb-6 group-hover:scale-110 transition-transform duration-300 flex justify-center">
                 <MessageSquare className="w-12 h-12" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-white">Personal Conversations</h3>
@@ -218,8 +218,8 @@ const Chatbot = () => {
               </p>
             </div>
 
-            <div className="glass-container rounded-2xl p-8 group hover:scale-105 transition-all duration-300 bg-slate-900/50 border border-blue-500/20">
-              <div className="text-blue-400 mb-6 group-hover:scale-110 transition-transform duration-300">
+            <div className="glass-container rounded-2xl p-8 group hover:scale-105 transition-all duration-300 bg-slate-900/50 border border-blue-500/20 text-center">
+              <div className="text-blue-400 mb-6 group-hover:scale-110 transition-transform duration-300 flex justify-center">
                 <Users className="w-12 h-12" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-white">Interactive Engagement</h3>
@@ -229,8 +229,8 @@ const Chatbot = () => {
               </p>
             </div>
 
-            <div className="glass-container rounded-2xl p-8 group hover:scale-105 transition-all duration-300 bg-slate-900/50 border border-blue-500/20">
-              <div className="text-blue-400 mb-6 group-hover:scale-110 transition-transform duration-300">
+            <div className="glass-container rounded-2xl p-8 group hover:scale-105 transition-all duration-300 bg-slate-900/50 border border-blue-500/20 text-center">
+              <div className="text-blue-400 mb-6 group-hover:scale-110 transition-transform duration-300 flex justify-center">
                 <Zap className="w-12 h-12" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-white">Intent Recognition</h3>

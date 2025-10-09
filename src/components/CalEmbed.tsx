@@ -9,11 +9,17 @@ const CalEmbed = () => {
       cal("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#329b88"},"dark":{"cal-brand":"#fafafa"}},"hideEventTypeDetails":false,"layout":"month_view"});
     })();
 
-    // Add custom CSS to hide button text on mobile
+    // Add custom CSS to hide button text on mobile or hide entire button
     const style = document.createElement('style');
     style.id = 'cal-mobile-style';
     style.textContent = `
       @media (max-width: 768px) {
+        /* Hide the button completely on mobile */
+        button[data-cal-namespace="30min"] {
+          display: none !important;
+        }
+        
+        /* Alternative: Show only icon (uncomment if you want icon-only instead)
         button[data-cal-namespace="30min"] div#button,
         button[data-cal-namespace="30min"] .font-semibold {
           display: none !important;
@@ -24,8 +30,6 @@ const CalEmbed = () => {
         }
         button[data-cal-namespace="30min"] #button-icon,
         button[data-cal-namespace="30min"] div[id="button-icon"] {
-          margin-right: 0 !important;
-          margin-left: 0 !important;
           margin: 0 !important;
         }
         button[data-cal-namespace="30min"] {
@@ -37,6 +41,7 @@ const CalEmbed = () => {
           justify-content: center !important;
           align-items: center !important;
         }
+        */
       }
     `;
     document.head.appendChild(style);
