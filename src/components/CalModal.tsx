@@ -9,7 +9,7 @@ interface CalModalProps {
 const CalModal = ({ isOpen, onClose }: CalModalProps) => {
   useEffect(() => {
     if (isOpen) {
-      // Load Cal.com script and initialize
+      // Load Cal.com script and initialize with unique namespace
       const script = document.createElement('script');
       script.type = 'text/javascript';
       script.innerHTML = `
@@ -40,15 +40,15 @@ const CalModal = ({ isOpen, onClose }: CalModalProps) => {
           }; 
         })(window, "https://app.cal.com/embed/embed.js", "init");
         
-        Cal("init", "30min", {origin:"https://app.cal.com"});
+        Cal("init", "modal-consultation", {origin:"https://app.cal.com"});
         
-        Cal.ns["30min"]("inline", {
-          elementOrSelector:"#my-cal-inline-30min",
+        Cal.ns["modal-consultation"]("inline", {
+          elementOrSelector:"#my-cal-inline-modal",
           config: {"layout":"month_view"},
           calLink: "goauto/30min",
         });
         
-        Cal.ns["30min"]("ui", {
+        Cal.ns["modal-consultation"]("ui", {
           "cssVarsPerTheme":{
             "light":{"cal-brand":"#329b88"},
             "dark":{"cal-brand":"#fafafa"}
@@ -94,7 +94,7 @@ const CalModal = ({ isOpen, onClose }: CalModalProps) => {
         <div className="h-full p-6">
           <div 
             style={{width:'100%',height:'100%',overflow:'scroll'}} 
-            id="my-cal-inline-30min"
+            id="my-cal-inline-modal"
           />
         </div>
       </div>
