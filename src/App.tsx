@@ -3,7 +3,10 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import CalEmbed from "./components/CalEmbed"; // Desktop version
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import CalModal from "./components/CalModal";
 import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
@@ -26,38 +29,53 @@ import Validation from "./pages/cases/Validation";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <CalEmbed />
-      <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/cases" element={<Cases />} />
-          <Route path="/partners" element={<Partners />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/chatbot" element={<Chatbot />} />
-          <Route path="/sms-email" element={<SmsEmail />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-conditions" element={<TermsConditions />} />
-          <Route path="/cases/villa-vie-residences" element={<VillaVieResidences />} />
-          <Route path="/cases/bedreklima" element={<Bedreklima />} />
-          <Route path="/cases/nikolinehus" element={<Nicolinehus />} />
-          <Route path="/cases/nordic-refrigeration" element={<NordicRefrigeration />} />
-          <Route path="/cases/swissblu" element={<Swissblu />} />
-          <Route path="/cases/reimbursement" element={<Reimbursement />} />
-          <Route path="/cases/validation" element={<Validation />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const App = () => {
+  const [isCalModalOpen, setIsCalModalOpen] = useState(false);
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        
+        {/* Fixed Consultation Button */}
+        <Button 
+          onClick={() => setIsCalModalOpen(true)}
+          className="z-[999999999999] fixed md:bottom-6 bottom-4 md:right-10 right-4 hero-button px-8 py-4 h-auto"
+        >
+          Schedule Consultation
+          <ArrowRight className="ml-2 w-5 h-5" />
+        </Button>
+
+        <BrowserRouter>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/cases" element={<Cases />} />
+            <Route path="/partners" element={<Partners />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/chatbot" element={<Chatbot />} />
+            <Route path="/sms-email" element={<SmsEmail />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-conditions" element={<TermsConditions />} />
+            <Route path="/cases/villa-vie-residences" element={<VillaVieResidences />} />
+            <Route path="/cases/bedreklima" element={<Bedreklima />} />
+            <Route path="/cases/nikolinehus" element={<Nicolinehus />} />
+            <Route path="/cases/nordic-refrigeration" element={<NordicRefrigeration />} />
+            <Route path="/cases/swissblu" element={<Swissblu />} />
+            <Route path="/cases/reimbursement" element={<Reimbursement />} />
+            <Route path="/cases/validation" element={<Validation />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+        
+        <CalModal isOpen={isCalModalOpen} onClose={() => setIsCalModalOpen(false)} />
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;
