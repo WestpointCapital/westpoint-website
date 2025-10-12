@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { Calendar } from "lucide-react";
 import CalModal from "./components/CalModal";
 import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
@@ -43,8 +43,8 @@ const App = () => {
           onClick={() => setIsCalModalOpen(true)}
           className="z-[999999999999] fixed md:bottom-6 bottom-4 md:right-10 right-4 hero-button px-8 py-4 h-auto"
         >
+          <Calendar className="mr-2 w-5 h-5" />
           Schedule Consultation
-          <ArrowRight className="ml-2 w-5 h-5" />
         </Button>
 
         <BrowserRouter>
