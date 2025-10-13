@@ -212,21 +212,22 @@ const Chatbot = () => {
               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center opacity-20"></div>
               <div className="relative z-10">
                 <div className="text-center mb-6">
-                  <div className="text-4xl font-bold text-yellow-400 mb-2">3x</div>
+                  <div className="text-4xl font-bold text-yellow-400 mb-2">80%</div>
                   <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <img src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Villa-Vie-White-Logo%20%281%29.svg" alt="Villa Vie Residences" className="w-12 h-12" />
+                    <img src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Med-farve-01.svg" alt="Bedreklima" className="w-12 h-12" />
                   </div>
                 </div>
                 <div className="text-center mb-6">
-                  <h3 className="text-xl font-semibold text-white">Villa Vie Residences</h3>
-                  <p className="text-sm text-blue-400">Residential Cruise</p>
+                  <h3 className="text-xl font-semibold text-white">Bedreklima</h3>
+                  <p className="text-sm text-blue-400">HVAC Solutions</p>
                 </div>
                 <p className="text-white/70 leading-relaxed mb-4">
-                  "We deployed an AI chatbot to engage with prospective guests exploring our residential cruise options. 
-                  The results were remarkable—3x increase in qualified leads. The chatbot answers detailed questions about 
-                  our residences, amenities, and voyage schedules, nurturing prospects through personalized conversations."
+                  "We deployed an AI chatbot to handle customer inquiries about our climate control systems. 
+                  The results were remarkable—80% reduction in customer questions. The chatbot instantly answers 
+                  questions about installation, maintenance, and product specifications, freeing our team to focus 
+                  on complex technical support and sales."
                 </p>
-                <div className="text-sm text-white/60">- Michael Torres, Sales Director</div>
+                <div className="text-sm text-white/60">- Henrik Nielsen, Customer Service Manager</div>
               </div>
             </div>
           </div>
