@@ -96,7 +96,9 @@ const ContactCTA = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-white">Email Us</div>
-                  <div className="text-white/70">contact@westpoint.capital</div>
+                  <a href="mailto:contact@westpoint.capital" className="text-white/70 hover:text-white transition-colors">
+                    contact@westpoint.capital
+                  </a>
                 </div>
               </div>
               <div className="flex items-center gap-4">
