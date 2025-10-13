@@ -48,7 +48,11 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-white">Contact</h4>
             <ul className="space-y-3">
               <li>
-                <a href="mailto:contact@westpoint.capital" className="text-white/70 hover:text-white transition-colors">
+                <a 
+                  href="mailto:contact@westpoint.capital" 
+                  className="text-white/70 hover:text-white transition-colors cursor-pointer"
+                  rel="noopener noreferrer"
+                >
                   contact@westpoint.capital
                 </a>
               </li>
