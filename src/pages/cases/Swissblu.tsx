@@ -2,9 +2,27 @@ import Navigation from '../../components/ui/navigation';
 import Footer from '../../components/sections/footer';
 import { ArrowLeft, CheckCircle, TrendingUp, Users, DollarSign, Mail, Target, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import CalButton from '../../components/CalButton';
+import { useEffect } from 'react';
 
 const Swissblu = () => {
+  useEffect(() => {
+    // Initialize Cal.com embed
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.innerHTML = `
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", "30min", {origin:"https://app.cal.com"});
+      Cal.ns["30min"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#329b88"},"dark":{"cal-brand":"#fafafa"}},"hideEventTypeDetails":false,"layout":"month_view"});
+    `;
+    document.head.appendChild(script);
+
+    return () => {
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-slate-950 overflow-x-hidden">
       <Navigation />
@@ -246,12 +264,15 @@ const Swissblu = () => {
               <p className="text-xl text-white/70 mb-8 max-w-2xl mx-auto">
                 Let's discuss how we can help you achieve similar results with targeted email campaigns and automation strategies.
               </p>
-              <CalButton 
+              <button 
+                data-cal-link="goauto/30min"
+                data-cal-namespace="30min"
+                data-cal-config='{"layout":"month_view"}'
                 className="inline-flex items-center gap-2 px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-full transition-colors duration-200"
               >
                 Get Started Today
                 <ArrowLeft className="w-4 h-4 rotate-180" />
-              </CalButton>
+              </button>
             </div>
           </div>
         </section>
