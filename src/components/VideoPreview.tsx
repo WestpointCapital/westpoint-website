@@ -33,23 +33,21 @@ const VideoPreview = ({ onClose }: VideoPreviewProps) => {
             {/* Video Preview Card with Blue Border */}
             <div 
               onClick={handleOpenVideo}
-              className="bg-slate-900 rounded-2xl shadow-2xl overflow-hidden cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-blue-500/20"
+              className="rounded-2xl cursor-pointer transform transition-all duration-300 hover:scale-105"
               style={{ 
-                width: '280px', 
-                border: '2px solid #5B6BF2 !important',
-                borderStyle: 'solid !important',
-                borderWidth: '2px !important',
-                borderColor: '#5B6BF2 !important',
-                boxSizing: 'border-box'
+                width: '280px',
+                border: '2px solid #5B6BF2',
+                backgroundColor: '#0f172a'
               }}
             >
-              {/* Title */}
-              <div className="px-4 pt-4 pb-2">
-                <p className="text-white text-sm font-medium">Watch introvideo</p>
-              </div>
+              <div className="shadow-2xl overflow-hidden rounded-2xl">
+                {/* Title */}
+                <div className="px-4 pt-4 pb-2">
+                  <p className="text-white text-sm font-medium">Watch introvideo</p>
+                </div>
 
-              {/* Video Thumbnail */}
-              <div className="relative aspect-video mx-4 mb-4 rounded-lg overflow-hidden">
+                {/* Video Thumbnail */}
+                <div className="relative aspect-video mx-4 mb-4 rounded-lg overflow-hidden">
                 <img 
                   src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/image2.jpeg"
                   alt="Video preview"
@@ -61,6 +59,7 @@ const VideoPreview = ({ onClose }: VideoPreviewProps) => {
                     <Play className="w-6 h-6 text-white fill-white" />
                   </div>
                 </div>
+              </div>
               </div>
             </div>
           </div>
