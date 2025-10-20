@@ -34,7 +34,11 @@ const VideoPreview = ({ onClose }: VideoPreviewProps) => {
             <div 
               onClick={handleOpenVideo}
               className="bg-slate-900 rounded-2xl shadow-2xl overflow-hidden cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-blue-500/20"
-              style={{ width: '280px', border: '2px solid #5B6BF2' }}
+              style={{ 
+                width: '280px', 
+                border: '2px solid #5B6BF2',
+                boxSizing: 'border-box'
+              }}
             >
               {/* Title */}
               <div className="px-4 pt-4 pb-2">
