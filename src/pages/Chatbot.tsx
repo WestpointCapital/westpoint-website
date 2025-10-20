@@ -3,8 +3,31 @@ import Footer from '../components/sections/footer';
 import { Button } from '../components/ui/button';
 import { MessageSquare, Users, Zap, Shield, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import VideoPreview from '../components/VideoPreview';
 
 const Chatbot = () => {
+  const [showVideoPreview, setShowVideoPreview] = useState(true);
+
+  // Hide/show the global Schedule Consultation button
+  useEffect(() => {
+    const globalButton = document.querySelector('[data-schedule-consultation]');
+    if (globalButton instanceof HTMLElement) {
+      if (showVideoPreview) {
+        globalButton.style.display = 'none';
+      } else {
+        globalButton.style.display = 'flex';
+      }
+    }
+
+    // Cleanup: show button when leaving page
+    return () => {
+      if (globalButton instanceof HTMLElement) {
+        globalButton.style.display = 'flex';
+      }
+    };
+  }, [showVideoPreview]);
+
   return (
     <div className="min-h-screen bg-slate-950 overflow-x-hidden">
       <Navigation />
@@ -357,6 +380,11 @@ const Chatbot = () => {
       </section>
 
       <Footer />
+      
+      {/* Video Preview */}
+      {showVideoPreview && (
+        <VideoPreview onClose={() => setShowVideoPreview(false)} />
+      )}
     </div>
   );
 };

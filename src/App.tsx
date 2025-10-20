@@ -42,6 +42,7 @@ const App = () => {
         <Button 
           onClick={() => setIsCalModalOpen(true)}
           className="z-[999999999999] fixed md:bottom-6 bottom-4 md:right-10 right-4 hero-button px-8 py-4 h-auto"
+          data-schedule-consultation
         >
           <Calendar className="mr-2 w-5 h-5" />
           Schedule Consultation
