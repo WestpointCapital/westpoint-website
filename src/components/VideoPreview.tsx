@@ -41,13 +41,8 @@ const VideoPreview = ({ onClose }: VideoPreviewProps) => {
               }}
             >
               <div className="shadow-2xl overflow-hidden rounded-2xl">
-                {/* Top Header */}
-                <div className="px-4 pt-4 pb-1 text-center">
-                  <p className="text-xs text-white/70">Do like 300+ companies — automate your customer chat today.</p>
-                </div>
-                
                 {/* Title */}
-                <div className="px-4 pb-2 text-right">
+                <div className="px-4 pt-4 pb-2 text-right">
                   <p className="text-lg font-medium" style={{ color: '#1F73ED' }}>Watch introvideo</p>
                 </div>
 
