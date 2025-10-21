@@ -23,95 +23,133 @@ const TermsConditions = () => {
               <div className="bg-slate-900/50 rounded-2xl p-8 md:p-12 border border-slate-700/50">
                 <div className="text-white space-y-8">
                   
+                  {/* Header Information */}
+                  <div className="mb-8">
+                    <h2 className="text-2xl font-bold text-white mb-4">Terms & Conditions</h2>
+                    <div className="text-white/80 space-y-2">
+                      <p><strong className="text-blue-400">Effective Date:</strong> [Insert date]</p>
+                      <p><strong className="text-blue-400">Company:</strong> Westpoint Capital OÜ</p>
+                      <p><strong className="text-blue-400">Registry Code:</strong> 16942224</p>
+                      <p><strong className="text-blue-400">Registered Address:</strong> Harju maakond, Tallinn, Lasnamäe linnaosa, Sepapaja tn 6, 15551, Estonia</p>
+                      <p><strong className="text-blue-400">Email:</strong> <a href="mailto:contact@westpointcapital.co" className="text-blue-400 hover:text-blue-300">contact@westpointcapital.co</a></p>
+                      <p><strong className="text-blue-400">Website:</strong> <a href="https://www.westpointcapital.co" className="text-blue-400 hover:text-blue-300">www.westpointcapital.co</a></p>
+                    </div>
+                  </div>
+
                   <div>
-                    <h2 className="text-2xl font-bold text-white mb-4">Parties</h2>
+                    <h2 className="text-2xl font-bold text-white mb-4">1. Parties</h2>
                     <p className="text-white/80 leading-relaxed">
-                      <strong className="text-blue-400">Westpoint Capital</strong> ("Service Provider")<br />
-                      <strong className="text-blue-400">Client</strong> ("Client")
+                      These Terms & Conditions ("Agreement") are entered into between Westpoint Capital OÜ ("Service Provider") and the Client ("Client"). By purchasing, subscribing to, or using any Services provided by Westpoint Capital OÜ, the Client agrees to be bound by the terms herein.
                     </p>
                   </div>
 
                   <div>
-                    <h2 className="text-2xl font-bold text-white mb-4">1. Scope of Services</h2>
+                    <h2 className="text-2xl font-bold text-white mb-4">2. Scope of Services</h2>
                     <p className="text-white/80 leading-relaxed">
-                      Westpoint Capital provides financial, technological, and consulting services, which may include but are not limited to software solutions, advisory services, marketing technology, automation tools, and related support ("Services"). All Services provided are subject to the terms set forth in this Agreement.
+                      Westpoint Capital OÜ provides software-as-a-service (SaaS) solutions, automation tools, chatbot technology, marketing systems, AI integrations, consulting, and related support ("Services"). The Services may include access to digital products and online platforms for business automation, communication, and analytics. All Services provided are subject to this Agreement and the applicable service order or subscription plan.
                     </p>
                   </div>
 
                   <div>
-                    <h2 className="text-2xl font-bold text-white mb-4">2. Client Responsibility</h2>
-                    <p className="text-white/80 leading-relaxed">
-                      The Client acknowledges and agrees that they bear full and exclusive responsibility for ensuring all information, data, and content used with the Services are accurate, lawful, and compliant. The Client is responsible for obtaining and maintaining all necessary consents, licenses, and authorizations required to use the Services in their region. The Client must conduct their own due diligence to ensure compliance with applicable regional, national, and international laws and regulations. The Client is solely responsible for approving and authorizing all content or material distributed through the Services.
+                    <h2 className="text-2xl font-bold text-white mb-4">3. Digital Products & Chatbot Services</h2>
+                    <p className="text-white/80 leading-relaxed mb-4">
+                      Westpoint Capital offers certain Services as digital products or software delivered online. These may include chatbot systems, automation flows, and digital integrations that can interact with third-party applications.
+                    </p>
+                    <p className="text-white/80 leading-relaxed mb-4">
+                      The chatbot and automation systems are designed to facilitate communication, lead generation, and customer service. The Client acknowledges that:
+                    </p>
+                    <ul className="text-white/80 leading-relaxed ml-6 space-y-2">
+                      <li>• The chatbot operates automatically and may collect, store, or process user data provided through its interface.</li>
+                      <li>• The Client is responsible for configuring and supervising chatbot interactions, ensuring compliance with all data-protection and consumer-communication laws.</li>
+                      <li>• Westpoint Capital does not monitor or control specific chatbot content, customer interactions, or data transmitted by the Client's users.</li>
+                      <li>• The Client must obtain any required consent for automated messaging, data collection, or marketing communication conducted through the chatbot.</li>
+                    </ul>
+                    <p className="text-white/80 leading-relaxed mt-4">
+                      Digital products are delivered immediately after purchase or activation. Because of the instant access and digital nature of the Services, no refunds are offered once access has been provided.
                     </p>
                   </div>
 
                   <div>
-                    <h2 className="text-2xl font-bold text-white mb-4">3. Service Provider Role</h2>
+                    <h2 className="text-2xl font-bold text-white mb-4">4. Client Responsibility</h2>
                     <p className="text-white/80 leading-relaxed">
-                      Westpoint Capital acts solely as a technical facilitator and service provider. Westpoint Capital does not review, edit, or approve Client content. Westpoint Capital does not validate or verify Client data, lists, or permissions. Westpoint Capital does not assume any responsibility for compliance with local or international regulations on behalf of the Client.
+                      The Client bears full responsibility for ensuring that all information, data, and content used within the Services are accurate, lawful, and compliant with applicable regulations. The Client must obtain all necessary consents, licenses, and authorizations to use the Services, ensure that communications and data handling through the chatbot or other platforms comply with the EU General Data Protection Regulation (GDPR), the Estonian Consumer Protection Act, and other relevant national or international laws, and conduct due diligence regarding compliance, advertising standards, and customer communication practices.
                     </p>
                   </div>
 
                   <div>
-                    <h2 className="text-2xl font-bold text-white mb-4">4. Platform Use and Misuse</h2>
+                    <h2 className="text-2xl font-bold text-white mb-4">5. Service Provider Role</h2>
                     <p className="text-white/80 leading-relaxed">
-                      Westpoint Capital provides a platform that enables Clients to use third-party resources, including phone numbers and communication channels. Westpoint Capital is not the provider or owner of the phone numbers used within the platform. Any misuse of the platform, including but not limited to violations of applicable laws, regulations, or malicious intent, is solely the responsibility of the Client. If Westpoint Capital identifies suspicious or unlawful activity, the Client's account may be suspended or terminated immediately without refund, and reported to authorities.
+                      Westpoint Capital acts solely as a technical facilitator. The company does not edit, validate, or approve Client content, nor is it responsible for the legal compliance of the Client's use of the Services. Westpoint Capital provides the infrastructure, hosting, and technical support for the digital tools offered.
                     </p>
                   </div>
 
                   <div>
-                    <h2 className="text-2xl font-bold text-white mb-4">5. Allocation of Risk & Liability</h2>
+                    <h2 className="text-2xl font-bold text-white mb-4">6. Platform Use and Misuse</h2>
                     <p className="text-white/80 leading-relaxed">
-                      The Client expressly agrees that all responsibility, risk, and liability for the use of Westpoint Capital's Services rests 100% with the Client. This includes, without limitation, claims, complaints, or disputes arising from the Client's use of the Services, regulatory investigations, penalties, or fines, and any lawsuits or legal actions brought in connection with the Client's use of the Services.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h2 className="text-2xl font-bold text-white mb-4">6. Indemnification</h2>
-                    <p className="text-white/80 leading-relaxed">
-                      The Client shall indemnify, defend, and hold harmless Westpoint Capital, its employees, directors, contractors, and affiliates from and against any and all claims, damages, losses, liabilities, costs, and expenses (including reasonable legal fees) arising from the Client's use of the Services, the Client's content, data, or communications, and any breach of laws, rules, or regulations by the Client.
+                      The Client may not use the Services in a manner that violates any applicable law or regulation. This includes spam, harassment, fraud, or data misuse. If unlawful or suspicious activity is detected, Westpoint Capital may immediately suspend or terminate access without refund and may report such activity to authorities. The Client agrees not to use the Services to send unsolicited or misleading messages, interfere with or disrupt other users' systems, or reverse engineer or misuse the underlying code of the chatbot or platform.
                     </p>
                   </div>
 
                   <div>
                     <h2 className="text-2xl font-bold text-white mb-4">7. Fees & Payment</h2>
                     <p className="text-white/80 leading-relaxed">
-                      All fees are due in accordance with the payment terms specified in the applicable invoice or service order. All fees are strictly non-refundable, regardless of service usage, results, or termination. Services may be suspended in case of non-payment.
+                      All fees are payable as outlined in the applicable invoice or subscription plan. All payments are final and non-refundable. Digital product access or subscription activation occurs only upon full payment. In case of non-payment, Services may be suspended or permanently terminated.
                     </p>
                   </div>
 
                   <div>
-                    <h2 className="text-2xl font-bold text-white mb-4">8. Limitation of Liability</h2>
+                    <h2 className="text-2xl font-bold text-white mb-4">8. Allocation of Risk & Limitation of Liability</h2>
                     <p className="text-white/80 leading-relaxed">
-                      Under no circumstances shall Westpoint Capital be liable for direct, indirect, incidental, or consequential damages resulting from the Services. The maximum liability of Westpoint Capital shall be strictly limited to the total fees paid by the Client for Services under this Agreement.
+                      All risks associated with the use of the Services rest solely with the Client. Under no circumstances shall Westpoint Capital be liable for any indirect, incidental, or consequential damages arising from use or inability to use the Services. The maximum liability of Westpoint Capital shall not exceed the total fees paid by the Client within the past 12 months.
                     </p>
                   </div>
 
                   <div>
-                    <h2 className="text-2xl font-bold text-white mb-4">9. Compliance Disclaimer</h2>
+                    <h2 className="text-2xl font-bold text-white mb-4">9. Indemnification</h2>
                     <p className="text-white/80 leading-relaxed">
-                      Westpoint Capital will make commercially reasonable efforts to remain compliant with applicable regulations in its own jurisdiction. However, it is solely the Client's responsibility to ensure their own compliance with regional, national, and international laws, including but not limited to financial, data protection, consumer, or marketing regulations.
+                      The Client shall indemnify and hold harmless Westpoint Capital, its directors, employees, and affiliates from any claims, damages, or losses arising from the Client's use of the Services, any breach of law, regulation, or third-party rights, or data or content transmitted through the chatbot or automation systems.
                     </p>
                   </div>
 
                   <div>
-                    <h2 className="text-2xl font-bold text-white mb-4">10. Governing Law & Jurisdiction</h2>
+                    <h2 className="text-2xl font-bold text-white mb-4">10. Data Protection & Privacy</h2>
                     <p className="text-white/80 leading-relaxed">
-                      This Agreement shall be governed by the laws of Denmark. The parties agree that the courts of Denmark shall have exclusive jurisdiction over any disputes arising under this Agreement.
+                      Westpoint Capital processes personal data in accordance with the EU General Data Protection Regulation (GDPR) and Estonian Data Protection Inspectorate guidelines. The Client remains the data controller for end-user data processed through the chatbot or software tools. Westpoint Capital acts as a data processor, limited to providing hosting, infrastructure, and support. A separate Data Processing Agreement (DPA) may apply where required by law. The Client must ensure that end users are informed of any automated data processing performed by the chatbot.
                     </p>
                   </div>
 
                   <div>
-                    <h2 className="text-2xl font-bold text-white mb-4">11. Term & Termination</h2>
+                    <h2 className="text-2xl font-bold text-white mb-4">11. Consumer Rights for Digital Content</h2>
                     <p className="text-white/80 leading-relaxed">
-                      This Agreement remains in effect until terminated by either party. Termination does not relieve the Client of any responsibilities or liabilities incurred prior to termination.
+                      For Clients who qualify as consumers under Estonian law, the following apply: Digital content is delivered immediately after purchase. By completing a purchase, the Client expressly agrees that delivery begins immediately and waives the right to withdrawal under §56(1) of the Estonian Consumer Protection Act, since the product is digital and not returnable. Westpoint Capital will ensure that digital products function as described and will provide reasonable support in case of technical issues.
                     </p>
                   </div>
 
                   <div>
-                    <h2 className="text-2xl font-bold text-white mb-4">12. Acceptance</h2>
+                    <h2 className="text-2xl font-bold text-white mb-4">12. Compliance Disclaimer</h2>
                     <p className="text-white/80 leading-relaxed">
-                      By using or engaging in Services provided by Westpoint Capital, the Client confirms their understanding and acceptance of these Terms & Conditions.
+                      Westpoint Capital will make reasonable efforts to ensure its operations comply with Estonian and EU law. However, the Client is solely responsible for ensuring that their use of the Services complies with any applicable laws in their region, including but not limited to marketing, data protection, and communication regulations.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h2 className="text-2xl font-bold text-white mb-4">13. Governing Law & Jurisdiction</h2>
+                    <p className="text-white/80 leading-relaxed">
+                      This Agreement is governed by the laws of Estonia, including applicable EU legislation. Any disputes shall be subject to the exclusive jurisdiction of the Harju County Court (Harju Maakohus) in Tallinn, Estonia.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h2 className="text-2xl font-bold text-white mb-4">14. Term & Termination</h2>
+                    <p className="text-white/80 leading-relaxed">
+                      This Agreement remains in effect until terminated by either party. Termination does not relieve the Client of payment obligations or liabilities incurred prior to termination. Upon termination, all rights to use the Services are revoked, and access to digital systems may be disabled.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h2 className="text-2xl font-bold text-white mb-4">15. Acceptance</h2>
+                    <p className="text-white/80 leading-relaxed">
+                      By using, subscribing to, or accessing any Services provided by Westpoint Capital OÜ, the Client confirms their understanding and acceptance of these Terms & Conditions.
                     </p>
                   </div>
 
@@ -127,7 +165,7 @@ const TermsConditions = () => {
                   If you have any questions about these Terms & Conditions, please contact us.
                 </p>
                 <a 
-                  href="mailto:contact@westpoint.capital" 
+                  href="mailto:contact@westpointcapital.co" 
                   className="inline-flex items-center gap-2 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-full transition-colors duration-200"
                 >
                   Contact Us
