@@ -54,8 +54,8 @@ const VideoPreview = ({ onClose }: VideoPreviewProps) => {
                   className="w-full h-full object-cover"
                 />
                 {/* Play Button Overlay */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
-                  <div className="bg-blue-500 rounded-full p-4 transform transition-transform group-hover:scale-110">
+                <div className="absolute inset-0 flex items-center justify-center bg-black/15 group-hover:bg-black/20 transition-colors">
+                  <div className="bg-blue-500/50 rounded-full p-4 transform transition-transform group-hover:scale-110">
                     <Play className="w-6 h-6 text-white fill-white" />
                   </div>
                 </div>
@@ -83,7 +83,7 @@ const VideoPreview = ({ onClose }: VideoPreviewProps) => {
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/V104kYG9PAY?autoplay=1"
+                src="https://www.youtube.com/embed/M_9Hj6pIqtM?autoplay=1"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
