@@ -36,7 +36,7 @@ const VideoPreview = ({ onClose }: VideoPreviewProps) => {
               className="rounded-2xl cursor-pointer transform transition-all duration-300 hover:scale-105"
               style={{ 
                 width: '280px',
-                border: '2px solid #5B6BF2',
+                border: '2px solid #1F73ED',
                 backgroundColor: '#0f172a'
               }}
             >
