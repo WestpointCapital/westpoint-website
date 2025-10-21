@@ -49,7 +49,7 @@ const VideoPreview = ({ onClose }: VideoPreviewProps) => {
                 {/* Video Thumbnail */}
                 <div className="relative aspect-video mx-4 mb-4 rounded-lg overflow-hidden">
                 <img 
-                  src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/image2.jpeg"
+                  src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Image%2010-21-25%20at%2010.46%E2%80%AFPM.jpg"
                   alt="Video preview"
                   className="w-full h-full object-cover"
                 />
