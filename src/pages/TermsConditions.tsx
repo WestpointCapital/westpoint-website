@@ -92,8 +92,14 @@ const TermsConditions = () => {
 
                   <div>
                     <h2 className="text-2xl font-bold text-white mb-4">7. Fees & Payment</h2>
+                    <p className="text-white/80 leading-relaxed mb-4">
+                      All fees are payable as outlined in the applicable invoice or subscription plan. Digital product access or subscription activation occurs only upon full payment. In case of non-payment, Services may be suspended or permanently terminated.
+                    </p>
+                    <p className="text-white/80 leading-relaxed mb-4">
+                      <strong className="text-blue-400">7-Day Money-Back Guarantee:</strong> For chatbot services and digital products, Westpoint Capital offers a 7-day money-back guarantee from the date of service activation. If the Client is not satisfied with the chatbot service within the first 7 days of activation, they may request a full refund by contacting support at <a href="mailto:contact@westpointcapital.co" className="text-blue-400 hover:text-blue-300">contact@westpointcapital.co</a>. Refund requests must be submitted within the 7-day period and will be processed within 5-10 business days. This guarantee applies only to the initial subscription period and does not extend to subsequent billing cycles.
+                    </p>
                     <p className="text-white/80 leading-relaxed">
-                      All fees are payable as outlined in the applicable invoice or subscription plan. All payments are final and non-refundable. Digital product access or subscription activation occurs only upon full payment. In case of non-payment, Services may be suspended or permanently terminated.
+                      <strong className="text-blue-400">Cancellation Policy:</strong> Clients may cancel their chatbot subscription at any time through their account dashboard or by contacting support. Cancellation will take effect at the end of the current billing period. No partial refunds will be provided for unused portions of the billing period, except as outlined in the 7-day money-back guarantee above.
                     </p>
                   </div>
 
