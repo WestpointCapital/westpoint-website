@@ -42,8 +42,8 @@ const VideoPreview = ({ onClose }: VideoPreviewProps) => {
             >
               <div className="shadow-2xl overflow-hidden rounded-2xl">
                 {/* Title */}
-                <div className="px-4 pt-4 pb-2">
-                  <p className="text-white text-sm font-medium">Watch introvideo</p>
+                <div className="px-4 pt-4 pb-2 text-center">
+                  <p className="text-sm font-medium" style={{ color: '#1F73ED' }}>Watch introvideo</p>
                 </div>
 
                 {/* Video Thumbnail */}
