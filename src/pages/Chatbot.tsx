@@ -59,6 +59,14 @@ const Chatbot = () => {
                 {/* Iframe Embed */}
                 <div className="w-full overflow-hidden -mx-4 lg:mx-0">
                   <div className="w-full max-w-md lg:max-w-lg">
+                    {/* Icon above form */}
+                    <div className="flex justify-center mb-4">
+                      <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                      </div>
+                    </div>
                     <iframe 
                       src="https://genia-psi.vercel.app/embed/campaign/1759853260622-7yyqth6" 
                       width="100%" 
