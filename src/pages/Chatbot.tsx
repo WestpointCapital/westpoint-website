@@ -41,21 +41,14 @@ const Chatbot = () => {
             <div className="space-y-8 text-center lg:text-left">
               <div>
                 <div className="mb-6">
-                  <p className="text-base text-center lg:text-left mb-4" style={{ color: '#1f73ed' }}>Do like 300+ companies</p>
+                  <p className="text-lg text-center lg:text-left mb-4" style={{ color: '#60A5FA' }}>Do like 300+ companies</p>
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center lg:text-left">
                     Get your <span className="text-blue-400">free demo chatbot</span> in one click
                   </h1>
                 </div>
-                <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed mb-4">
+                <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed mb-8">
                   Enter your website URL and we'll show you exactly how our AI assistant can transform your customer experience.
                 </p>
-                <div className="flex justify-center lg:justify-start mb-8">
-                  <img 
-                    src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/cursor.svg" 
-                    alt="Computer cursor" 
-                    className="w-6 h-6 sm:w-8 sm:h-8 animate-bounce"
-                  />
-                </div>
                 
                 {/* Iframe Embed */}
                 <div className="w-full overflow-hidden -mx-4 lg:mx-0">
