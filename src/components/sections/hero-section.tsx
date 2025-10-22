@@ -1,12 +1,8 @@
 import { Button } from '../ui/button';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import SilkR3F from '../effects/SilkR3F';
-import CalModal from '../CalModal';
-import { useState } from 'react';
 
 const HeroSection = () => {
-  const [isCalModalOpen, setIsCalModalOpen] = useState(false);
-  
   return (
     <>
       <section className="relative min-h-[115vh] sm:min-h-screen flex items-center justify-center pt-20 pb-32 bg-slate-900">
@@ -46,23 +42,19 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex justify-center items-center mb-16" style={{ marginTop: '15px' }}>
-              <Button 
-                variant="hero" 
-                size="lg" 
-                className="px-8 py-4 text-lg"
-                onClick={() => setIsCalModalOpen(true)}
+              <button 
+                data-cal-link="westpoint-capital/free-consultation-call"
+                data-cal-namespace="free-consultation-call"
+                data-cal-config='{"layout":"month_view"}'
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 rounded-[300px] bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 py-4 text-lg"
               >
                 Get a free strategy call
                 <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
+              </button>
             </div>
           </div>
         </div>
       </section>
-
-      
-      {/* Cal.com Modal */}
-      <CalModal isOpen={isCalModalOpen} onClose={() => setIsCalModalOpen(false)} />
 
     </>
   );
