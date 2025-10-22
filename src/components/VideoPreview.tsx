@@ -33,7 +33,7 @@ const VideoPreview = ({ onClose }: VideoPreviewProps) => {
             {/* Video Preview Card with Blue Border */}
             <div 
               onClick={handleOpenVideo}
-              className="rounded-2xl cursor-pointer transform transition-all duration-300 hover:scale-105"
+              className="rounded-2xl cursor-pointer transform transition-all duration-300 hover:scale-105 animate-pulse"
               style={{ 
                 width: '280px',
                 border: '2px solid #1F73ED',
