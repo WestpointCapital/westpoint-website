@@ -27,7 +27,7 @@ const TermsConditions = () => {
                   <div className="mb-8">
                     <h2 className="text-2xl font-bold text-white mb-4">Terms & Conditions</h2>
                     <div className="text-white/80 space-y-2">
-                      <p><strong className="text-blue-400">Effective Date:</strong> [Insert date]</p>
+                      <p><strong className="text-blue-400">Effective Date:</strong> 20 Oct 2025</p>
                       <p><strong className="text-blue-400">Company:</strong> Westpoint Capital OÜ</p>
                       <p><strong className="text-blue-400">Registry Code:</strong> 16942224</p>
                       <p><strong className="text-blue-400">Registered Address:</strong> Harju maakond, Tallinn, Lasnamäe linnaosa, Sepapaja tn 6, 15551, Estonia</p>
