@@ -9,6 +9,24 @@ import VideoPreview from '../components/VideoPreview';
 const Chatbot = () => {
   const [showVideoPreview, setShowVideoPreview] = useState(true);
 
+  // Initialize Cal.com embed for chatbot CTA
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.innerHTML = `
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", "30min", {origin:"https://app.cal.com"});
+      Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+    `;
+    document.head.appendChild(script);
+
+    return () => {
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+    };
+  }, []);
+
   // Hide/show the global Schedule Consultation button
   useEffect(() => {
     const globalButton = document.querySelector('[data-schedule-consultation]');
@@ -87,6 +105,24 @@ const Chatbot = () => {
         </div>
       </section>
 
+      {/* Chatbot CTA Section */}
+      <section className="py-16 bg-slate-900/50">
+        <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
+          <div className="text-center px-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-white">
+              Book a free call about our <span className="text-blue-400">chatbot solution</span>
+            </h2>
+            <button 
+              data-cal-link="westpoint-capital/30min"
+              data-cal-namespace="30min"
+              data-cal-config='{"layout":"month_view"}'
+              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:scale-105 active:scale-95 text-lg"
+            >
+              Book now
+            </button>
+          </div>
+        </div>
+      </section>
 
       {/* AI Automation Section */}
       <section className="py-24 bg-slate-950">
