@@ -89,7 +89,7 @@ const Chatbot = () => {
             </div>
 
             {/* Right Side - Video */}
-            <div className="flex justify-center" style={{ marginTop: '-78px' }}>
+            <div className="flex justify-center pt-12 sm:pt-16" style={{ marginTop: '-78px' }}>
               <div className="relative w-full flex justify-center">
                 <video 
                   src="https://www.goauto.ai/wp-content/uploads/2025/06/Chat-animation-v1.mp4"
@@ -97,7 +97,7 @@ const Chatbot = () => {
                   loop
                   muted
                   playsInline
-                  className="w-full max-w-[65%] sm:max-w-xs lg:max-w-sm h-auto rounded-xl mx-auto"
+                  className="w-full max-w-[80%] sm:max-w-md lg:max-w-lg h-auto rounded-xl mx-auto"
                 />
               </div>
             </div>
@@ -116,7 +116,7 @@ const Chatbot = () => {
               data-cal-link="westpoint-capital/30min"
               data-cal-namespace="30min"
               data-cal-config='{"layout":"month_view"}'
-              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:scale-105 active:scale-95 text-lg"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 sm:py-4 sm:px-8 rounded-full transition-all duration-300 hover:scale-105 active:scale-95 text-base sm:text-lg w-full sm:w-auto"
             >
               Book now
             </button>
