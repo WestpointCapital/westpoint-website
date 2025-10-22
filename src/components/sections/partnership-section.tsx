@@ -47,27 +47,27 @@ const PartnershipSection = () => {
 
         {/* New Personalized Communication Section */}
         <div className="glass-container rounded-2xl px-4 sm:px-6 py-6 bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20 mt-24">
-          <div className="grid lg:grid-cols-2 gap-8 items-center justify-items-center">
+          <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center justify-items-center">
             
             {/* Mobile First - Image */}
             <div className="flex justify-center lg:justify-end order-1 lg:order-2 w-full">
-              <div className="relative w-full max-w-sm">
+              <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md">
                 <img 
                   src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/convo.png" 
                   alt="Personalized customer communication"
-                  className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] lg:max-w-sm h-auto rounded-xl shadow-lg mx-auto"
-                  style={{ transform: 'scale(0.8)' }}
+                  className="w-full h-auto rounded-xl shadow-lg mx-auto"
+                  style={{ transform: 'scale(0.7)' }}
                 />
               </div>
             </div>
 
             {/* Mobile Second - Text Content */}
-            <div className="space-y-6 text-center lg:text-left max-w-lg order-2 lg:order-1 px-4 lg:px-8">
+            <div className="space-y-4 lg:space-y-6 text-center lg:text-left max-w-lg order-2 lg:order-1 px-2 sm:px-4 lg:px-8">
               <div>
-                <h2 className="font-bold text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6">
+                <h2 className="font-bold text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-4 lg:mb-6">
                   Make every customer feel <span className="text-blue-400">special and seen</span>
                 </h2>
-                <p className="text-white/70 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed mb-6">
+                <p className="text-white/70 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed mb-4 lg:mb-6">
                   While most brands send generic, impersonal messages with no-reply addresses, 
                   we focus on creating meaningful 2-way conversations. Our platform ensures every 
                   customer interaction feels personal, engaging, and truly human - making your 
@@ -77,7 +77,7 @@ const PartnershipSection = () => {
 
               {/* CTA Button */}
               <div className="flex justify-center lg:justify-start">
-                <Button size="sm" className="hero-button" asChild>
+                <Button size="sm" className="hero-button text-xs sm:text-sm" asChild>
                   <a href="/contact">Start for free today</a>
                 </Button>
               </div>
