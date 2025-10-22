@@ -86,15 +86,15 @@ const MetricsSection = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <button 
-            data-cal-link="goauto/30min"
-            data-cal-namespace="30min"
-            data-cal-config='{"layout":"month_view"}'
-            className="schedule-button px-8 py-4 font-semibold text-lg" 
-            style={{ borderRadius: '300px' }}
-          >
-            Schedule a call
-          </button>
+                <button 
+                  data-cal-link="westpoint-capital/free-consultation-call"
+                  data-cal-namespace="free-consultation-call"
+                  data-cal-config='{"layout":"month_view"}'
+                  className="schedule-button px-8 py-4 font-semibold text-lg" 
+                  style={{ borderRadius: '300px' }}
+                >
+                  Schedule a call
+                </button>
         </div>
       </div>
     </section>
