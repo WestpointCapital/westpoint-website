@@ -1,13 +1,14 @@
 import Navigation from '../components/ui/navigation';
 import Footer from '../components/sections/footer';
 import { Button } from '../components/ui/button';
-import { MessageSquare, Users, Zap, Shield, ArrowRight } from 'lucide-react';
+import { MessageSquare, Users, Zap, Shield, ArrowRight, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import VideoPreview from '../components/VideoPreview';
 
 const Chatbot = () => {
   const [showVideoPreview, setShowVideoPreview] = useState(true);
+  const [isIntrovideoOpen, setIsIntrovideoOpen] = useState(false);
 
   // Initialize Cal.com embed for chatbot CTA
   useEffect(() => {
@@ -229,7 +230,7 @@ const Chatbot = () => {
                 style={{ 
                   width: '600px'
                 }}
-                onClick={() => window.open('https://www.youtube.com/watch?v=Iad3-ZM9pA8', '_blank')}
+                onClick={() => setIsIntrovideoOpen(true)}
               >
                 <div className="relative aspect-video rounded-lg overflow-hidden">
                   <img 
@@ -472,6 +473,35 @@ const Chatbot = () => {
       {/* Video Preview */}
       {showVideoPreview && (
         <VideoPreview onClose={() => setShowVideoPreview(false)} />
+      )}
+
+      {/* Introvideo Modal */}
+      {isIntrovideoOpen && (
+        <div className="fixed inset-0 z-[9999999999] flex items-center justify-center bg-black/80 backdrop-blur-sm">
+          <div className="relative w-full max-w-5xl mx-4">
+            {/* Close Button */}
+            <button
+              onClick={() => setIsIntrovideoOpen(false)}
+              className="absolute -top-12 right-0 bg-white hover:bg-gray-100 rounded-full p-2 transition-colors"
+            >
+              <X className="w-6 h-6 text-gray-900" />
+            </button>
+
+            {/* YouTube Video */}
+            <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/Iad3-ZM9pA8?autoplay=1"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );
