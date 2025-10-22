@@ -65,7 +65,7 @@ const Chatbot = () => {
                   </h1>
                 </div>
                 <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed mb-8">
-                  Enter your website URL and we'll show you exactly how our AI assistant can transform your customer experience.
+                  Enter your website URL and get a free chatbot demo that instantly understands your site and shows how it can improve your customer experience.
                 </p>
                 
                 {/* Iframe Embed */}
