@@ -48,6 +48,19 @@ const Chatbot = () => {
 
   return (
     <div className="min-h-screen bg-slate-950 overflow-x-hidden">
+      {/* Custom CSS for heartbeat animation */}
+      <style>
+        {`
+          @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.05); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+          }
+        `}
+      </style>
+      
       <Navigation />
       
       {/* Hero Section */}
@@ -192,6 +205,52 @@ const Chatbot = () => {
                 >
                   Get your free demo now
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Introvideo Section */}
+      <section className="py-24 bg-slate-950">
+        <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
+          <div className="text-center px-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+              Introvideo
+            </h2>
+            <p className="text-xl text-white/70 mb-12 max-w-3xl mx-auto">
+              Watch this video to see how you can get your free chatbot demo and learn who this solution is perfect for.
+            </p>
+            
+            {/* Video Preview */}
+            <div className="flex justify-center">
+              <div 
+                className="shadow-2xl overflow-hidden rounded-2xl cursor-pointer transform transition-all duration-300 hover:scale-105"
+                style={{ 
+                  width: '400px',
+                  border: '2px solid #1F73ED',
+                  backgroundColor: '#0f172a',
+                  animation: 'heartbeat 2s ease-in-out infinite'
+                }}
+                onClick={() => window.open('https://www.youtube.com/watch?v=Iad3-ZM9pA8', '_blank')}
+              >
+                <div className="px-4 pt-4 pb-2 text-center">
+                  <p className="text-lg font-medium text-white">Watch introvideo</p>
+                </div>
+                <div className="relative aspect-video mx-4 mb-4 rounded-lg overflow-hidden">
+                  <img 
+                    src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Image%2010-21-25%20at%2010.46%E2%80%AFPM.jpg" 
+                    alt="Video preview" 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/15 group-hover:bg-black/20 transition-colors">
+                    <div className="bg-blue-500/50 rounded-full p-4 transform transition-transform group-hover:scale-110">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-play w-6 h-6 text-white fill-white">
+                        <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
