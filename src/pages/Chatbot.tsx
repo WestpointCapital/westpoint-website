@@ -41,7 +41,7 @@ const Chatbot = () => {
             <div className="space-y-8 text-center lg:text-left">
               <div>
                 <div className="mb-6">
-                  <p className="text-sm text-white/70 mb-4 text-center lg:text-left">Do like 300+ companies</p>
+                  <p className="text-base text-center lg:text-left mb-4" style={{ color: '#1f73ed' }}>Do like 300+ companies</p>
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center lg:text-left">
                     Get your <span className="text-blue-400">free demo chatbot</span> in one click
                   </h1>
