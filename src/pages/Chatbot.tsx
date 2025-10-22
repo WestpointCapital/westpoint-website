@@ -401,9 +401,14 @@ const Chatbot = () => {
               Start nurturing your customers with super fast, intelligent responses that feel personal and engaging.
             </p>
             <div className="flex justify-center">
-              <Button size="lg" className="hero-button" asChild>
-                <Link to="/contact">Wanna hear more?</Link>
-              </Button>
+              <button 
+                data-cal-link="westpoint-capital/30min"
+                data-cal-namespace="30min"
+                data-cal-config='{"layout":"month_view"}'
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 rounded-[300px] bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 py-4 hero-button"
+              >
+                Wanna hear more?
+              </button>
             </div>
           </div>
         </div>
