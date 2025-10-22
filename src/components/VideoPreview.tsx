@@ -18,6 +18,19 @@ const VideoPreview = ({ onClose }: VideoPreviewProps) => {
 
   return (
     <>
+      {/* Custom CSS for heartbeat animation */}
+      <style>
+        {`
+          @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.05); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+          }
+        `}
+      </style>
+      
       {/* Floating Video Preview */}
       {!isVideoOpen && (
         <div className="fixed bottom-6 right-6 z-[999999999] animate-in slide-in-from-bottom-5 duration-300">
@@ -33,11 +46,12 @@ const VideoPreview = ({ onClose }: VideoPreviewProps) => {
             {/* Video Preview Card with Blue Border */}
             <div 
               onClick={handleOpenVideo}
-              className="rounded-2xl cursor-pointer transform transition-all duration-300 hover:scale-105 animate-pulse"
+              className="rounded-2xl cursor-pointer transform transition-all duration-300 hover:scale-105"
               style={{ 
                 width: '280px',
                 border: '2px solid #1F73ED',
-                backgroundColor: '#0f172a'
+                backgroundColor: '#0f172a',
+                animation: 'heartbeat 2s ease-in-out infinite'
               }}
             >
               <div className="shadow-2xl overflow-hidden rounded-2xl">
