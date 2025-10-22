@@ -21,7 +21,7 @@ const Services = () => {
     },
     {
       icon: null, // No icon for this service
-      title: "AI-Powered Customer Experiences",
+      title: "AI Chatbots",
       description: "We transform how your business interacts with customers through AI customer service and assistants. Our solutions don't just answer questions — they qualify leads, nurture relationships, and provide real-time support that feels human, at scale.",
       examples: [
         "AI customer service for websites & apps",
