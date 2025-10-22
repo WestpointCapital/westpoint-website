@@ -46,9 +46,8 @@ const VideoPreview = ({ onClose }: VideoPreviewProps) => {
             {/* Video Preview Card with Blue Border */}
             <div 
               onClick={handleOpenVideo}
-              className="rounded-2xl cursor-pointer transform transition-all duration-300 hover:scale-105"
+              className="rounded-2xl cursor-pointer transform transition-all duration-300 hover:scale-105 w-64 sm:w-72 md:w-80"
               style={{ 
-                width: '280px',
                 border: '2px solid #1F73ED',
                 backgroundColor: '#0f172a',
                 animation: 'heartbeat 2s ease-in-out infinite'
@@ -56,12 +55,12 @@ const VideoPreview = ({ onClose }: VideoPreviewProps) => {
             >
               <div className="shadow-2xl overflow-hidden rounded-2xl">
                 {/* Title */}
-                <div className="px-4 pt-4 pb-2 text-center">
-                  <p className="text-lg font-medium text-white">Watch introvideo</p>
+                <div className="px-3 sm:px-4 pt-3 sm:pt-4 pb-2 text-center">
+                  <p className="text-sm sm:text-lg font-medium text-white">Watch introvideo</p>
                 </div>
 
                 {/* Video Thumbnail */}
-                <div className="relative aspect-video mx-4 mb-4 rounded-lg overflow-hidden">
+                <div className="relative aspect-video mx-3 sm:mx-4 mb-3 sm:mb-4 rounded-lg overflow-hidden">
                 <img 
                   src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Image%2010-21-25%20at%2010.46%E2%80%AFPM.jpg"
                   alt="Video preview"
