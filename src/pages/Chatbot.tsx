@@ -215,7 +215,7 @@ const Chatbot = () => {
       <section className="py-24 bg-slate-950">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="text-center px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Introvideo
             </h2>
             <p className="text-xl text-white/70 mb-12 max-w-3xl mx-auto">
@@ -225,19 +225,13 @@ const Chatbot = () => {
             {/* Video Preview */}
             <div className="flex justify-center">
               <div 
-                className="shadow-2xl overflow-hidden rounded-2xl cursor-pointer transform transition-all duration-300 hover:scale-105"
+                className="cursor-pointer transform transition-all duration-300 hover:scale-105"
                 style={{ 
-                  width: '400px',
-                  border: '2px solid #1F73ED',
-                  backgroundColor: '#0f172a',
-                  animation: 'heartbeat 2s ease-in-out infinite'
+                  width: '600px'
                 }}
                 onClick={() => window.open('https://www.youtube.com/watch?v=Iad3-ZM9pA8', '_blank')}
               >
-                <div className="px-4 pt-4 pb-2 text-center">
-                  <p className="text-lg font-medium text-white">Watch introvideo</p>
-                </div>
-                <div className="relative aspect-video mx-4 mb-4 rounded-lg overflow-hidden">
+                <div className="relative aspect-video rounded-lg overflow-hidden">
                   <img 
                     src="https://riy6kvbsz7kdh0jt.public.blob.vercel-storage.com/Image%2010-21-25%20at%2010.46%E2%80%AFPM.jpg" 
                     alt="Video preview" 
