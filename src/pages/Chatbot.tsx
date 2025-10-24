@@ -75,11 +75,11 @@ const Chatbot = () => {
                 <div className="mb-6">
                   <p className="text-lg text-center lg:text-left mb-4" style={{ color: '#60A5FA' }}>Do like 300+ companies</p>
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center lg:text-left">
-                    Get your <span className="text-blue-400">free demo chatbot</span> in one click
+                    Cut support expenses and <span className="text-blue-400">convert more traffic</span>.
                   </h1>
                 </div>
                 <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed mb-8">
-                  Enter your website URL and get a free chatbot demo that instantly understands your site and shows how it can improve your customer experience.
+                  Enter your website URL and get a free chatbot demo that can cut your support expenses by 60% and convert an extra 25% of your traffic into paying customers.
                 </p>
                 
                 {/* Iframe Embed */}
