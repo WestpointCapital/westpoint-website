@@ -64,6 +64,17 @@ const Chatbot = () => {
       
       <Navigation />
       
+      {/* High-Converting Headline Section */}
+      <section className="pt-32 pb-16 bg-slate-950">
+        <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
+          <div className="text-center px-4">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+              Tired of spending <span className="text-red-400">thousands</span> on manual support?
+            </h1>
+          </div>
+        </div>
+      </section>
+      
       {/* Hero Section */}
       <section className="pt-40 pb-24 bg-slate-950">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
