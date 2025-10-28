@@ -48,7 +48,7 @@ const Chatbot = () => {
   }, [showVideoPreview]);
 
   return (
-    <div className="min-h-screen bg-slate-900 overflow-x-hidden">
+    <div className="min-h-screen bg-slate-800 overflow-x-hidden">
       {/* Custom CSS for heartbeat animation */}
       <style>
         {`
@@ -65,7 +65,7 @@ const Chatbot = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-40 pb-24 bg-slate-900">
+      <section className="pt-40 pb-24 bg-slate-800">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center px-4">
             
@@ -121,7 +121,7 @@ const Chatbot = () => {
       </section>
 
       {/* Chatbot CTA Section */}
-      <section className="py-16 bg-slate-900/50">
+      <section className="py-16 bg-slate-800/50">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="text-center px-4">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-white">
@@ -140,7 +140,7 @@ const Chatbot = () => {
       </section>
 
       {/* AI Automation Section */}
-      <section className="py-24 bg-slate-900">
+      <section className="py-24 bg-slate-800">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center px-4">
             
@@ -177,7 +177,7 @@ const Chatbot = () => {
       </section>
 
       {/* Built-in Return Flow Section */}
-      <section className="py-24 bg-slate-900">
+      <section className="py-24 bg-slate-800">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center px-4">
             
@@ -214,7 +214,7 @@ const Chatbot = () => {
       </section>
 
       {/* Introvideo Section */}
-      <section className="py-24 bg-slate-900">
+      <section className="py-24 bg-slate-800">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="text-center px-4">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
@@ -254,7 +254,7 @@ const Chatbot = () => {
       </section>
 
       {/* Case Studies Section */}
-      <section className="py-24 bg-slate-900/50">
+      <section className="py-24 bg-slate-800/50">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="text-center mb-16 px-4">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
@@ -343,7 +343,7 @@ const Chatbot = () => {
       </section>
 
       {/* User Insights Section */}
-      <section className="py-24 bg-slate-900">
+      <section className="py-24 bg-slate-800">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           {/* Header */}
           <div className="text-center mb-16 px-4">
@@ -396,7 +396,7 @@ const Chatbot = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-24 bg-slate-900">
+      <section className="py-24 bg-slate-800">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="text-center mb-16 px-4">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
@@ -409,7 +409,7 @@ const Chatbot = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
-            <div className="glass-container rounded-2xl p-8 group hover:scale-105 transition-all duration-300 bg-slate-900/50 border border-blue-500/20 text-center">
+            <div className="glass-container rounded-2xl p-8 group hover:scale-105 transition-all duration-300 bg-slate-800/50 border border-blue-500/20 text-center">
               <div className="text-blue-400 mb-6 group-hover:scale-110 transition-transform duration-300 flex justify-center">
                 <MessageSquare className="w-12 h-12" />
               </div>
@@ -420,7 +420,7 @@ const Chatbot = () => {
               </p>
             </div>
 
-            <div className="glass-container rounded-2xl p-8 group hover:scale-105 transition-all duration-300 bg-slate-900/50 border border-blue-500/20 text-center">
+            <div className="glass-container rounded-2xl p-8 group hover:scale-105 transition-all duration-300 bg-slate-800/50 border border-blue-500/20 text-center">
               <div className="text-blue-400 mb-6 group-hover:scale-110 transition-transform duration-300 flex justify-center">
                 <Users className="w-12 h-12" />
               </div>
@@ -431,7 +431,7 @@ const Chatbot = () => {
               </p>
             </div>
 
-            <div className="glass-container rounded-2xl p-8 group hover:scale-105 transition-all duration-300 bg-slate-900/50 border border-blue-500/20 text-center">
+            <div className="glass-container rounded-2xl p-8 group hover:scale-105 transition-all duration-300 bg-slate-800/50 border border-blue-500/20 text-center">
               <div className="text-blue-400 mb-6 group-hover:scale-110 transition-transform duration-300 flex justify-center">
                 <Zap className="w-12 h-12" />
               </div>
@@ -446,7 +446,7 @@ const Chatbot = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-slate-900">
+      <section className="py-24 bg-slate-800">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="text-center px-4">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
