@@ -123,7 +123,7 @@ const Chatbot = () => {
 
             {/* Right Side - Video */}
             <div className="flex justify-center pt-12 sm:pt-16">
-              <div className="relative w-full flex justify-center pt-2 lg:pt-0">
+              <div className="relative w-full flex justify-center lg:justify-end pt-2 lg:pt-0">
                 <video 
                   src="https://www.goauto.ai/wp-content/uploads/2025/06/Chat-animation-v1.mp4"
                   autoPlay
