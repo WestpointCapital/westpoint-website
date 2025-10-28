@@ -142,15 +142,15 @@ const Chatbot = () => {
       {/* CTA Section */}
       <section className="py-12 bg-slate-800/50">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
-          <div className="text-center px-4">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-white">
+          <div className="text-center px-4 lg:px-20">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-white pt-8 lg:pt-20">
               Ready to talk? Book a <span className="text-blue-400">free call</span> with us
             </h2>
             <button 
               data-cal-link="westpoint-capital/free-consultation-call" 
               data-cal-namespace="free-consultation-call" 
               data-cal-config='{"layout":"month_view"}' 
-              className="hero-button px-8 py-4 h-auto inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 rounded-[300px] bg-primary text-primary-foreground hover:bg-primary/90" 
+              className="hero-button px-8 lg:px-15 py-4 lg:py-15 h-auto inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 rounded-[300px] bg-primary text-primary-foreground hover:bg-primary/90" 
               data-schedule-consultation="true"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-calendar mr-2 w-5 h-5">
