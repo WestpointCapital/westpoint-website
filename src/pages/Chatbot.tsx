@@ -79,7 +79,7 @@ const Chatbot = () => {
                   </h1>
                 </div>
                 <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed mb-8">
-                  Enter your website URL and get a free chatbot demo that can cut your support expenses by 60% and convert an extra 25% of your traffic into paying customers.
+                  Enter your website URL and get a free chatbot demo that can cut your support expenses by 60% and convert more of your traffic into paying customers.
                 </p>
                 
                 {/* Iframe Embed */}
