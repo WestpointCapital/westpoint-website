@@ -92,7 +92,11 @@ const Chatbot = () => {
                     </button>
                   </div>
                   
-                  <p className="text-sm sm:text-base md:text-lg text-center lg:text-left mb-4" style={{ color: '#60A5FA' }}>Get first month for 1$</p>
+                  <div className="flex justify-center lg:justify-start mb-4">
+                    <div className="inline-flex items-center gap-2 glass-container rounded-full px-4 py-2">
+                      <span className="text-sm font-medium text-white">Get first month for 1$</span>
+                    </div>
+                  </div>
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center lg:text-left">
                     <span className="text-blue-400">Instantly</span> cut support expenses and convert more traffic.
                   </h1>
