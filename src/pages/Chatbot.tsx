@@ -48,7 +48,7 @@ const Chatbot = () => {
   }, [showVideoPreview]);
 
   return (
-    <div className="min-h-screen bg-slate-950 overflow-x-hidden">
+    <div className="min-h-screen bg-slate-900 overflow-x-hidden">
       {/* Custom CSS for heartbeat animation */}
       <style>
         {`
@@ -65,7 +65,7 @@ const Chatbot = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-40 pb-24 bg-slate-950">
+      <section className="pt-40 pb-24 bg-slate-900">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center px-4">
             
@@ -141,7 +141,7 @@ const Chatbot = () => {
       </section>
 
       {/* AI Automation Section */}
-      <section className="py-24 bg-slate-950">
+      <section className="py-24 bg-slate-900">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center px-4">
             
@@ -178,7 +178,7 @@ const Chatbot = () => {
       </section>
 
       {/* Built-in Return Flow Section */}
-      <section className="py-24 bg-slate-950">
+      <section className="py-24 bg-slate-900">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center px-4">
             
@@ -215,7 +215,7 @@ const Chatbot = () => {
       </section>
 
       {/* Introvideo Section */}
-      <section className="py-24 bg-slate-950">
+      <section className="py-24 bg-slate-900">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="text-center px-4">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
@@ -344,7 +344,7 @@ const Chatbot = () => {
       </section>
 
       {/* User Insights Section */}
-      <section className="py-24 bg-slate-950">
+      <section className="py-24 bg-slate-900">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           {/* Header */}
           <div className="text-center mb-16 px-4">
@@ -397,7 +397,7 @@ const Chatbot = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-24 bg-slate-950">
+      <section className="py-24 bg-slate-900">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="text-center mb-16 px-4">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
@@ -447,7 +447,7 @@ const Chatbot = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-slate-950">
+      <section className="py-24 bg-slate-900">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="text-center px-4">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
