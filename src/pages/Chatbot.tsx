@@ -60,6 +60,12 @@ const Chatbot = () => {
             75% { transform: scale(1.05); }
             100% { transform: scale(1); }
           }
+          
+          @keyframes playButtonPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+          }
         `}
       </style>
       
@@ -79,7 +85,8 @@ const Chatbot = () => {
                     <p className="text-xs text-white/70 mb-2">Watch introvideo</p>
                     <button 
                       onClick={() => setShowIntroVideo(true)}
-                      className="inline-flex items-center justify-center bg-blue-500/50 hover:bg-blue-500/70 rounded-full p-4 transition-all duration-300 hover:scale-110 animate-pulse"
+                      className="inline-flex items-center justify-center bg-blue-500/50 hover:bg-blue-500/70 rounded-full p-4 transition-all duration-300 hover:scale-110"
+                      style={{ animation: 'playButtonPulse 2s ease-in-out infinite' }}
                     >
                       <Play className="w-6 h-6 text-white fill-white" />
                     </button>
