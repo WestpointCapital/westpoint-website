@@ -84,7 +84,7 @@ const Chatbot = () => {
             <div className="space-y-8 text-center lg:text-left">
               <div>
                 <div className="mb-6">
-                  <p className="text-lg text-center lg:text-left mb-4" style={{ color: '#60A5FA' }}>Do like 300+ companies</p>
+                  <p className="text-sm sm:text-base md:text-lg text-center lg:text-left mb-4" style={{ color: '#60A5FA' }}>Do like 300+ companies</p>
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center lg:text-left">
                     Get your <span className="text-blue-400">free demo chatbot</span> in one click
                   </h1>
@@ -142,7 +142,7 @@ const Chatbot = () => {
               data-cal-link="westpoint-capital/30min"
               data-cal-namespace="30min"
               data-cal-config='{"layout":"month_view"}'
-              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 sm:py-4 sm:px-8 rounded-full transition-all duration-300 hover:scale-105 active:scale-95 text-base sm:text-lg w-full sm:w-auto"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 sm:py-4 sm:px-12 rounded-full transition-all duration-300 hover:scale-105 active:scale-95 text-base sm:text-lg w-full sm:w-auto min-w-[200px] sm:min-w-[250px]"
             >
               Book now
             </button>
