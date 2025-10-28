@@ -79,7 +79,7 @@ const Chatbot = () => {
                     <p className="text-xs text-white/70 mb-2">Watch introvideo</p>
                     <button 
                       onClick={() => setShowIntroVideo(true)}
-                      className="inline-flex items-center justify-center bg-blue-500/50 hover:bg-blue-500/70 rounded-full p-4 transition-all duration-300 hover:scale-110"
+                      className="inline-flex items-center justify-center bg-blue-500/50 hover:bg-blue-500/70 rounded-full p-4 transition-all duration-300 hover:scale-110 animate-pulse"
                     >
                       <Play className="w-6 h-6 text-white fill-white" />
                     </button>
