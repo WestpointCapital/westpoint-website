@@ -131,7 +131,7 @@ const Chatbot = () => {
                   muted
                   playsInline
                   className="w-full max-w-[80%] sm:max-w-md lg:max-w-lg h-auto rounded-xl mx-auto"
-                  style={{ transform: 'scale(0.8)', paddingTop: '40px' }}
+                  style={{ marginTop: '10px' }}
                 />
               </div>
             </div>
