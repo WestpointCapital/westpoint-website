@@ -133,7 +133,7 @@ const Chatbot = () => {
               data-cal-config='{"layout":"month_view"}'
               className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 active:scale-95"
             >
-              Book your free call now
+              Book free democall
             </button>
           </div>
         </div>
