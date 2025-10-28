@@ -72,7 +72,7 @@ const Chatbot = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-40 pb-24 bg-slate-800">
+      <section className="pt-40 bg-slate-800">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center px-1 sm:px-2 lg:px-4">
             
