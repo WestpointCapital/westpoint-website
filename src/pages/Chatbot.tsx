@@ -131,7 +131,8 @@ const Chatbot = () => {
               data-cal-link="westpoint-capital/30min"
               data-cal-namespace="30min"
               data-cal-config='{"layout":"month_view"}'
-              className="w-full sm:w-auto bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 active:scale-95"
+              className="w-full sm:w-auto bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 transition-all duration-300 hover:scale-105 active:scale-95"
+              style={{ borderRadius: '60px' }}
             >
               Book free democall
             </button>
