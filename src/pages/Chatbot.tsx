@@ -66,6 +66,11 @@ const Chatbot = () => {
             50% { transform: scale(1.1); }
             100% { transform: scale(1); }
           }
+          
+          /* Navigation background override for chatbot page */
+          nav {
+            background-color: #111827 !important;
+          }
         `}
       </style>
       
