@@ -130,8 +130,7 @@ const Chatbot = () => {
                   loop
                   muted
                   playsInline
-                  className="w-full max-w-[80%] sm:max-w-md lg:max-w-lg h-auto rounded-xl mx-auto"
-                  style={{ marginTop: '10px' }}
+                  className="w-full max-w-[80%] sm:max-w-md lg:max-w-lg h-auto rounded-xl mx-auto pt-2 lg:pt-[70px]"
                 />
               </div>
             </div>
