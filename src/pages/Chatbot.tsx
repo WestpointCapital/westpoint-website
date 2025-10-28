@@ -74,7 +74,7 @@ const Chatbot = () => {
       {/* Hero Section */}
       <section className="pt-40 pb-24 bg-slate-800">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center px-4">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center px-1 sm:px-2 lg:px-4">
             
             {/* Left Side - Text Content */}
             <div className="space-y-8 text-center lg:text-left">
@@ -131,7 +131,7 @@ const Chatbot = () => {
                   muted
                   playsInline
                   className="w-full max-w-[80%] sm:max-w-md lg:max-w-lg h-auto rounded-xl mx-auto"
-                  style={{ transform: 'scale(0.8)' }}
+                  style={{ transform: 'scale(0.8)', paddingTop: '40px' }}
                 />
               </div>
             </div>
