@@ -122,16 +122,7 @@ const Chatbot = () => {
             </div>
 
             {/* Right Side - Video */}
-            <div className="flex justify-center pt-12 sm:pt-16" style={{ marginTop: '-78px' }}>
-              <style>
-                {`
-                  @media (min-width: 1024px) {
-                    .flex.justify-center.pt-12.sm\\:pt-16 {
-                      margin-top: 0 !important;
-                    }
-                  }
-                `}
-              </style>
+            <div className="flex justify-center pt-12 sm:pt-16">
               <div className="relative w-full flex justify-center pt-2 lg:pt-[70px]">
                 <video 
                   src="https://www.goauto.ai/wp-content/uploads/2025/06/Chat-animation-v1.mp4"
