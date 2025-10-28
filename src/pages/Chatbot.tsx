@@ -128,9 +128,12 @@ const Chatbot = () => {
               Ready to talk? Book a <span className="text-blue-400">free call</span> with us
             </h2>
             <button 
+              data-cal-link="westpoint-capital/30min"
+              data-cal-namespace="30min"
+              data-cal-config='{"layout":"month_view"}'
               className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 active:scale-95"
             >
-              Get your free demo now
+              Book a call
             </button>
           </div>
         </div>
