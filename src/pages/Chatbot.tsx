@@ -1,13 +1,14 @@
 import Navigation from '../components/ui/navigation';
 import Footer from '../components/sections/footer';
 import { Button } from '../components/ui/button';
-import { MessageSquare, Users, Zap, Shield, ArrowRight, X } from 'lucide-react';
+import { MessageSquare, Users, Zap, Shield, ArrowRight, X, Play } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import VideoPreview from '../components/VideoPreview';
 
 const Chatbot = () => {
   const [showVideoPreview, setShowVideoPreview] = useState(true);
+  const [showIntroVideo, setShowIntroVideo] = useState(false);
   const [isIntrovideoOpen, setIsIntrovideoOpen] = useState(false);
 
   // Initialize Cal.com embed for chatbot CTA
@@ -73,6 +74,17 @@ const Chatbot = () => {
             <div className="space-y-8 text-center lg:text-left">
               <div>
                 <div className="mb-6">
+                  {/* Mobile Video Button - Only visible on mobile */}
+                  <div className="block lg:hidden mb-4 text-center">
+                    <p className="text-xs text-white/70 mb-2">Watch introvideo</p>
+                    <button 
+                      onClick={() => setShowIntroVideo(true)}
+                      className="inline-flex items-center justify-center bg-blue-500/50 hover:bg-blue-500/70 rounded-full p-4 transition-all duration-300 hover:scale-110"
+                    >
+                      <Play className="w-6 h-6 text-white fill-white" />
+                    </button>
+                  </div>
+                  
                   <p className="text-sm sm:text-base md:text-lg text-center lg:text-left mb-4" style={{ color: '#60A5FA' }}>Do like 300+ companies</p>
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center lg:text-left">
                     Cut support expenses and <span className="text-blue-400">convert more traffic</span>.
@@ -478,9 +490,40 @@ const Chatbot = () => {
 
       <Footer />
       
-      {/* Video Preview */}
+      {/* Video Preview - Hidden on mobile */}
       {showVideoPreview && (
-        <VideoPreview onClose={() => setShowVideoPreview(false)} />
+        <div className="hidden lg:block">
+          <VideoPreview onClose={() => setShowVideoPreview(false)} />
+        </div>
+      )}
+
+      {/* Mobile Intro Video Modal */}
+      {showIntroVideo && (
+        <div className="fixed inset-0 z-[9999999999] flex items-center justify-center bg-black/80 backdrop-blur-sm">
+          <div className="relative w-full max-w-5xl mx-4">
+            {/* Close Button */}
+            <button
+              onClick={() => setShowIntroVideo(false)}
+              className="absolute -top-12 right-0 bg-white hover:bg-gray-100 rounded-full p-2 transition-colors"
+            >
+              <X className="w-6 h-6 text-gray-900" />
+            </button>
+
+            {/* YouTube Video */}
+            <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/Iad3-ZM9pA8?autoplay=1"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
       )}
 
       {/* Introvideo Modal */}
