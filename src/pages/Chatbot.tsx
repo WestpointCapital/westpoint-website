@@ -120,26 +120,6 @@ const Chatbot = () => {
         </div>
       </section>
 
-      {/* Chatbot CTA Section */}
-      <section className="py-16 bg-slate-800/50">
-        <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
-          <div className="text-center px-4">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-white">
-              Book a free call about our <span className="text-blue-400">chatbot solution</span>
-            </h2>
-            <button 
-              data-cal-link="westpoint-capital/30min"
-              data-cal-namespace="30min"
-              data-cal-config='{"layout":"month_view"}'
-              className="w-full sm:w-auto bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 transition-all duration-300 hover:scale-105 active:scale-95"
-              style={{ borderRadius: '60px' }}
-            >
-              Book free democall
-            </button>
-          </div>
-        </div>
-      </section>
-
       {/* AI Automation Section */}
       <section className="py-24 bg-slate-800">
         <div className="mx-auto w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%]">
