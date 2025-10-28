@@ -131,9 +131,9 @@ const Chatbot = () => {
               data-cal-link="westpoint-capital/30min"
               data-cal-namespace="30min"
               data-cal-config='{"layout":"month_view"}'
-              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 active:scale-95 w-[80%] sm:w-auto sm:min-w-[200px]"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-12 rounded-full transition-all duration-300 hover:scale-105 active:scale-95"
             >
-              Book now
+              Book your free call now
             </button>
           </div>
         </div>
