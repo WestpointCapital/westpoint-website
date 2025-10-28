@@ -98,7 +98,7 @@ const Chatbot = () => {
                     </div>
                   </div>
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center lg:text-left">
-                    <span className="text-blue-400">Instantly</span> cut support expenses and convert more traffic.
+                    Automate support and boost conversions <span className="text-blue-400">instantly</span>
                   </h1>
                 </div>
                 <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed mb-8">
